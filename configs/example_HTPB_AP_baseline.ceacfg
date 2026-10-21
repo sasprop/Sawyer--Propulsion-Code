@@ -1,0 +1,56 @@
+{
+  "ingredients": [
+    {
+      "name": "HTPB",
+      "wt_pct": 9.93553,
+      "include_cea": true,
+      "func_override": null,
+      "weq_override": null
+    },
+    {
+      "name": "IPDI",
+      "wt_pct": 0.82447,
+      "include_cea": true,
+      "func_override": null,
+      "weq_override": null
+    },
+    {
+      "name": "IDP",
+      "wt_pct": 1.24,
+      "include_cea": true,
+      "func_override": null,
+      "weq_override": null
+    },
+    {
+      "name": "AP_CUSTOM",
+      "wt_pct": 70.0,
+      "include_cea": true,
+      "func_override": null,
+      "weq_override": null
+    },
+    {
+      "name": "AL",
+      "wt_pct": 18.0,
+      "include_cea": true,
+      "func_override": null,
+      "weq_override": null
+    }
+  ],
+  "formula_name": "HTPB-AP BASELINE",
+  "formula_tag": "DEV",
+  "formula_notes": "Example baseline: 70% AP / 18% Al with an HTPB/IPDI/IDP binder solved by the cure calculator.",
+  "cure_mode": "calc",
+  "nco_oh_ratio": 0.89,
+  "pc_psia": 1000.0,
+  "eps": 9.0,
+  "pamb": 14.7,
+  "alt_mode": "manual",
+  "alt_fixed": 0.0,
+  "alt_start": 0.0,
+  "alt_end": 30000.0,
+  "pamb_manual": 14.7,
+  "cstar_eff": 1.0,
+  "isp_eff": 1.0,
+  "app_version": "1.0.0",
+  "config_format": 2
+}

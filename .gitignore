@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+
+# PyInstaller output
+build/
+dist/
+packaging/version_info.txt
+
+# Your runs and personal configs (kept on disk, not in git)
+Formula Outputs/
+configs/*
+!configs/example_*.ceacfg
+
+# Old project files moved out of the repo - move this folder elsewhere
+_archive/
+
+# Editor / OS clutter
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+selftest.txt

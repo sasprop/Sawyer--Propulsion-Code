@@ -1,0 +1,7075 @@
+[
+  {
+    "id": 1,
+    "name": "AL",
+    "aliases": [
+      "Al",
+      "Aluminum",
+      "ALUMINUM"
+    ],
+    "category": 2000,
+    "cea_formula": "AL 1.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 2.7,
+    "Weq": 0.0,
+    "particles": [
+      5
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 140. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 2,
+    "name": "HTPB",
+    "aliases": [
+      "R-45M",
+      "R45M",
+      "R45",
+      "HTPB_R45M",
+      "C7.337H10.982O.058",
+      "HYDROXY TERMINATED POLYBUTADIENE"
+    ],
+    "category": 3000,
+    "cea_formula": "C 7.337 H 10.982 O 0.058",
+    "h_cal": -2970.0,
+    "t_k": 298.15,
+    "density": 0.901,
+    "Weq": 1190.5,
+    "particles": [
+      0
+    ],
+    "functional_group": "OH",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 270. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 3,
+    "name": "IDP",
+    "aliases": [
+      "Isodecyl Pelargonate",
+      "ISODECYL_PELARGONATE",
+      "C19H38O2",
+      "CH3(CH2)7COO(CH2)7CH(CH3)2"
+    ],
+    "category": 7000,
+    "cea_formula": "C 19.0 H 38.0 O 2.0",
+    "h_cal": -209500.0,
+    "t_k": 298.15,
+    "density": 0.87,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 295. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 4,
+    "name": "AP_CUSTOM",
+    "aliases": [
+      "AP",
+      "Ammonium Perchlorate",
+      "AMMONIUM_PERCHLORATE",
+      "NH4ClO4"
+    ],
+    "category": 1000,
+    "cea_formula": "CL 1.0 H 4.0 N 1.0 O 4.0",
+    "h_cal": -70690.0,
+    "t_k": 298.15,
+    "density": 1.95,
+    "Weq": 0.0,
+    "particles": [
+      400,
+      200,
+      90,
+      30
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 103. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 5,
+    "name": "HMDI",
+    "aliases": [
+      "C8H12N2O2",
+      "H12MDI",
+      "HDI",
+      "HEXAMETHYLENE DIISOCYANATE",
+      "Hexamethylene Diisocyanate",
+      "Hydrogenated MDI",
+      "HYDROGENATED_MDI",
+      "OCN-(CH2)6-NCO"
+    ],
+    "category": 4000,
+    "cea_formula": "C 8.0 H 12.0 N 2.0 O 2.0",
+    "h_cal": -75270.0,
+    "t_k": 298.15,
+    "density": 1.04,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "NCO",
+    "phase": "L",
+    "notes": "Hexamethylene diisocyanate curative (allprop entry 259). Legacy HMDI primary name retained for compatibility."
+  },
+  {
+    "id": 6,
+    "name": "RIO",
+    "aliases": [
+      "Red Iron Oxide",
+      "Fe2O3",
+      "RED_IRON_OXIDE",
+      "IRON_OXIDE_RED",
+      "FERRIC OXIDE",
+      "HEMATITE"
+    ],
+    "category": 5000,
+    "cea_formula": "FE 2.0 O 3.0",
+    "h_cal": -197300.0,
+    "t_k": 298.15,
+    "density": 5.12,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 234. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 7,
+    "name": "IPDI",
+    "aliases": [
+      "Isophorone Diisocyanate",
+      "ISOPHORONE_DIISOCYANATE",
+      "C12H18N2O2"
+    ],
+    "category": 4000,
+    "cea_formula": "C 12.0 H 18.0 N 2.0 O 2.0",
+    "h_cal": -88800.0,
+    "t_k": 298.15,
+    "density": 1.06,
+    "Weq": 111.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "NCO",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 284. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 8,
+    "name": "DOA",
+    "aliases": [
+      "Dioctyl Adipate",
+      "DIOCTYL_ADIPATE",
+      "C22 H42 O4",
+      "DIOCTYL ADIPATE PLASTICIZER"
+    ],
+    "category": 7000,
+    "cea_formula": "C 22.0 H 42.0 O 4.0",
+    "h_cal": -311630.0,
+    "t_k": 298.15,
+    "density": 0.927,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 318. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 11,
+    "name": "CUO",
+    "aliases": [
+      "Copper Oxide",
+      "BLACK_COPPER_OXIDE",
+      "CopperOxide",
+      "CUPRIC OXIDE"
+    ],
+    "category": 5000,
+    "cea_formula": "CU 1.0 O 1.0",
+    "h_cal": -37300.0,
+    "t_k": 298.15,
+    "density": 6.315,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 342. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 12,
+    "name": "OXAMIDE",
+    "aliases": [
+      "Oxamide",
+      "OXAMIDE_BRS",
+      "C2H4N2O2",
+      "OXAMIDE S",
+      "OXALAMIDE",
+      "ETHANEDIAMIDE",
+      "OXALIC ACID DIAMIDE"
+    ],
+    "category": 6000,
+    "cea_formula": "C 2.0 H 4.0 N 2.0 O 2.0",
+    "h_cal": -123000.0,
+    "t_k": 298.15,
+    "density": 1.667,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 257. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 13,
+    "name": "TEPANOL_HX878",
+    "aliases": [
+      "HX-878",
+      "HX878",
+      "Tepanol HX-878",
+      "TEPANOL",
+      "C14H32N6O2"
+    ],
+    "category": 8000,
+    "cea_formula": "C 14.0 H 32.0 N 6.0 O 2.0",
+    "h_cal": -146.0,
+    "t_k": 298.15,
+    "density": 1.1,
+    "Weq": 211.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "OH",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 383. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10001,
+    "name": "BROMINE_TRIFLUORIDE",
+    "aliases": [
+      "BRF3",
+      "BROMINE TRIFLUORIDE"
+    ],
+    "category": 1000,
+    "cea_formula": "BR 1.0 F 3.0",
+    "h_cal": -72580.0,
+    "t_k": 298.15,
+    "density": 2.803,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 1. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10002,
+    "name": "BROMINE_PENTAFLUORIDE_LIQUID",
+    "aliases": [
+      "BRF5L",
+      "BROMINE PENTAFLUORIDE LIQUID",
+      "BRF5 L"
+    ],
+    "category": 1000,
+    "cea_formula": "BR 1.0 F 5.0",
+    "h_cal": -109590.0,
+    "t_k": 298.15,
+    "density": 2.4604,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 2. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10003,
+    "name": "MFTNMF",
+    "aliases": [
+      "CFN3O6",
+      "MONOFLUOROTRINITROMETHIDE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 F 1.0 N 3.0 O 6.0",
+    "h_cal": -37300.0,
+    "t_k": 298.15,
+    "density": 1.587,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 3. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10004,
+    "name": "BIS_FLUOROXY_DIFLUOROMETHANE",
+    "aliases": [
+      "BIS(FLUOROXY)DIFLUOROMETHANE",
+      "CF4O2L",
+      "CF4O2 L"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 F 4.0 O 2.0",
+    "h_cal": -139100.0,
+    "t_k": 298.15,
+    "density": 1.2,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 4. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10005,
+    "name": "PFG",
+    "aliases": [
+      "CF5N3L",
+      "PERFLUOROGUANIDINE",
+      "CF5N3 G"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 F 5.0 N 3.0",
+    "h_cal": 24200.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 76. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10006,
+    "name": "COMPOUND_R",
+    "aliases": [
+      "CF7N3",
+      "COMPOUND R",
+      "TRIS(DIFLUOROAMINO)FLUOROMETHANE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 F 7.0 N 3.0",
+    "h_cal": -52500.0,
+    "t_k": 298.15,
+    "density": 1.56,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 6. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10007,
+    "name": "DELTA",
+    "aliases": [
+      "CF8N4",
+      "TETRAKIS(DIFLUOROAMINO)METHANE",
+      "CF8N4 G"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 F 8.0 N 4.0",
+    "h_cal": 2600.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 79. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10008,
+    "name": "TNM",
+    "aliases": [
+      "CHN3O6L",
+      "NITROFORM",
+      "TRINITROMETHANE",
+      "CN4O8",
+      "TETRANITROMETHANE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 N 4.0 O 8.0",
+    "h_cal": 8800.0,
+    "t_k": 298.15,
+    "density": 1.64,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 10. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10009,
+    "name": "NITROMETHANE",
+    "aliases": [
+      "CH3NO2"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 H 3.0 N 1.0 O 2.0",
+    "h_cal": -27030.0,
+    "t_k": 298.15,
+    "density": 1.129,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 9. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10010,
+    "name": "TRINITROETHYL_NITRATE",
+    "aliases": [
+      "C2H2N4O9",
+      "TRINITROETHYL NITRATE"
+    ],
+    "category": 1000,
+    "cea_formula": "C 2.0 H 2.0 N 4.0 O 9.0",
+    "h_cal": -31190.0,
+    "t_k": 298.15,
+    "density": 1.65,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 11. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10011,
+    "name": "1_1_DINITRO_1_FLUOROETHANE",
+    "aliases": [
+      "1,1-DINITRO-1-FLUOROETHANE",
+      "C2H3FN2O4"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 F 1.0 H 3.0 N 2.0 O 4.0",
+    "h_cal": -67340.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 12. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10012,
+    "name": "2_FLUORO_2_2_DINITROETHANOL",
+    "aliases": [
+      "2-FLUORO-2,2-DINITROETHANOL",
+      "C2H3FN2O5"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 F 1.0 H 3.0 N 2.0 O 5.0",
+    "h_cal": -114200.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 13. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10014,
+    "name": "1_1_DINITROETHANE",
+    "aliases": [
+      "1,1-DINITROETHANE",
+      "C2H4N2O4"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 H 4.0 N 2.0 O 4.0",
+    "h_cal": -34670.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 15. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10015,
+    "name": "NITROETHANE",
+    "aliases": [
+      "C2H5NO2"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 H 5.0 N 1.0 O 2.0",
+    "h_cal": -33200.0,
+    "t_k": 298.15,
+    "density": 1.0413,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 16. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10016,
+    "name": "ETHYL_NITRATE",
+    "aliases": [
+      "C2H5NO3",
+      "ETHYL NITRATE"
+    ],
+    "category": 1000,
+    "cea_formula": "C 2.0 H 5.0 N 1.0 O 3.0",
+    "h_cal": -45510.0,
+    "t_k": 298.15,
+    "density": 1.1,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 17. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10017,
+    "name": "1_1_BIS_DINITRO_1_FLUOROPROPANE",
+    "aliases": [
+      "1,1-BIS(DINITRO)-1-FLUOROPROPANE",
+      "C3H5FN2O4"
+    ],
+    "category": 8000,
+    "cea_formula": "C 3.0 F 1.0 H 5.0 N 2.0 O 4.0",
+    "h_cal": -80530.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 18. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10018,
+    "name": "1_1_1_TRINITROPROPANE",
+    "aliases": [
+      "1,1,1-TRINITROPROPANE",
+      "C3H5N3O6"
+    ],
+    "category": 8000,
+    "cea_formula": "C 3.0 H 5.0 N 3.0 O 6.0",
+    "h_cal": -28060.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 19. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10019,
+    "name": "ADN",
+    "aliases": [
+      "AMMONIUM DINITRAMIDE",
+      "NH4 N(NO2)2",
+      "NH4N3O4",
+      "NH4 N3O4",
+      "by SRI, 1991, mp 95C, stable"
+    ],
+    "category": 1000,
+    "cea_formula": "H 4.0 N 4.0 O 4.0",
+    "h_cal": -35800.0,
+    "t_k": 298.15,
+    "density": 1.8,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 20. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10020,
+    "name": "NG",
+    "aliases": [
+      "C3H5N3O9",
+      "GLYCEROL TRINITRATE",
+      "NITROGLYCERINE",
+      "O2NO-CH-[OCH2(NO2)]2"
+    ],
+    "category": 7000,
+    "cea_formula": "C 3.0 H 5.0 N 3.0 O 9.0",
+    "h_cal": -90750.0,
+    "t_k": 298.15,
+    "density": 1.6,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 21. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10024,
+    "name": "CTF",
+    "aliases": [
+      "CHLORINE TRIFLUORIDE",
+      "CLF3"
+    ],
+    "category": 1000,
+    "cea_formula": "CL 1.0 F 3.0",
+    "h_cal": -37970.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 88. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10025,
+    "name": "FLOROX",
+    "aliases": [
+      "CLF3O",
+      "OXYCHLORINE TRIFLUORIDE",
+      "FLUOROX"
+    ],
+    "category": 1000,
+    "cea_formula": "CL 1.0 F 3.0 O 1.0",
+    "h_cal": -32600.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 89. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10026,
+    "name": "COMPOUND_A",
+    "aliases": [
+      "CHLORINE PENTAFLUORIDE",
+      "CLF5",
+      "COMPOUND A"
+    ],
+    "category": 1000,
+    "cea_formula": "CL 1.0 F 5.0",
+    "h_cal": -55700.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 90. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10027,
+    "name": "PERCHLORIC_ACID",
+    "aliases": [
+      "HCLO4",
+      "PERCHLORIC ACID"
+    ],
+    "category": 8000,
+    "cea_formula": "CL 1.0 H 1.0 O 4.0",
+    "h_cal": -11100.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 28. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10028,
+    "name": "CHLORINE",
+    "aliases": [
+      "CL2"
+    ],
+    "category": 8000,
+    "cea_formula": "CL 2.0",
+    "h_cal": -5391.0,
+    "t_k": 298.15,
+    "density": 1.56,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 29. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10029,
+    "name": "CHLORINE_HEPTOXIDE",
+    "aliases": [
+      "CHLORINE HEPTOXIDE",
+      "CL2O7"
+    ],
+    "category": 8000,
+    "cea_formula": "CL 2.0 O 7.0",
+    "h_cal": 55000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 30. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10030,
+    "name": "FLUORINE_LIQUID_AT_NBP",
+    "aliases": [
+      "F2",
+      "FLUORINE LIQUID AT NBP",
+      "FLUORINE"
+    ],
+    "category": 8000,
+    "cea_formula": "F 2.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 94. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10031,
+    "name": "OXYGEN_DIFLUORIDE_LIQUID_AT_NBP",
+    "aliases": [
+      "OF2",
+      "OXYGEN DIFLUORIDE LIQUID AT NBP",
+      "OXYGEN DIFLUORIDE"
+    ],
+    "category": 1000,
+    "cea_formula": "F 2.0 O 1.0",
+    "h_cal": 5860.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 96. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10032,
+    "name": "NITROGEN_TRIFLUORIDE_LIQUID_AT_NBP",
+    "aliases": [
+      "NF3",
+      "NITROGEN TRIFLUORIDE LIQUID AT NBP",
+      "NITROGEN DIFLUORIDE"
+    ],
+    "category": 1000,
+    "cea_formula": "F 3.0 N 1.0",
+    "h_cal": -31430.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 97. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10034,
+    "name": "HTP",
+    "aliases": [
+      "H2O2",
+      "HYDROGEN PEROXIDE",
+      "PEROXIDE"
+    ],
+    "category": 1000,
+    "cea_formula": "H 2.0 O 2.0",
+    "h_cal": -44880.0,
+    "t_k": 298.15,
+    "density": 1.4422,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 35. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10035,
+    "name": "NTO",
+    "aliases": [
+      "DINITROGEN TETROXIDE",
+      "N2O4",
+      "NITROGEN TETROXIDE"
+    ],
+    "category": 1000,
+    "cea_formula": "N 2.0 O 4.0",
+    "h_cal": 2170.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 102. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10036,
+    "name": "LOX",
+    "aliases": [
+      "LIQUID OXYGEN AT NBP",
+      "LO2",
+      "O2",
+      "GAS O2"
+    ],
+    "category": 1000,
+    "cea_formula": "O 2.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 1.4286,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "G",
+    "notes": "Imported from ALLPROP.json entry 334. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10037,
+    "name": "OZONE_LIQUID_AT_NBP",
+    "aliases": [
+      "O3",
+      "OZONE LIQUID AT NBP"
+    ],
+    "category": 1000,
+    "cea_formula": "O 3.0",
+    "h_cal": 30310.0,
+    "t_k": 298.15,
+    "density": 1.449,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 38. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10038,
+    "name": "ABH",
+    "aliases": [
+      "ALB3H12",
+      "ALUMINUM BOROHYDRIDE",
+      "ALUMINUM BOROHYDRIDE GAS"
+    ],
+    "category": 2000,
+    "cea_formula": "AL 1.0 B 3.0 H 12.0",
+    "h_cal": -14900.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "G",
+    "notes": "Imported from ALLPROP.json entry 67. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10039,
+    "name": "DB",
+    "aliases": [
+      "B2H6",
+      "DIBORANE LIQUID AT 180.59K (NBP)",
+      "DIBORANE GAS"
+    ],
+    "category": 2000,
+    "cea_formula": "B 2.0 H 6.0",
+    "h_cal": 9800.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "G",
+    "notes": "Imported from ALLPROP.json entry 68. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10040,
+    "name": "PB",
+    "aliases": [
+      "B5H9",
+      "PENTABORANE",
+      "LEAD"
+    ],
+    "category": 2000,
+    "cea_formula": "PB 1.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 11.337,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 213. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10041,
+    "name": "METHANE_LIQUID_AT_NBP",
+    "aliases": [
+      "CH4",
+      "METHANE LIQUID AT NBP",
+      "SLUSH METHANE",
+      "S-CH4"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 H 4.0",
+    "h_cal": -21500.0,
+    "t_k": 298.15,
+    "density": 0.5,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 326. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10042,
+    "name": "METHOXYAMINE",
+    "aliases": [
+      "CH5NO"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 H 5.0 N 1.0 O 1.0",
+    "h_cal": -13000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 43. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10043,
+    "name": "MMH",
+    "aliases": [
+      "CH3N2H3",
+      "METHYL HYDRAZINE",
+      "MONOMETHYL HYDRAZINE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 H 6.0 N 2.0",
+    "h_cal": 12950.0,
+    "t_k": 298.15,
+    "density": 0.874,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 44. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10044,
+    "name": "ACETYLENE",
+    "aliases": [
+      "C2H2",
+      "ETHYNE LIQUID",
+      "ETHYNE SOLID"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 H 2.0",
+    "h_cal": 48070.0,
+    "t_k": 298.15,
+    "density": 0.729,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 172. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10045,
+    "name": "ETHYLENE_LIQUID_AT_NBP",
+    "aliases": [
+      "C2H4",
+      "ETHYLENE LIQUID AT NBP",
+      "PE",
+      "POLYETHYLENE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 H 4.0",
+    "h_cal": -12700.0,
+    "t_k": 298.15,
+    "density": 0.9,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 236. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10046,
+    "name": "AMMONIUM_DICYANAMIDE",
+    "aliases": [
+      "AMMONIUM DICYANAMIDE",
+      "C2H4N4",
+      "DICYANDIAMIDE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 H 4.0 N 4.0",
+    "h_cal": 7140.0,
+    "t_k": 298.15,
+    "density": 1.4,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 175. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10047,
+    "name": "2_TRIAZOETHANOL",
+    "aliases": [
+      "2-TRIAZOETHANOL",
+      "C2H5N3O"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 H 5.0 N 3.0 O 1.0",
+    "h_cal": 22470.0,
+    "t_k": 298.15,
+    "density": 1.149,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 48. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10048,
+    "name": "N_N_DIMETHYL_NITROSOAMINE",
+    "aliases": [
+      "C2H6N2O",
+      "N,N-DIMETHYL NITROSOAMINE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 H 6.0 N 2.0 O 1.0",
+    "h_cal": 1150.0,
+    "t_k": 298.15,
+    "density": 1.0053,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 49. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10049,
+    "name": "UDMH",
+    "aliases": [
+      "C2H8N2",
+      "UNSYM-DIMETHYLHYDRAZINE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 H 8.0 N 2.0",
+    "h_cal": 11900.0,
+    "t_k": 298.15,
+    "density": 0.7861,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 50. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10050,
+    "name": "HYBALINE_A_4",
+    "aliases": [
+      "ALB3H19C2N",
+      "ALUMINUM BOROHYDRIDE DIMETHYLAMINATE",
+      "HYBALINE A-4"
+    ],
+    "category": 2000,
+    "cea_formula": "AL 1.0 B 3.0 C 2.0 H 19.0 N 1.0",
+    "h_cal": -54600.0,
+    "t_k": 298.15,
+    "density": 0.734,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 51. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10051,
+    "name": "ACRYLIC_NITRILE",
+    "aliases": [
+      "ACRYLIC NITRILE",
+      "ACRYLONITRILE",
+      "C3H3N"
+    ],
+    "category": 8000,
+    "cea_formula": "C 3.0 H 3.0 N 1.0",
+    "h_cal": 36190.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 52. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10052,
+    "name": "HYDROGEN_AZIDE",
+    "aliases": [
+      "HN3",
+      "HYDRAZOIC ACID",
+      "HYDROGEN AZIDE",
+      "GAS"
+    ],
+    "category": 9000,
+    "cea_formula": "H 1.0 N 3.0",
+    "h_cal": 70260.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "G",
+    "notes": "Imported from ALLPROP.json entry 243. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10053,
+    "name": "LH2",
+    "aliases": [
+      "H2",
+      "HYDROGEN",
+      "HYDROGEN LIQUID AT NBP",
+      "GAS H2"
+    ],
+    "category": 8000,
+    "cea_formula": "H 2.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 0.09,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "G",
+    "notes": "Imported from ALLPROP.json entry 329. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10054,
+    "name": "NH3_L",
+    "aliases": [
+      "AMMONIA L",
+      "NH3",
+      "NH3 L"
+    ],
+    "category": 8000,
+    "cea_formula": "H 3.0 N 1.0",
+    "h_cal": -17090.0,
+    "t_k": 298.15,
+    "density": 0.676,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 55. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10055,
+    "name": "HYDRAZINE",
+    "aliases": [
+      "N2H4"
+    ],
+    "category": 8000,
+    "cea_formula": "H 4.0 N 2.0",
+    "h_cal": 12050.0,
+    "t_k": 298.15,
+    "density": 1.004,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 56. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10056,
+    "name": "DECH",
+    "aliases": [
+      "C10H20",
+      "DIETHYLCYCLOHEXANE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 10.0 H 20.0",
+    "h_cal": -173300.0,
+    "t_k": 298.15,
+    "density": 0.804,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 57. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10057,
+    "name": "JP_5",
+    "aliases": [
+      "JP-5"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 H 1.954",
+    "h_cal": -5670.0,
+    "t_k": 298.15,
+    "density": 0.83,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 58. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10058,
+    "name": "SILANE",
+    "aliases": [
+      "SIH4",
+      "SILICON TETRAHYDRIDE AT NBP"
+    ],
+    "category": 2000,
+    "cea_formula": "H 4.0 SI 1.0",
+    "h_cal": 6400.0,
+    "t_k": 298.15,
+    "density": 0.68,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 59. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10059,
+    "name": "PROPANE",
+    "aliases": [
+      "C3H8",
+      "LIQUID PROPANE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 3.0 H 8.0",
+    "h_cal": -29600.0,
+    "t_k": 298.15,
+    "density": 0.5853,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 60. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10060,
+    "name": "ETHANE_L",
+    "aliases": [
+      "C2H6",
+      "ETHANE L"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 H 6.0",
+    "h_cal": -23750.0,
+    "t_k": 298.15,
+    "density": 0.57,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 61. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10061,
+    "name": "METHYLACETYLENE_LIQ",
+    "aliases": [
+      "C3H4",
+      "METHYLACETYLENE LIQ",
+      "METHYLACETYLENE GAS"
+    ],
+    "category": 8000,
+    "cea_formula": "C 3.0 H 4.0",
+    "h_cal": 44310.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "G",
+    "notes": "Imported from ALLPROP.json entry 247. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10062,
+    "name": "RP_1",
+    "aliases": [
+      "CH1.9532",
+      "KEROSENE",
+      "ROCKET PROPELLANT 1",
+      "RP-1"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 H 1.9532",
+    "h_cal": -5760.0,
+    "t_k": 298.15,
+    "density": 0.8,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 63. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10063,
+    "name": "HYBALINE_A5",
+    "aliases": [
+      "A5",
+      "AL(BH4)3:CH3NH2",
+      "ALB3H17CN",
+      "ALUMINUM BOROHYDRIDE METHYLAMINATE",
+      "HYBALINE A5"
+    ],
+    "category": 2000,
+    "cea_formula": "AL 1.0 B 3.0 C 1.0 H 17.0 N 1.0",
+    "h_cal": -55000.0,
+    "t_k": 298.15,
+    "density": 0.736,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 64. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10064,
+    "name": "BEBHMA",
+    "aliases": [
+      "BE(BH4)2:CH3NH2",
+      "BEBH13CN",
+      "BERYLLIUM BOROHYDRIDE METHYLAMINATE"
+    ],
+    "category": 2000,
+    "cea_formula": "B 1.0 BE 1.0 C 1.0 H 13.0 N 1.0",
+    "h_cal": -60000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 65. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10065,
+    "name": "NITROGEN_LIQUID_AT_NBP",
+    "aliases": [
+      "N2",
+      "NITROGEN LIQUID AT NBP",
+      "GAS N2"
+    ],
+    "category": 8000,
+    "cea_formula": "N 2.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 1.25,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "G",
+    "notes": "Imported from ALLPROP.json entry 330. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10066,
+    "name": "PB_G",
+    "aliases": [
+      "B5H9G",
+      "PB G",
+      "PENTABORANE GAS",
+      "B5H9 G"
+    ],
+    "category": 2000,
+    "cea_formula": "B 5.0 H 9.0",
+    "h_cal": 15020.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "G",
+    "notes": "Imported from ALLPROP.json entry 69. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10067,
+    "name": "BROMINE_MONOFLUORIDE",
+    "aliases": [
+      "BRF",
+      "BROMINE MONOFLUORIDE"
+    ],
+    "category": 8000,
+    "cea_formula": "BR 1.0 F 1.0",
+    "h_cal": -13970.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 70. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10068,
+    "name": "BROMINE_TRIFLUORIDE_GAS",
+    "aliases": [
+      "BRF3G",
+      "BROMINE TRIFLUORIDE GAS",
+      "BRF3 G"
+    ],
+    "category": 1000,
+    "cea_formula": "BR 1.0 F 3.0",
+    "h_cal": -61090.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "G",
+    "notes": "Imported from ALLPROP.json entry 71. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10069,
+    "name": "BROMINE_PENTAFLUORIDE_GAS",
+    "aliases": [
+      "BRF5G",
+      "BROMINE PENTAFLUORIDE GAS",
+      "BRF5 G"
+    ],
+    "category": 1000,
+    "cea_formula": "BR 1.0 F 5.0",
+    "h_cal": -102470.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "G",
+    "notes": "Imported from ALLPROP.json entry 72. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10070,
+    "name": "PFF",
+    "aliases": [
+      "CF4N2G",
+      "PERFLUOROFORMAMIDINE",
+      "CF4N2 G"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 F 4.0 N 2.0",
+    "h_cal": -33700.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 73. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10071,
+    "name": "FLUOROXYTRIFLUOROMETHANE",
+    "aliases": [
+      "CF4OG",
+      "CF4O G"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 F 4.0 O 1.0",
+    "h_cal": -184000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 74. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10072,
+    "name": "BIS_FLUOROXY_DIFOUOROMETHANE",
+    "aliases": [
+      "BIS(FLUOROXY)DIFOUOROMETHANE",
+      "CF4O2"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 F 4.0 O 2.0",
+    "h_cal": -134600.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 75. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10073,
+    "name": "COMPOUND_H",
+    "aliases": [
+      "BIS(DIFLUOROAMINO)DIFLUOROMETHANE",
+      "CF6N2",
+      "COMPOUND H"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 F 6.0 N 2.0",
+    "h_cal": -107500.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 77. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10074,
+    "name": "COMPOUND_R_GAS",
+    "aliases": [
+      "CF7N3G",
+      "COMPOUND R GAS",
+      "CF7N3 G",
+      "TRIS(DIFLUOROAMINO)FLUOROMETHANE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 F 7.0 N 3.0",
+    "h_cal": -46500.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "G",
+    "notes": "Imported from ALLPROP.json entry 78. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10075,
+    "name": "TETRAZOLE_GAS",
+    "aliases": [
+      "CH2N4G",
+      "TETRAZOLE GAS",
+      "CH2N4 G"
+    ],
+    "category": 9000,
+    "cea_formula": "C 1.0 H 2.0 N 4.0",
+    "h_cal": 80100.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "G",
+    "notes": "Imported from ALLPROP.json entry 80. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10076,
+    "name": "1_1_2_2_TETRANITRO_1_2_DIFLUORIDE",
+    "aliases": [
+      "1,1,2,2-TETRANITRO-1,2-DIFLUORIDE",
+      "CF2N4O8"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 F 2.0 N 4.0 O 8.0",
+    "h_cal": -90500.0,
+    "t_k": 298.15,
+    "density": 1.696,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 81. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10077,
+    "name": "C2H4F4N2",
+    "aliases": [
+      "1,2-BIS(DIFLUOROAMINO)ETHANE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 F 4.0 H 4.0 N 2.0",
+    "h_cal": -41000.0,
+    "t_k": 298.15,
+    "density": 1.696,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 82. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10078,
+    "name": "C3H6F4N2",
+    "aliases": [
+      "1,2-BIS(DIFLUOROAMINO)PROPANE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 3.0 F 4.0 H 6.0 N 2.0",
+    "h_cal": -43000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 84. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10079,
+    "name": "C3H6N2O4",
+    "aliases": [
+      "2,2-DINITROPROPANE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 3.0 H 6.0 N 2.0 O 4.0",
+    "h_cal": -45300.0,
+    "t_k": 298.15,
+    "density": 1.3,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 127. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10080,
+    "name": "CHLORINE_MONOFLUORIDE",
+    "aliases": [
+      "CHLORINE MONOFLUORIDE",
+      "CLF"
+    ],
+    "category": 8000,
+    "cea_formula": "CL 1.0 F 1.0",
+    "h_cal": -12100.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 86. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10081,
+    "name": "PERCHLORYL_FLUORIDE",
+    "aliases": [
+      "FCLO3",
+      "PERCHLORYL FLUORIDE"
+    ],
+    "category": 8000,
+    "cea_formula": "CL 1.0 F 1.0 O 3.0",
+    "h_cal": -5120.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 87. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10084,
+    "name": "NITROSYL_FLUORIDE",
+    "aliases": [
+      "NITROSYL FLUORIDE",
+      "NOF"
+    ],
+    "category": 8000,
+    "cea_formula": "F 1.0 N 1.0 O 1.0",
+    "h_cal": -15700.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 91. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10085,
+    "name": "NITRYL_FLUORIDE",
+    "aliases": [
+      "NITRYL FLUORIDE",
+      "NO2F"
+    ],
+    "category": 8000,
+    "cea_formula": "F 1.0 N 1.0 O 2.0",
+    "h_cal": -19000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 92. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10086,
+    "name": "FLUORINE_NITRATE",
+    "aliases": [
+      "FLUORINE NITRATE",
+      "FNO3"
+    ],
+    "category": 1000,
+    "cea_formula": "F 1.0 N 1.0 O 3.0",
+    "h_cal": 2500.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 93. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10088,
+    "name": "DIFLUOROAMINE",
+    "aliases": [
+      "F2NH"
+    ],
+    "category": 8000,
+    "cea_formula": "F 2.0 H 1.0 N 1.0",
+    "h_cal": -32000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 95. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10091,
+    "name": "TRIFLUOROAMINE_OXIDE",
+    "aliases": [
+      "NF3O",
+      "TRIFLUOROAMINE OXIDE"
+    ],
+    "category": 8000,
+    "cea_formula": "F 3.0 N 1.0 O 1.0",
+    "h_cal": -35900.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 98. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10092,
+    "name": "N2F4_L",
+    "aliases": [
+      "N2F4",
+      "N2F4 L",
+      "TETRAFLUOROHYDRAZINE LIQUID",
+      "N2F4 G",
+      "TETRAFLUOROHYDRASZINE GAS"
+    ],
+    "category": 8000,
+    "cea_formula": "F 4.0 N 2.0",
+    "h_cal": -2000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "G",
+    "notes": "Imported from ALLPROP.json entry 249. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10093,
+    "name": "HNO3",
+    "aliases": [
+      "NITRIC ACID"
+    ],
+    "category": 1000,
+    "cea_formula": "H 1.0 N 1.0 O 3.0",
+    "h_cal": -32100.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 100. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10096,
+    "name": "AN",
+    "aliases": [
+      "AMMONIUM NITRATE",
+      "NH4NO3"
+    ],
+    "category": 1000,
+    "cea_formula": "H 4.0 N 2.0 O 3.0",
+    "h_cal": -87270.0,
+    "t_k": 298.15,
+    "density": 1.725,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 104. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10097,
+    "name": "NAHP",
+    "aliases": [
+      "ALCL6N3O30",
+      "NITRONIUM ALUMINUM HEXAPERCHLORATE"
+    ],
+    "category": 1000,
+    "cea_formula": "AL 1.0 CL 6.0 N 3.0 O 30.0",
+    "h_cal": -120000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 105. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10098,
+    "name": "UDFU",
+    "aliases": [
+      "CH2F2N2O",
+      "UNSYM-DIFLUOROUREA"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 F 2.0 H 2.0 N 2.0 O 1.0",
+    "h_cal": -67700.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 106. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10099,
+    "name": "5_NITRAMINOTETRAZOLE",
+    "aliases": [
+      "5-NITRAMINOTETRAZOLE",
+      "CH2N6O2",
+      "NITROGUANYL AZIDE"
+    ],
+    "category": 9000,
+    "cea_formula": "C 1.0 H 2.0 N 6.0 O 2.0",
+    "h_cal": 71320.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 108. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10101,
+    "name": "NITROUREA",
+    "aliases": [
+      "CH3N3O3"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 H 3.0 N 3.0 O 3.0",
+    "h_cal": -64230.00000000001,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 109. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10102,
+    "name": "NQ",
+    "aliases": [
+      "CH4N4O2",
+      "NGu",
+      "NGU",
+      "NITROGUANIDINE",
+      "PICRITE"
+    ],
+    "category": 9000,
+    "cea_formula": "C 1.0 H 4.0 N 4.0 O 2.0",
+    "h_cal": -21760.0,
+    "t_k": 298.15,
+    "density": 1.775,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 110. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10103,
+    "name": "5_AMINOTETRAZOLE_NITRATE",
+    "aliases": [
+      "5-AMINOTETRAZOLE NITRATE",
+      "CH4N6O3",
+      "GUANYLAZIDE NITRATE"
+    ],
+    "category": 1000,
+    "cea_formula": "C 1.0 H 4.0 N 6.0 O 3.0",
+    "h_cal": 3790.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 112. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10105,
+    "name": "NITROAMINOGUANIDINE",
+    "aliases": [
+      "CH5N5O2"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 H 5.0 N 5.0 O 2.0",
+    "h_cal": 5300.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 113. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10106,
+    "name": "HNF",
+    "aliases": [
+      "CH5N5O6",
+      "HYDRAZINIUM NITROFORMATE"
+    ],
+    "category": 9000,
+    "cea_formula": "C 1.0 H 5.0 N 5.0 O 6.0",
+    "h_cal": -17200.0,
+    "t_k": 298.15,
+    "density": 1.85,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 114. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10107,
+    "name": "DIAMINOGUANIDINE_NITRATE",
+    "aliases": [
+      "CH8N6O3",
+      "DIAMINOGUANIDINE NITRATE"
+    ],
+    "category": 1000,
+    "cea_formula": "C 1.0 H 8.0 N 6.0 O 3.0",
+    "h_cal": -36460.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 115. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10108,
+    "name": "TAGN",
+    "aliases": [
+      "CH9N7O3",
+      "TRIAMINOGUANIDINIUM NITRATE"
+    ],
+    "category": 1000,
+    "cea_formula": "C 1.0 H 9.0 N 7.0 O 3.0",
+    "h_cal": -11500.0,
+    "t_k": 298.15,
+    "density": 1.538,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 116. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10109,
+    "name": "1_1_1_TRINITROETHANE",
+    "aliases": [
+      "1,1,1-TRINITROETHANE",
+      "C2H3N3O6"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 H 3.0 N 3.0 O 6.0",
+    "h_cal": -27400.0,
+    "t_k": 298.15,
+    "density": 1.53,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 117. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10110,
+    "name": "3_NITRAMINO_1_2_4_TRIAZOLE",
+    "aliases": [
+      "3-NITRAMINO-1,2,4-TRIAZOLE",
+      "C2H3N5O2"
+    ],
+    "category": 9000,
+    "cea_formula": "C 2.0 H 3.0 N 5.0 O 2.0",
+    "h_cal": 26870.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 118. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10111,
+    "name": "TNEDA",
+    "aliases": [
+      "C2H4N6O8",
+      "N,N,N',N'-TETRANITROETHYLENEDIAMINE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 H 4.0 N 6.0 O 8.0",
+    "h_cal": 47590.0,
+    "t_k": 298.15,
+    "density": 1.75,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 119. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10112,
+    "name": "3_AMINO_1_2_4_TRIAZOLE_NITRATE",
+    "aliases": [
+      "3-AMINO-1,2,4-TRIAZOLE NITRATE",
+      "C2H5N5O3",
+      "1-FORMAMIDO-2-NITROGUANIDINE"
+    ],
+    "category": 1000,
+    "cea_formula": "C 2.0 H 5.0 N 5.0 O 3.0",
+    "h_cal": -35100.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 121. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10114,
+    "name": "EDNA",
+    "aliases": [
+      "C2H6N4O4",
+      "ETHYLENE DINITRAMINE"
+    ],
+    "category": 9000,
+    "cea_formula": "C 2.0 H 6.0 N 4.0 O 4.0",
+    "h_cal": -23650.0,
+    "t_k": 298.15,
+    "density": 1.75,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 122. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10115,
+    "name": "GUANIDINONIUM_5_NITROAMINOTETRAZOLATE",
+    "aliases": [
+      "C2H7N9O2",
+      "GUANIDINONIUM-5-NITROAMINOTETRAZOLATE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 H 7.0 N 9.0 O 2.0",
+    "h_cal": 26590.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 123. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10116,
+    "name": "HNE",
+    "aliases": [
+      "C2N6O12",
+      "HEXANITROETHANE"
+    ],
+    "category": 9000,
+    "cea_formula": "C 2.0 N 6.0 O 12.0",
+    "h_cal": 28600.0,
+    "t_k": 298.15,
+    "density": 2.25,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 124. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10117,
+    "name": "BTU",
+    "aliases": [
+      "C3H2F12N8O",
+      "N,N'-DI(TRIS(DIFLUOROAMINO)METHYL)UREA"
+    ],
+    "category": 8000,
+    "cea_formula": "C 3.0 F 12.0 H 2.0 N 8.0 O 1.0",
+    "h_cal": -80000.0,
+    "t_k": 298.15,
+    "density": 1.88,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 125. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10118,
+    "name": "1_1_1_3_TETRANITROPROPANE",
+    "aliases": [
+      "1,1,1,3-TETRANITROPROPANE",
+      "C3H4N4O8"
+    ],
+    "category": 8000,
+    "cea_formula": "C 3.0 H 4.0 N 4.0 O 8.0",
+    "h_cal": -38600.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 126. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10119,
+    "name": "RDX",
+    "aliases": [
+      "C3H6N6O6",
+      "HEXAHYDRO-1,3,5-TRINITRO-S-TRIAZINE"
+    ],
+    "category": 9000,
+    "cea_formula": "C 3.0 H 6.0 N 6.0 O 6.0",
+    "h_cal": 14690.0,
+    "t_k": 298.15,
+    "density": 1.816,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 128. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10120,
+    "name": "NITROSYL_TETRAFLUOROCHLORATE",
+    "aliases": [
+      "NITROSYL TETRAFLUOROCHLORATE",
+      "NOCLF4"
+    ],
+    "category": 8000,
+    "cea_formula": "CL 1.0 F 4.0 N 1.0 O 1.0",
+    "h_cal": -69200.0,
+    "t_k": 298.15,
+    "density": 2.85,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 129. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10121,
+    "name": "NITRYL_TETRAFLUOROCHLORATE",
+    "aliases": [
+      "NITRYL TETRAFLUOROCHLORATE",
+      "NO2CLF4"
+    ],
+    "category": 8000,
+    "cea_formula": "CL 1.0 F 4.0 N 1.0 O 2.0",
+    "h_cal": -48000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 130. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10122,
+    "name": "NH3OHCLO4",
+    "aliases": [
+      "HAP",
+      "HYDROXYLAMMONIUM PERCHLORATE",
+      "NH4OCLO4"
+    ],
+    "category": 1000,
+    "cea_formula": "CL 1.0 H 4.0 N 1.0 O 5.0",
+    "h_cal": -66340.0,
+    "t_k": 298.15,
+    "density": 2.126,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 131. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10123,
+    "name": "HP",
+    "aliases": [
+      "HYDRAZINIUM PERCHLORATE",
+      "N2H5CLO4"
+    ],
+    "category": 1000,
+    "cea_formula": "CL 1.0 H 5.0 N 2.0 O 4.0",
+    "h_cal": -42000.0,
+    "t_k": 298.15,
+    "density": 1.94,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 132. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10124,
+    "name": "POTASSIUM_PERCHLORATE",
+    "aliases": [
+      "KCLO4",
+      "POTASSIUM PERCHLORATE",
+      "KP"
+    ],
+    "category": 1000,
+    "cea_formula": "CL 1.0 K 1.0 O 4.0",
+    "h_cal": -102800.0,
+    "t_k": 298.15,
+    "density": 2.52,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 133. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10125,
+    "name": "LITHIUM_PERCHLORATE",
+    "aliases": [
+      "LICLO4",
+      "LITHIUM PERCHLORATE"
+    ],
+    "category": 1000,
+    "cea_formula": "CL 1.0 LI 1.0 O 4.0",
+    "h_cal": -90880.0,
+    "t_k": 298.15,
+    "density": 2.43,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 134. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10126,
+    "name": "NITROSYL_PERCHLORATE",
+    "aliases": [
+      "NITROSYL PERCHLORATE",
+      "NOCLO4"
+    ],
+    "category": 1000,
+    "cea_formula": "CL 1.0 N 1.0 O 5.0",
+    "h_cal": -36850.0,
+    "t_k": 298.15,
+    "density": 2.169,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 135. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10127,
+    "name": "NP",
+    "aliases": [
+      "NITRONIUM PERCHLORATE",
+      "NO2CLO4"
+    ],
+    "category": 1000,
+    "cea_formula": "CL 1.0 N 1.0 O 6.0",
+    "h_cal": 8880.0,
+    "t_k": 298.15,
+    "density": 2.2,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 136. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10128,
+    "name": "HDP",
+    "aliases": [
+      "HYDRAZINIUM DIPERCHLORATE",
+      "N2H6CL2O8"
+    ],
+    "category": 1000,
+    "cea_formula": "CL 2.0 H 6.0 N 2.0 O 8.0",
+    "h_cal": -68900.0,
+    "t_k": 298.15,
+    "density": 2.21,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 137. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10129,
+    "name": "HYDROXYLAMINE",
+    "aliases": [
+      "NH2OH"
+    ],
+    "category": 8000,
+    "cea_formula": "H 3.0 N 1.0 O 1.0",
+    "h_cal": -26200.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 138. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10130,
+    "name": "LITHIUM_NITRATE",
+    "aliases": [
+      "LINO3",
+      "LITHIUM NITRATE"
+    ],
+    "category": 1000,
+    "cea_formula": "LI 1.0 N 1.0 O 3.0",
+    "h_cal": -115000.0,
+    "t_k": 298.15,
+    "density": 2.38,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 139. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10131,
+    "name": "ALUMINUM_HYDRIDE",
+    "aliases": [
+      "ALH3",
+      "ALUMINUM HYDRIDE"
+    ],
+    "category": 2000,
+    "cea_formula": "AL 1.0 H 3.0",
+    "h_cal": -2770.0,
+    "t_k": 298.15,
+    "density": 1.43,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 141. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10132,
+    "name": "LAH",
+    "aliases": [
+      "LIALH4",
+      "LITHIUM ALUMINUM HYDRIDE"
+    ],
+    "category": 2000,
+    "cea_formula": "AL 1.0 H 4.0 LI 1.0",
+    "h_cal": -26200.0,
+    "t_k": 298.15,
+    "density": 0.917,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 142. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10133,
+    "name": "NAALAM",
+    "aliases": [
+      "ALH8N4NA",
+      "SODIUM ALUMINUM AMIDE"
+    ],
+    "category": 2000,
+    "cea_formula": "AL 1.0 H 8.0 N 4.0 NA 1.0",
+    "h_cal": -173000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 143. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10134,
+    "name": "MAH",
+    "aliases": [
+      "AL2H8MG",
+      "MAGNESIUM ALUMINUM HYDRIDE"
+    ],
+    "category": 2000,
+    "cea_formula": "AL 2.0 H 8.0 MG 1.0",
+    "h_cal": -31500.0,
+    "t_k": 298.15,
+    "density": 1.046,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 144. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10135,
+    "name": "LBH",
+    "aliases": [
+      "LIBH4",
+      "LITHIUM BOROHYDRIDE"
+    ],
+    "category": 2000,
+    "cea_formula": "B 1.0 H 4.0 LI 1.0",
+    "h_cal": -46440.0,
+    "t_k": 298.15,
+    "density": 0.681,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 145. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10136,
+    "name": "NABH",
+    "aliases": [
+      "NABH4",
+      "SODIUM BOROHYDRIDE"
+    ],
+    "category": 2000,
+    "cea_formula": "B 1.0 H 4.0 NA 1.0",
+    "h_cal": -45650.0,
+    "t_k": 298.15,
+    "density": 1.08,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 146. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10137,
+    "name": "AMMONIA_BORANE",
+    "aliases": [
+      "AMMONIA BORANE",
+      "BORINE AMMONIATE",
+      "NH3BH3"
+    ],
+    "category": 8000,
+    "cea_formula": "B 1.0 H 6.0 N 1.0",
+    "h_cal": -41630.0,
+    "t_k": 298.15,
+    "density": 0.73,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 147. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10138,
+    "name": "BERYLLIUM_BOROHYDRIDE",
+    "aliases": [
+      "BEB2H8",
+      "BERYLLIUM BOROHYDRIDE"
+    ],
+    "category": 2000,
+    "cea_formula": "B 2.0 BE 1.0 H 8.0",
+    "h_cal": -25800.0,
+    "t_k": 298.15,
+    "density": 0.604,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 148. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10139,
+    "name": "B2H6_N2H4",
+    "aliases": [
+      "B2H10N2",
+      "B2H6.N2H4",
+      "HYDRAZINE DIBORANE"
+    ],
+    "category": 2000,
+    "cea_formula": "B 2.0 H 10.0 N 2.0",
+    "h_cal": -30000.0,
+    "t_k": 298.15,
+    "density": 0.94,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 149. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10140,
+    "name": "DIAMMINO_DIBORANE",
+    "aliases": [
+      "B2H12N2",
+      "DIAMMINO DIBORANE"
+    ],
+    "category": 2000,
+    "cea_formula": "B 2.0 H 12.0 N 2.0",
+    "h_cal": -46000.0,
+    "t_k": 298.15,
+    "density": 1.0,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 150. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10141,
+    "name": "ATB",
+    "aliases": [
+      "AMMONIA TRIBORANE",
+      "B3H10N"
+    ],
+    "category": 2000,
+    "cea_formula": "B 3.0 H 10.0 N 1.0",
+    "h_cal": -49000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 151. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10142,
+    "name": "DIHYDRAZINEBIS_DIHYDRIDOBORON_DI_TRIBOROHYDRIDE_8",
+    "aliases": [
+      "B8H28N4",
+      "DIHYDRAZINEBIS(DIHYDRIDOBORON)DI(TRIBOROHYDRIDE-8)"
+    ],
+    "category": 2000,
+    "cea_formula": "B 8.0 H 28.0 N 4.0",
+    "h_cal": -10000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 152. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10143,
+    "name": "DECABORANE",
+    "aliases": [
+      "B10H14"
+    ],
+    "category": 2000,
+    "cea_formula": "B 10.0 H 14.0",
+    "h_cal": -15800.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 153. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10144,
+    "name": "DEKAZENE",
+    "aliases": [
+      "B10H18N2",
+      "DODECAHYDRODECABORATE DIAMMINE"
+    ],
+    "category": 2000,
+    "cea_formula": "B 10.0 H 28.0 N 2.0",
+    "h_cal": -87130.0,
+    "t_k": 298.15,
+    "density": 1.0,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 154. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10145,
+    "name": "DIDEKAZENE",
+    "aliases": [
+      "B10H22N4"
+    ],
+    "category": 2000,
+    "cea_formula": "B 10.0 H 22.0 N 4.0",
+    "h_cal": -71000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 155. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10146,
+    "name": "TRIS_AMMONIA_DECABORANE_14",
+    "aliases": [
+      "B10H23N3",
+      "TRIS(AMMONIA)DECABORANE(14)"
+    ],
+    "category": 2000,
+    "cea_formula": "B 10.0 H 23.0 N 3.0",
+    "h_cal": -92000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 156. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10147,
+    "name": "H3D",
+    "aliases": [
+      "B10H24N6",
+      "DIHYDRAZINIUM PERHYDRODECABORATE HYDRAZINATE"
+    ],
+    "category": 2000,
+    "cea_formula": "B 10.0 H 24.0 N 6.0",
+    "h_cal": -23300.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 157. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10148,
+    "name": "H4D",
+    "aliases": [
+      "B10H28N8",
+      "DIHYDRAZINIUM PERHYDRODECABORATE DIHYDRAZINATE"
+    ],
+    "category": 2000,
+    "cea_formula": "B 10.0 H 28.0 N 8.0",
+    "h_cal": -22800.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 158. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10149,
+    "name": "TETRAKIS_HYDRAZINE_DECABORANE",
+    "aliases": [
+      "B10H30N8",
+      "TETRAKIS(HYDRAZINE)DECABORANE"
+    ],
+    "category": 2000,
+    "cea_formula": "B 10.0 H 30.0 N 8.0",
+    "h_cal": -2000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 159. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10150,
+    "name": "PHDB",
+    "aliases": [
+      "B10H34N10",
+      "PENTAKIS(HYDRAZINE)DECABORANE"
+    ],
+    "category": 2000,
+    "cea_formula": "B 10.0 H 34.0 N 10.0",
+    "h_cal": 10000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 160. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10151,
+    "name": "BERYLLIUM_HYDRIDE",
+    "aliases": [
+      "BEH2",
+      "BERYLLIUM HYDRIDE"
+    ],
+    "category": 2000,
+    "cea_formula": "BE 1.0 H 2.0",
+    "h_cal": -4400.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 161. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10152,
+    "name": "DILITHIUM_BERYLLIUM_HYDRIDE",
+    "aliases": [
+      "DILITHIUM BERYLLIUM HYDRIDE",
+      "LI2BEH4"
+    ],
+    "category": 2000,
+    "cea_formula": "BE 1.0 H 4.0 LI 2.0",
+    "h_cal": -79900.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 162. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10153,
+    "name": "TETRAZOLE",
+    "aliases": [
+      "CH2N4"
+    ],
+    "category": 9000,
+    "cea_formula": "C 1.0 H 2.0 N 4.0",
+    "h_cal": 56660.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 163. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10154,
+    "name": "5_HYDROXYTETRAZOLE",
+    "aliases": [
+      "5-HYDROXYTETRAZOLE",
+      "CH2N4O"
+    ],
+    "category": 9000,
+    "cea_formula": "C 1.0 H 2.0 N 4.0 O 1.0",
+    "h_cal": 1510.0,
+    "t_k": 298.15,
+    "density": 1.76,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 164. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10155,
+    "name": "5_AMINOTETRAZOLE",
+    "aliases": [
+      "5-AMINOTETRAZOLE",
+      "CH3N5"
+    ],
+    "category": 9000,
+    "cea_formula": "C 1.0 H 3.0 N 5.0",
+    "h_cal": 49670.0,
+    "t_k": 298.15,
+    "density": 1.65,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 165. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10156,
+    "name": "TAG",
+    "aliases": [
+      "CH8N6",
+      "TRIAMINOGUANIDINE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 H 8.0 N 6.0",
+    "h_cal": 57600.0,
+    "t_k": 298.15,
+    "density": 1.56,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 166. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10157,
+    "name": "TAZ",
+    "aliases": [
+      "CH9N9",
+      "TRIAMINOGUANIDINIUM AZIDE"
+    ],
+    "category": 9000,
+    "cea_formula": "C 1.0 H 9.0 N 9.0",
+    "h_cal": 105650.0,
+    "t_k": 298.15,
+    "density": 1.44,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 167. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10158,
+    "name": "TRIAMINOGUANIDINIUM_TRIBOROHYDRIDE_8",
+    "aliases": [
+      "CH17B3N6",
+      "TRIAMINOGUANIDINIUM TRIBOROHYDRIDE-8"
+    ],
+    "category": 2000,
+    "cea_formula": "B 3.0 C 1.0 H 17.0 N 6.0",
+    "h_cal": 47900.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 168. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10159,
+    "name": "TRIAMINOGUANIDINIUM_NONABOROHYDRIDE_14",
+    "aliases": [
+      "CH23B9N6",
+      "TRIAMINOGUANIDINIUM NONABOROHYDRIDE-14"
+    ],
+    "category": 2000,
+    "cea_formula": "B 9.0 C 1.0 H 23.0 N 6.0",
+    "h_cal": 28300.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 169. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10160,
+    "name": "TRIAMINOGUANIDINIUM_DECABOROHYDRIDE_13_HYDRAZINATE",
+    "aliases": [
+      "CH26B10N8",
+      "TRIAMINOGUANIDINIUM DECABOROHYDRIDE-13-HYDRAZINATE"
+    ],
+    "category": 2000,
+    "cea_formula": "B 10.0 C 1.0 H 26.0 N 8.0",
+    "h_cal": 30900.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 170. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10161,
+    "name": "5_CYANOTETRAZOLE",
+    "aliases": [
+      "5-CYANOTETRAZOLE",
+      "C2HN5"
+    ],
+    "category": 9000,
+    "cea_formula": "C 2.0 H 1.0 N 5.0",
+    "h_cal": 96090.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 171. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10162,
+    "name": "CYANOGUANYL_AZIDE",
+    "aliases": [
+      "C2H2N6",
+      "CYANOGUANYL AZIDE"
+    ],
+    "category": 9000,
+    "cea_formula": "C 2.0 H 2.0 N 6.0",
+    "h_cal": 96980.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 173. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10165,
+    "name": "5_METHOXYLTETRAZOLE",
+    "aliases": [
+      "5-METHOXYLTETRAZOLE",
+      "C2H4N4O"
+    ],
+    "category": 9000,
+    "cea_formula": "C 2.0 H 4.0 N 4.0 O 1.0",
+    "h_cal": 16510.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 176. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10167,
+    "name": "5_5_HYDRAZOTETRAZOLE",
+    "aliases": [
+      "5,5'-HYDRAZOTETRAZOLE",
+      "C2H4N10"
+    ],
+    "category": 9000,
+    "cea_formula": "C 2.0 H 4.0 N 10.0",
+    "h_cal": 135140.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 178. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10168,
+    "name": "1_METHYL_5_AMINOTETRAZOLE",
+    "aliases": [
+      "1-METHYL-5-AMINOTETRAZOLE",
+      "C2H5N5",
+      "5-METHYLAMINOTETRAZOLE"
+    ],
+    "category": 9000,
+    "cea_formula": "C 2.0 H 5.0 N 5.0",
+    "h_cal": 48410.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 181. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10171,
+    "name": "5_GUANYLAMINOTETRAZOLE",
+    "aliases": [
+      "5-GUANYLAMINOTETRAZOLE",
+      "C2H5N7"
+    ],
+    "category": 9000,
+    "cea_formula": "C 2.0 H 5.0 N 7.0",
+    "h_cal": 40560.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 182. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10172,
+    "name": "HYDRAZODICARBAMIDE",
+    "aliases": [
+      "C2H6N4O2"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 H 6.0 N 4.0 O 2.0",
+    "h_cal": -119190.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 183. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10173,
+    "name": "DIAMINOGUANIDINIUM_AZIDE_FORMALDEHYDE_POLYMER",
+    "aliases": [
+      "C2H8N8",
+      "DAZAL",
+      "DIAMINOGUANIDINIUM AZIDE-FORMALDEHYDE POLYMER"
+    ],
+    "category": 3000,
+    "cea_formula": "C 2.0 H 8.0 N 8.0",
+    "h_cal": 106800.0,
+    "t_k": 298.15,
+    "density": 1.42,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 184. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10174,
+    "name": "1_5_TETRAZOLYL_4_GUANYLTETRAZENE_HYDRATE",
+    "aliases": [
+      "1-(5-TETRAZOLYL)-4-GUANYLTETRAZENE HYDRATE",
+      "C2H8N10O"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 H 8.0 N 10.0 O 1.0",
+    "h_cal": 45210.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 185. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10175,
+    "name": "DIMETHYLAMINE_BORANE_ADDUCT",
+    "aliases": [
+      "C2H10BN",
+      "DIMETHYLAMINE-BORANE ADDUCT"
+    ],
+    "category": 8000,
+    "cea_formula": "B 1.0 C 2.0 H 10.0 N 1.0",
+    "h_cal": -30400.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 186. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10176,
+    "name": "BIS_METHYLHYDRAZINO_DECABORANE",
+    "aliases": [
+      "BIS-(METHYLHYDRAZINO)DECABORANE",
+      "C2H24B10N4"
+    ],
+    "category": 2000,
+    "cea_formula": "B 10.0 C 2.0 H 24.0 N 4.0",
+    "h_cal": -100000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 187. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10177,
+    "name": "BIS_TRIAMINOGUANIDINIUM_PERHYDRODECABORATE",
+    "aliases": [
+      "BIS-(TRIAMINOGUANIDINIUM)PERHYDRODECABORATE",
+      "C2H28B10N12"
+    ],
+    "category": 8000,
+    "cea_formula": "B 10.0 C 2.0 H 28.0 N 12.0",
+    "h_cal": 60000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 188. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10178,
+    "name": "LITHIUM_DICYANAMIDE",
+    "aliases": [
+      "LIC2N3",
+      "LITHIUM DICYANAMIDE"
+    ],
+    "category": 2000,
+    "cea_formula": "C 2.0 LI 1.0 N 3.0",
+    "h_cal": -9000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 189. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10179,
+    "name": "5_ACETAMIDOTETRAZOLE",
+    "aliases": [
+      "5-ACETAMIDOTETRAZOLE",
+      "C3H5N5O"
+    ],
+    "category": 9000,
+    "cea_formula": "C 3.0 H 5.0 N 5.0 O 1.0",
+    "h_cal": -1210.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 190. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10180,
+    "name": "3_NITRAMINO_5_METHYL_1_2_4_TRIAZOLE",
+    "aliases": [
+      "3-NITRAMINO-5-METHYL-1,2,4-TRIAZOLE",
+      "C3H5N5O2"
+    ],
+    "category": 9000,
+    "cea_formula": "C 3.0 H 5.0 N 5.0 O 2.0",
+    "h_cal": 12720.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 191. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10181,
+    "name": "1_5_DIMETHYLTETRAZOLE",
+    "aliases": [
+      "1,5-DIMETHYLTETRAZOLE",
+      "C3H6N4"
+    ],
+    "category": 9000,
+    "cea_formula": "C 3.0 H 6.0 N 4.0",
+    "h_cal": 45080.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 192. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10182,
+    "name": "1_4_DIMETHYL_5_TETRAZOLONE",
+    "aliases": [
+      "1,4-DIMETHYL-5-TETRAZOLONE",
+      "C3H6N4O"
+    ],
+    "category": 8000,
+    "cea_formula": "C 3.0 H 6.0 N 4.0 O 1.0",
+    "h_cal": -6690.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 193. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10183,
+    "name": "CESIUM_AZIDE",
+    "aliases": [
+      "CESIUM AZIDE",
+      "CSN3"
+    ],
+    "category": 9000,
+    "cea_formula": "CS 1.0 N 3.0",
+    "h_cal": -2160.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 194. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10184,
+    "name": "LITHIUM_HYDRIDE",
+    "aliases": [
+      "LIH",
+      "LITHIUM HYDRIDE"
+    ],
+    "category": 2000,
+    "cea_formula": "H 1.0 LI 1.0",
+    "h_cal": -21670.0,
+    "t_k": 298.15,
+    "density": 0.82,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 195. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10185,
+    "name": "AMMONIUM_AZIDE",
+    "aliases": [
+      "AMMONIUM AZIDE",
+      "NH3N3"
+    ],
+    "category": 9000,
+    "cea_formula": "H 3.0 N 4.0",
+    "h_cal": 27140.0,
+    "t_k": 298.15,
+    "density": 1.346,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 196. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10186,
+    "name": "MERCUROUS_AZIDE",
+    "aliases": [
+      "HG2N6",
+      "MERCUROUS AZIDE"
+    ],
+    "category": 9000,
+    "cea_formula": "HG 2.0 N 6.0",
+    "h_cal": 142100.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 197. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10187,
+    "name": "POTASSIUM_AZIDE",
+    "aliases": [
+      "KN3",
+      "POTASSIUM AZIDE"
+    ],
+    "category": 9000,
+    "cea_formula": "K 1.0 N 3.0",
+    "h_cal": -400.0,
+    "t_k": 298.15,
+    "density": 2.04,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 198. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10188,
+    "name": "LITHIUM_AZIDE",
+    "aliases": [
+      "LIN3",
+      "LITHIUM AZIDE"
+    ],
+    "category": 9000,
+    "cea_formula": "LI 1.0 N 3.0",
+    "h_cal": 2790.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 199. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10189,
+    "name": "SODIUM_AZIDE",
+    "aliases": [
+      "NAN3",
+      "SODIUM AZIDE"
+    ],
+    "category": 9000,
+    "cea_formula": "N 3.0 NA 1.0",
+    "h_cal": 5180.0,
+    "t_k": 298.15,
+    "density": 1.85,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 200. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10190,
+    "name": "LEAD_AZIDE",
+    "aliases": [
+      "LEAD AZIDE",
+      "PBN6"
+    ],
+    "category": 9000,
+    "cea_formula": "N 6.0 PB 1.0",
+    "h_cal": 115900.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 201. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10191,
+    "name": "BERYLLIUM",
+    "aliases": [
+      "BE"
+    ],
+    "category": 2000,
+    "cea_formula": "BE 1.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 1.85,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 202. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10192,
+    "name": "BERYLLIUM_HYDRIDE_96",
+    "aliases": [
+      "BEH2.0356O.008C.0228",
+      "BERYLLIUM HYDRIDE 96%"
+    ],
+    "category": 2000,
+    "cea_formula": "BE 1.0 C 0.0228 H 2.0356 O 0.008",
+    "h_cal": -5576.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 203. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10193,
+    "name": "BERYLLIUM_HYDRIDE_83",
+    "aliases": [
+      "BE26H59C4",
+      "BERYLLIUM HYDRIDE 83%"
+    ],
+    "category": 2000,
+    "cea_formula": "BE 26.0 C 4.0 H 59.0",
+    "h_cal": -104000.0,
+    "t_k": 298.15,
+    "density": 0.66,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 204. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10194,
+    "name": "BERYLLIUM_HYDRIDE_93",
+    "aliases": [
+      "BE8.6542H17.6277C.3522",
+      "BERYLLIUM HYDRIDE 93%"
+    ],
+    "category": 2000,
+    "cea_formula": "BE 8.6542 C 0.3522 H 17.6277",
+    "h_cal": -50800.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 205. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10195,
+    "name": "BERYLLIUM_HYDRIDE_95",
+    "aliases": [
+      "BE8.7182H17.8334C.2601O.0202",
+      "BERYLLIUM HYDRIDE 95%"
+    ],
+    "category": 2000,
+    "cea_formula": "BE 8.7182 C 0.2601 H 17.8334 O 0.0202",
+    "h_cal": -40100.0,
+    "t_k": 298.15,
+    "density": 0.65,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 206. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10196,
+    "name": "BORON",
+    "aliases": [
+      "B"
+    ],
+    "category": 2000,
+    "cea_formula": "B 1.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 2.32,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 207. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10197,
+    "name": "LITHIUM",
+    "aliases": [
+      "LI"
+    ],
+    "category": 2000,
+    "cea_formula": "LI 1.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 0.534,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 208. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10198,
+    "name": "MAGNESIUM",
+    "aliases": [
+      "MG"
+    ],
+    "category": 2000,
+    "cea_formula": "MG 1.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 1.74,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 209. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10199,
+    "name": "MAGNESIUM_HYDRIDE",
+    "aliases": [
+      "MAGNESIUM HYDRIDE",
+      "MGH2"
+    ],
+    "category": 2000,
+    "cea_formula": "H 2.0 MG 1.0",
+    "h_cal": -17000.0,
+    "t_k": 298.15,
+    "density": 1.45,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 210. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10200,
+    "name": "SODIUM",
+    "aliases": [
+      "NA"
+    ],
+    "category": 2000,
+    "cea_formula": "NA 1.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 0.97,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 211. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10201,
+    "name": "SODIUM_HYDRIDE",
+    "aliases": [
+      "NAH",
+      "SODIUM HYDRIDE"
+    ],
+    "category": 2000,
+    "cea_formula": "H 1.0 NA 1.0",
+    "h_cal": -13700.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 212. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10202,
+    "name": "SULFUR",
+    "aliases": [
+      "S"
+    ],
+    "category": 8000,
+    "cea_formula": "S 1.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 2.046,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 214. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10203,
+    "name": "SILICON",
+    "aliases": [
+      "SI"
+    ],
+    "category": 2000,
+    "cea_formula": "SI 1.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 2.4,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 215. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10204,
+    "name": "TITANIUM",
+    "aliases": [
+      "TI"
+    ],
+    "category": 2000,
+    "cea_formula": "TI 1.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 4.5,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 216. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10205,
+    "name": "ZIRCONIUM",
+    "aliases": [
+      "ZR"
+    ],
+    "category": 2000,
+    "cea_formula": "ZR 1.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 6.4,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 217. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10206,
+    "name": "CARBORANE",
+    "aliases": [
+      "B10H10C2H2"
+    ],
+    "category": 2000,
+    "cea_formula": "B 10.0 C 2.0 H 12.0",
+    "h_cal": -27600.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 218. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10207,
+    "name": "TETRAMETHYLAMMONIUM_TRIBOROHYDRIDE",
+    "aliases": [
+      "C4H12NB3H8",
+      "TETRAMETHYLAMMONIUM TRIBOROHYDRIDE"
+    ],
+    "category": 2000,
+    "cea_formula": "B 3.0 C 4.0 H 20.0 N 1.0",
+    "h_cal": -22000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 219. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10208,
+    "name": "LITHIUM_ALUMINUM_HYDRIDE_ALUMINUM_HYDRIDE_ADDUCT",
+    "aliases": [
+      "LIAL6H19",
+      "LITHIUM ALUMINUM HYDRIDE-ALUMINUM HYDRIDE ADDUCT"
+    ],
+    "category": 2000,
+    "cea_formula": "AL 6.0 H 19.0 LI 1.0",
+    "h_cal": -44000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 220. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10209,
+    "name": "LITHIUM_ALUMINUM_HYDRIDE_10ALUMINUM_HYDRIDE_ADDUCT",
+    "aliases": [
+      "LIAL11H34",
+      "LITHIUM ALUMINUM HYDRIDE.10ALUMINUM HYDRIDE ADDUCT"
+    ],
+    "category": 2000,
+    "cea_formula": "AL 11.0 H 34.0 LI 1.0",
+    "h_cal": -64000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 221. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10210,
+    "name": "ZIRCONIUM_SILICIDE",
+    "aliases": [
+      "ZIRCONIUM SILICIDE",
+      "ZRSI"
+    ],
+    "category": 2000,
+    "cea_formula": "SI 1.0 ZR 1.0",
+    "h_cal": -18000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 222. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10211,
+    "name": "ZIRCONIUM_DISILICIDE",
+    "aliases": [
+      "ZIRCONIUM DISILICIDE",
+      "ZRSI2"
+    ],
+    "category": 2000,
+    "cea_formula": "SI 2.0 ZR 1.0",
+    "h_cal": -12000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 223. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10212,
+    "name": "EC",
+    "aliases": [
+      "C17H20N2O",
+      "ETHYL CENTRALITE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 17.0 H 20.0 N 2.0 O 1.0",
+    "h_cal": -25000.0,
+    "t_k": 298.15,
+    "density": 1.14,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 224. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10213,
+    "name": "ADIPONITRILE",
+    "aliases": [
+      "C6H8N2"
+    ],
+    "category": 8000,
+    "cea_formula": "C 6.0 H 8.0 N 2.0",
+    "h_cal": 26300.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 225. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10214,
+    "name": "ALUMINUM_TRIBOROHYDRIDE",
+    "aliases": [
+      "ALB9H24",
+      "ALUMINUM TRIBOROHYDRIDE"
+    ],
+    "category": 2000,
+    "cea_formula": "AL 1.0 B 9.0 H 24.0",
+    "h_cal": -75000.0,
+    "t_k": 298.15,
+    "density": 0.5,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 226. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10215,
+    "name": "ABHPMO",
+    "aliases": [
+      "AL(BH4)3:CH2O",
+      "ALB3H14C1O",
+      "ALUMINUM BOROHYDRIDE POLYMETHYLENE OXIDE"
+    ],
+    "category": 2000,
+    "cea_formula": "AL 1.0 B 3.0 C 1.0 H 14.0 O 1.0",
+    "h_cal": -132000.0,
+    "t_k": 298.15,
+    "density": 1.8,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 227. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10216,
+    "name": "ABHBPMO",
+    "aliases": [
+      "AL(BH4)3:2C2H4O",
+      "ALB3H20C4O2",
+      "ALUMINUM BOROHYDRIDE BISPOLYETHYLENEOXIDE"
+    ],
+    "category": 2000,
+    "cea_formula": "AL 1.0 B 3.0 C 4.0 H 20.0 O 2.0",
+    "h_cal": -177400.0,
+    "t_k": 298.15,
+    "density": 0.71,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 228. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10217,
+    "name": "LITHIUM_ALUMINUM",
+    "aliases": [
+      "LIAL",
+      "LITHIUM ALUMINUM",
+      "LITHIUM-ALUMINUM ALLOY"
+    ],
+    "category": 2000,
+    "cea_formula": "AL 1.0 LI 1.0",
+    "h_cal": -15000.0,
+    "t_k": 298.15,
+    "density": 1.56,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 229. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10218,
+    "name": "WOOD",
+    "aliases": [
+      "CH2O"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 H 2.0 O 1.0",
+    "h_cal": -48000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 230. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10219,
+    "name": "LITHIUM_BERYLLIUM_HYDRIDE",
+    "aliases": [
+      "LIBEH3",
+      "LITHIUM BERYLLIUM HYDRIDE"
+    ],
+    "category": 2000,
+    "cea_formula": "BE 1.0 H 3.0 LI 1.0",
+    "h_cal": -42000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 231. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10220,
+    "name": "ETHYLENE_CARBONATE",
+    "aliases": [
+      "C3H4O3",
+      "ETHYLENE CARBONATE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 3.0 H 4.0 O 3.0",
+    "h_cal": -138800.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 232. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10221,
+    "name": "METHYLNITROACETATE",
+    "aliases": [
+      "C3H5NO4"
+    ],
+    "category": 8000,
+    "cea_formula": "C 3.0 H 5.0 N 1.0 O 4.0",
+    "h_cal": -109770.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 233. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10222,
+    "name": "TEFLON",
+    "aliases": [
+      "C2F4",
+      "POLYTETRAFLUOROETHYLENE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 F 4.0",
+    "h_cal": -195200.0,
+    "t_k": 298.15,
+    "density": 2.31,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 235. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10223,
+    "name": "PE",
+    "aliases": [
+      "POLYETHYLENE",
+      "CH2"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 H 2.0",
+    "h_cal": -6350.0,
+    "t_k": 298.15,
+    "density": 0.9,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 237. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10224,
+    "name": "PEH",
+    "aliases": [
+      "C2H6N2",
+      "POLYETHYLENEHYDRAZINE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 H 6.0 N 2.0",
+    "h_cal": 250.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 238. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10225,
+    "name": "PBEP",
+    "aliases": [
+      "C2.238H3.24F2.114N1.094",
+      "POLY (1.2-BIS(DIFOUOROAMINO)-2,3-EPOXYPROPANE)"
+    ],
+    "category": 3000,
+    "cea_formula": "C 2.238 F 2.114 H 3.24 N 1.094",
+    "h_cal": -47800.0,
+    "t_k": 298.15,
+    "density": 1.61,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 239. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10226,
+    "name": "POLYACRYLAMIDE",
+    "aliases": [
+      "C3H5NO"
+    ],
+    "category": 8000,
+    "cea_formula": "C 3.0 H 5.0 N 1.0 O 1.0",
+    "h_cal": -113000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 240. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10227,
+    "name": "2_NITROPROPENE_POLYMER",
+    "aliases": [
+      "2-NITROPROPENE POLYMER",
+      "C3H5NO2"
+    ],
+    "category": 3000,
+    "cea_formula": "C 3.0 H 5.0 N 1.0 O 2.0",
+    "h_cal": -30750.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 241. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10230,
+    "name": "CUBANE",
+    "aliases": [
+      "C8H8",
+      "CUBANE WITH ARIES HT OF FORMATION"
+    ],
+    "category": 9000,
+    "cea_formula": "C 8.0 H 8.0",
+    "h_cal": 149500.0,
+    "t_k": 298.15,
+    "density": 1.18,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 246. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10232,
+    "name": "CESIUM_NITRATE",
+    "aliases": [
+      "CESIUM NITRATE",
+      "CSNO3"
+    ],
+    "category": 1000,
+    "cea_formula": "CS 1.0 N 1.0 O 3.0",
+    "h_cal": -118100.0,
+    "t_k": 298.15,
+    "density": 3.685,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 248. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10234,
+    "name": "PH3_G",
+    "aliases": [
+      "PH3",
+      "PH3 G",
+      "PHOSPHINE GAS"
+    ],
+    "category": 8000,
+    "cea_formula": "H 3.0 P 1.0",
+    "h_cal": 1300.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "G",
+    "notes": "Imported from ALLPROP.json entry 250. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10235,
+    "name": "P2H4_L",
+    "aliases": [
+      "DIPHOSPHOROUS TETRAHYDRIDE LIQ",
+      "P2H4",
+      "P2H4 L",
+      "P2H4 G"
+    ],
+    "category": 2000,
+    "cea_formula": "H 4.0 P 2.0",
+    "h_cal": 5000.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "G",
+    "notes": "Imported from ALLPROP.json entry 252. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10237,
+    "name": "GAP",
+    "aliases": [
+      "-OCH2CH(CH2N3)-",
+      "C3H5N3O",
+      "GLYCIDYLAZIDE POLYMER"
+    ],
+    "category": 3000,
+    "cea_formula": "C 3.0 H 5.0 N 3.0 O 1.0",
+    "h_cal": 34000.0,
+    "t_k": 298.15,
+    "density": 1.3,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 253. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10238,
+    "name": "TEGDN",
+    "aliases": [
+      "C6H12N2O8",
+      "TRIETHYLENEGLYCOL DINITRATE"
+    ],
+    "category": 7000,
+    "cea_formula": "C 6.0 H 12.0 N 2.0 O 8.0",
+    "h_cal": -145400.0,
+    "t_k": 298.15,
+    "density": 1.329,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 254. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10239,
+    "name": "MNA",
+    "aliases": [
+      "C7H8N2O2",
+      "CH3NH-Ph-NO2",
+      "N-METHYL-P-NITROANILINE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 7.0 H 8.0 N 2.0 O 2.0",
+    "h_cal": -7400.0,
+    "t_k": 298.15,
+    "density": 1.21,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 255. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10240,
+    "name": "GRAPHITE",
+    "aliases": [
+      "C"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 1.8,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 256. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10241,
+    "name": "N_100",
+    "aliases": [
+      "C23H38N6O5",
+      "N-100",
+      "\u000023H38N6O5"
+    ],
+    "category": 4000,
+    "cea_formula": "C 23.0 H 38.0 N 6.0 O 5.0",
+    "h_cal": -257500.0,
+    "t_k": 298.15,
+    "density": 1.132,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "NCO",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 258. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10242,
+    "name": "FE_AA",
+    "aliases": [
+      "((CH3CO)2CH)3FE",
+      "C15H21FEO6",
+      "FE(AA)",
+      "FE(AA)3",
+      "FERRIC ACETYLACETONATE"
+    ],
+    "category": 5000,
+    "cea_formula": "C 15.0 FE 1.0 H 21.0 O 6.0",
+    "h_cal": -313200.0,
+    "t_k": 298.15,
+    "density": 1.33,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 260. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10243,
+    "name": "HMX",
+    "aliases": [
+      "\"HER MAJESTY'S EXPLOSIVE\"",
+      "C4H8N8O8",
+      "CYCLOTETRAMETHYLENETETRANITRAMINE"
+    ],
+    "category": 9000,
+    "cea_formula": "C 4.0 H 8.0 N 8.0 O 8.0",
+    "h_cal": 18000.0,
+    "t_k": 298.15,
+    "density": 1.93,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 261. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10244,
+    "name": "TMETN",
+    "aliases": [
+      "1,1,1-TRIMETHYLOLETHANE TRINITRATE",
+      "C5H9N3O9",
+      "METN",
+      "METRIOL TRINITRATE"
+    ],
+    "category": 7000,
+    "cea_formula": "C 5.0 H 9.0 N 3.0 O 9.0",
+    "h_cal": -100000.0,
+    "t_k": 298.15,
+    "density": 1.488,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 262. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10245,
+    "name": "BTTN",
+    "aliases": [
+      "1,2,4-BUTANETRIOL TRINITRATE",
+      "C4H7N3O9"
+    ],
+    "category": 7000,
+    "cea_formula": "C 4.0 H 7.0 N 3.0 O 9.0",
+    "h_cal": -89500.0,
+    "t_k": 298.15,
+    "density": 1.52,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 263. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10246,
+    "name": "INFO_631C",
+    "aliases": [
+      "2-TRIS(DIFLUORAMINO)METHOXY)ETHYLAMINE HYDROCHLORIDE",
+      "C3H7CLF6N4O",
+      "INFO 631C"
+    ],
+    "category": 8000,
+    "cea_formula": "C 3.0 CL 1.0 F 6.0 H 7.0 N 4.0 O 1.0",
+    "h_cal": -118700.0,
+    "t_k": 298.15,
+    "density": 1.8,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 264. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10247,
+    "name": "INFO_635P",
+    "aliases": [
+      "2-TRIS(DIFLUORAMINO)METHOXY)ETHYLAMINE PERCHLORATE",
+      "C3H7CLF6N4O5",
+      "INFO 635P"
+    ],
+    "category": 1000,
+    "cea_formula": "C 3.0 CL 1.0 F 6.0 H 7.0 N 4.0 O 5.0",
+    "h_cal": -113600.0,
+    "t_k": 298.15,
+    "density": 1.8,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 265. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10248,
+    "name": "COAL",
+    "aliases": [
+      "CH.681O.069N.011S.003SI.009"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 H 0.681 N 0.011 O 0.069 S 0.003 SI 0.009",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 266. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10249,
+    "name": "FEFO",
+    "aliases": [
+      "C5H6F2N4O10",
+      "[F(NO2)2CCH2O]2CH2"
+    ],
+    "category": 8000,
+    "cea_formula": "C 5.0 F 2.0 H 6.0 N 4.0 O 10.0",
+    "h_cal": -178000.0,
+    "t_k": 298.15,
+    "density": 1.6,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 267. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10250,
+    "name": "SYEP",
+    "aliases": [
+      "C7F6H8N6O10",
+      "[FC(NO2)2CH2OCH2]2-C(NF2)2"
+    ],
+    "category": 8000,
+    "cea_formula": "C 7.0 F 6.0 H 8.0 N 6.0 O 10.0",
+    "h_cal": -230000.0,
+    "t_k": 298.15,
+    "density": 1.65,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 268. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10251,
+    "name": "SYFO",
+    "aliases": [
+      "C11H14F10N8O10",
+      "[FC(NO2)2CH2CH2C(NF2)2CH2O]2-CH2"
+    ],
+    "category": 8000,
+    "cea_formula": "C 11.0 F 10.0 H 14.0 N 8.0 O 10.0",
+    "h_cal": -268300.0,
+    "t_k": 298.15,
+    "density": 1.64,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 269. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10252,
+    "name": "FERRIC_FLUORIDE_S",
+    "aliases": [
+      "FEF3",
+      "FERRIC FLUORIDE S"
+    ],
+    "category": 5000,
+    "cea_formula": "F 3.0 FE 1.0",
+    "h_cal": -249000.0,
+    "t_k": 298.15,
+    "density": 3.52,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 271. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10253,
+    "name": "LEAD_MONOXIDE",
+    "aliases": [
+      "LEAD MONOXIDE",
+      "LITHARGE",
+      "PBO",
+      "RED PBO",
+      "MASSICOT",
+      "YELLOW PBO"
+    ],
+    "category": 5000,
+    "cea_formula": "O 1.0 PB 1.0",
+    "h_cal": -52120.0,
+    "t_k": 298.15,
+    "density": 8.0,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 273. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10255,
+    "name": "LEAD_DIOXIDE",
+    "aliases": [
+      "LEAD DIOXIDE",
+      "PBO2",
+      "PLATTNERITE"
+    ],
+    "category": 5000,
+    "cea_formula": "O 2.0 PB 1.0",
+    "h_cal": -65600.0,
+    "t_k": 298.15,
+    "density": 9.375,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 274. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10256,
+    "name": "LEAD_ORTHOPLUMBATE",
+    "aliases": [
+      "LEAD ORTHOPLUMBATE",
+      "PB3O4",
+      "RED LEAD OXIDE",
+      "TRILEAD TETRAOXIDE"
+    ],
+    "category": 5000,
+    "cea_formula": "O 4.0 PB 3.0",
+    "h_cal": -171770.0,
+    "t_k": 298.15,
+    "density": 9.1,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 275. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10257,
+    "name": "DEGDN",
+    "aliases": [
+      "C4H8N2O7",
+      "DIETHYLENE GLYCOL DINITRATE",
+      "O2NOCH2CH2OCH2CH2ONO2"
+    ],
+    "category": 7000,
+    "cea_formula": "C 4.0 H 8.0 N 2.0 O 7.0",
+    "h_cal": -102000.0,
+    "t_k": 298.15,
+    "density": 1.377,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 276. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10258,
+    "name": "EGDN",
+    "aliases": [
+      "C2H4N2O6",
+      "ETHYLENE GLYCOL DINITRATE",
+      "O2NOCH2CH2ONO2"
+    ],
+    "category": 7000,
+    "cea_formula": "C 2.0 H 4.0 N 2.0 O 6.0",
+    "h_cal": -58300.0,
+    "t_k": 298.15,
+    "density": 1.48,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 277. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10259,
+    "name": "PGDN",
+    "aliases": [
+      "C3H6N2O6",
+      "O2NOCH2CH(ONO2)CH3",
+      "PROPYLENEGLYCOL DINITRATE"
+    ],
+    "category": 7000,
+    "cea_formula": "C 3.0 H 6.0 N 2.0 O 6.0",
+    "h_cal": -83100.0,
+    "t_k": 298.15,
+    "density": 1.376,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 278. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10260,
+    "name": "GN",
+    "aliases": [
+      "CH6N4O3",
+      "GUANIDINE NITRATE"
+    ],
+    "category": 1000,
+    "cea_formula": "C 1.0 H 6.0 N 4.0 O 3.0",
+    "h_cal": -92500.0,
+    "t_k": 298.15,
+    "density": 1.436,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 279. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10261,
+    "name": "NC",
+    "aliases": [
+      "12.2%N (NC)",
+      "C6H7.68N2.32O9.645",
+      "CELLULOSE NITRAE",
+      "NITROCELLULOSE",
+      "PYROXYLIN",
+      "13.15%N (NC)",
+      "CH7.365N2.64O10.29",
+      "GRADE C NC",
+      "TYPE INC",
+      "TYPE I NC"
+    ],
+    "category": 9000,
+    "cea_formula": "C 1.0 H 7.365 N 2.64 O 10.29",
+    "h_cal": -164800.0,
+    "t_k": 298.15,
+    "density": 1.65,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 281. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10262,
+    "name": "TDI",
+    "aliases": [
+      "C9H6N2O2",
+      "TOLUENE DIISOCYANATE"
+    ],
+    "category": 4000,
+    "cea_formula": "C 9.0 H 6.0 N 2.0 O 2.0",
+    "h_cal": -18200.0,
+    "t_k": 298.15,
+    "density": 1.22,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "NCO",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 282. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10263,
+    "name": "TVOPA",
+    "aliases": [
+      "C9H14F12N6O3",
+      "[[CH2(NF2)CH(NF2)O]CH2]2-CH-[OCH(NF2)CH2(NF2)]"
+    ],
+    "category": 8000,
+    "cea_formula": "C 9.0 F 12.0 H 14.0 N 6.0 O 3.0",
+    "h_cal": -207190.0,
+    "t_k": 298.15,
+    "density": 1.54,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 283. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10264,
+    "name": "KN",
+    "aliases": [
+      "KNO3",
+      "NITER",
+      "NITRE",
+      "POTASSIUM NITRATE",
+      "SALPRUNELLA",
+      "SALTPETER",
+      "SAL PRUNELLA"
+    ],
+    "category": 1000,
+    "cea_formula": "K 1.0 N 1.0 O 3.0",
+    "h_cal": -117760.0,
+    "t_k": 298.15,
+    "density": 2.1,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 285. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10265,
+    "name": "DEP",
+    "aliases": [
+      "C12H14O4",
+      "DIETHYL PHTHALATE"
+    ],
+    "category": 7000,
+    "cea_formula": "C 12.0 H 14.0 O 4.0",
+    "h_cal": -184000.0,
+    "t_k": 298.15,
+    "density": 1.12,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 286. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10266,
+    "name": "DBP",
+    "aliases": [
+      "C16H22O4",
+      "DIBUTYL PHTHALATE"
+    ],
+    "category": 7000,
+    "cea_formula": "C 16.0 H 22.0 O 4.0",
+    "h_cal": -203900.0,
+    "t_k": 298.15,
+    "density": 1.045,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 287. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10267,
+    "name": "DMP",
+    "aliases": [
+      "C10H10O4",
+      "DIMETHYL PHTHALATE"
+    ],
+    "category": 7000,
+    "cea_formula": "C 10.0 H 10.0 O 4.0",
+    "h_cal": -161200.0,
+    "t_k": 298.15,
+    "density": 1.19,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 288. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10268,
+    "name": "RESORCINOL",
+    "aliases": [
+      "1,3-BENZENEDIOLE",
+      "C6H6O2",
+      "RESORCIN"
+    ],
+    "category": 8000,
+    "cea_formula": "C 6.0 H 6.0 O 2.0",
+    "h_cal": -87950.0,
+    "t_k": 298.15,
+    "density": 1.2,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 289. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10269,
+    "name": "2_NDPA",
+    "aliases": [
+      "2-NDPA",
+      "2-NITRODIPHENYLAMINE",
+      "C12H10N2O2"
+    ],
+    "category": 8000,
+    "cea_formula": "C 12.0 H 10.0 N 2.0 O 2.0",
+    "h_cal": 17000.0,
+    "t_k": 298.15,
+    "density": 1.366,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 290. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10270,
+    "name": "DPA",
+    "aliases": [
+      "C12H11N",
+      "DIPHENYLAMINE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 12.0 H 11.0 N 1.0",
+    "h_cal": 34350.0,
+    "t_k": 298.15,
+    "density": 1.6,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 291. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10271,
+    "name": "MAPO",
+    "aliases": [
+      "C9H18N3OP",
+      "O=P[NCH2CHCH3]3",
+      "TRISMETHYLAZIRIDINYLPHOSPHINEOXIDE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 9.0 H 18.0 N 3.0 O 1.0 P 1.0",
+    "h_cal": -223600.0,
+    "t_k": 298.15,
+    "density": 1.08,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 292. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10272,
+    "name": "TA",
+    "aliases": [
+      "C9H14O6",
+      "GLYCERINE TRIACETATE",
+      "TRIACETIN",
+      "[CH3COOCH2]2-CH-OCOCH3",
+      "TANTALUM"
+    ],
+    "category": 7000,
+    "cea_formula": "TA 1.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 16.69,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 376. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10273,
+    "name": "POTASSIUM_SULFATE",
+    "aliases": [
+      "K2SO4",
+      "POTASSIUM SULFATE"
+    ],
+    "category": 6000,
+    "cea_formula": "K 2.0 O 4.0 S 1.0",
+    "h_cal": -343620.0,
+    "t_k": 298.15,
+    "density": 2.662,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 294. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10274,
+    "name": "CATOCENE",
+    "aliases": [
+      "2,2-BIS(ETHYLFERROCENYL)PROPANE",
+      "C27H32FE2",
+      "[C2H5(C5H5)2FE]2-C(CH3)2"
+    ],
+    "category": 5000,
+    "cea_formula": "C 27.0 FE 2.0 H 32.0",
+    "h_cal": 9990.0,
+    "t_k": 298.15,
+    "density": 1.27,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 296. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10275,
+    "name": "PBST",
+    "aliases": [
+      "C36H70O4PB",
+      "LEAD STEARATE",
+      "[CH3(CH2)16COO]2=PB"
+    ],
+    "category": 5000,
+    "cea_formula": "C 36.0 H 70.0 O 4.0 PB 1.0",
+    "h_cal": -424000.0,
+    "t_k": 298.15,
+    "density": 1.4,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 297. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10276,
+    "name": "ZIRCONIUM_CARBIDE",
+    "aliases": [
+      "ZIRCONIUM CARBIDE",
+      "ZRC"
+    ],
+    "category": 2000,
+    "cea_formula": "C 1.0 ZR 1.0",
+    "h_cal": -48500.0,
+    "t_k": 298.15,
+    "density": 6.9,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 298. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10277,
+    "name": "COPPER_SULFATE",
+    "aliases": [
+      "COPPER SULFATE",
+      "CUPRIC SULFATE",
+      "CUSO4"
+    ],
+    "category": 5000,
+    "cea_formula": "CU 1.0 O 4.0 S 1.0",
+    "h_cal": -184000.0,
+    "t_k": 298.15,
+    "density": 3.65,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 299. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10278,
+    "name": "NHC",
+    "aliases": [
+      "C8H24B10",
+      "CHB10H10C(CH2)5CH3",
+      "N-HEXYL CARBORANE"
+    ],
+    "category": 2000,
+    "cea_formula": "B 10.0 C 8.0 H 24.0",
+    "h_cal": -91000.0,
+    "t_k": 298.15,
+    "density": 0.9,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 300. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10279,
+    "name": "AO_2246",
+    "aliases": [
+      "antioxicant 2246",
+      "AO 2246",
+      "C23H32O2"
+    ],
+    "category": 8000,
+    "cea_formula": "C 23.0 H 32.0 O 2.0",
+    "h_cal": -143470.0,
+    "t_k": 298.15,
+    "density": 1.08,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 301. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10280,
+    "name": "CAB",
+    "aliases": [
+      "C15H22O8",
+      "CELLULOSE ACETATE/BUTYRATE"
+    ],
+    "category": 3000,
+    "cea_formula": "C 15.0 H 22.0 O 8.0",
+    "h_cal": -390000.0,
+    "t_k": 298.15,
+    "density": 1.2,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 302. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10281,
+    "name": "CA",
+    "aliases": [
+      "C12H16O8",
+      "CELLULOSE ACETATE",
+      "C3N3O3H3",
+      "CYANURIC ACID"
+    ],
+    "category": 3000,
+    "cea_formula": "C 3.0 H 3.0 N 3.0 O 3.0",
+    "h_cal": -168000.0,
+    "t_k": 298.15,
+    "density": 1.75,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 373. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10282,
+    "name": "FERROCENE",
+    "aliases": [
+      "C10H10FE",
+      "[C5H5]2=FE"
+    ],
+    "category": 5000,
+    "cea_formula": "C 10.0 FE 1.0 H 10.0",
+    "h_cal": 33800.0,
+    "t_k": 298.15,
+    "density": 1.49,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 304. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10283,
+    "name": "ALUMINUM_OXIDE",
+    "aliases": [
+      "AL2O3",
+      "ALUMINA",
+      "ALUMINUM OXIDE",
+      "CORUNDUM"
+    ],
+    "category": 8000,
+    "cea_formula": "AL 2.0 O 3.0",
+    "h_cal": -399000.0,
+    "t_k": 298.15,
+    "density": 3.97,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 305. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10284,
+    "name": "GAP_A",
+    "aliases": [
+      "C14H24N18O4",
+      "GAP-A",
+      "GLYCIDYL AZIDE-A POLYMER"
+    ],
+    "category": 3000,
+    "cea_formula": "C 14.0 H 24.0 N 18.0 O 4.0",
+    "h_cal": 304000.0,
+    "t_k": 298.15,
+    "density": 1.24,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 306. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10285,
+    "name": "HT_BIND",
+    "aliases": [
+      "C7.1158H11.003N.1291O.0989S.0015",
+      "HT BIND"
+    ],
+    "category": 3000,
+    "cea_formula": "C 7.1158 H 11.003 N 0.1291 O 0.0989 S 0.0015",
+    "h_cal": -8260.0,
+    "t_k": 298.15,
+    "density": 0.9,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 307. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10286,
+    "name": "POLYU",
+    "aliases": [
+      "C5.117H9.586O1.684N.138",
+      "POLYURETHANE",
+      "C5.117 H9.586 O1.684 N.138"
+    ],
+    "category": 3000,
+    "cea_formula": "C 5.117 H 9.586 N 0.138 O 1.684",
+    "h_cal": -82800.0,
+    "t_k": 298.15,
+    "density": 1.01,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 308. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10287,
+    "name": "VITON",
+    "aliases": [
+      "C11F14H8"
+    ],
+    "category": 3000,
+    "cea_formula": "C 11.0 F 14.0 H 8.0",
+    "h_cal": -726700.0,
+    "t_k": 298.15,
+    "density": 1.85,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 309. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10288,
+    "name": "NPU",
+    "aliases": [
+      "C2.53H4.1N1.64O2.66",
+      "NITROPOLYURETHANE",
+      "C2.53 H4.1 N1.64 O2.66"
+    ],
+    "category": 3000,
+    "cea_formula": "C 2.53 H 4.1 N 1.64 O 2.66",
+    "h_cal": -16700.0,
+    "t_k": 298.15,
+    "density": 1.5,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 310. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10289,
+    "name": "SBM",
+    "aliases": [
+      "C64H94N34O18F64",
+      "[-CH(C2H3N2F4)CH2O-]15-CONHC2H2N2F4NHCOO-"
+    ],
+    "category": 3000,
+    "cea_formula": "C 64.0 F 64.0 H 94.0 N 34.0 O 18.0",
+    "h_cal": -1410000.0,
+    "t_k": 298.15,
+    "density": 1.5,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 311. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10290,
+    "name": "PBEP_XL",
+    "aliases": [
+      "C2.451H3.276O.879N1.096F1.992",
+      "CROSSLINKED PBEP",
+      "PBEP XL",
+      "C2.451 H3.276 O.879 N1.096 F1.992"
+    ],
+    "category": 3000,
+    "cea_formula": "C 2.451 F 1.992 H 3.276 N 1.096 O 0.879",
+    "h_cal": -43675.0,
+    "t_k": 298.15,
+    "density": 1.61,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 312. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10291,
+    "name": "KELF",
+    "aliases": [
+      "C2F3CL",
+      "KELF POLYMER"
+    ],
+    "category": 3000,
+    "cea_formula": "C 2.0 CL 1.0 F 3.0",
+    "h_cal": -51400.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 313. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10292,
+    "name": "HNH",
+    "aliases": [
+      "C6H4N6O12",
+      "HEXANITROHEXYNE",
+      "[CCH2C(NO2)3]2",
+      "C6 H4 N6 O12",
+      "mp 130, stable (Thiokol)"
+    ],
+    "category": 9000,
+    "cea_formula": "C 6.0 H 4.0 N 6.0 O 12.0",
+    "h_cal": 62000.0,
+    "t_k": 298.15,
+    "density": 1.868,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 314. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10293,
+    "name": "43_B",
+    "aliases": [
+      "1 C10H22O4B10+ 1 C5H16B10",
+      "43 B",
+      "43% BORON BINDER",
+      "C4.167H11.745O.636B6.745",
+      "C4.167 H11.745 O.636 B6.745"
+    ],
+    "category": 3000,
+    "cea_formula": "B 6.745 C 4.167 H 11.745 O 0.636",
+    "h_cal": -68100.0,
+    "t_k": 298.15,
+    "density": 0.967,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 315. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10294,
+    "name": "55_B",
+    "aliases": [
+      "55 B",
+      "55% BORON BINDER",
+      "C2.618H8.774O.348B5.004",
+      "C2.618 H8.774 O.348 B5.004",
+      "see 43 B"
+    ],
+    "category": 3000,
+    "cea_formula": "B 5.004 C 2.618 H 8.774 O 0.348",
+    "h_cal": -44200.0,
+    "t_k": 298.15,
+    "density": 1.027,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 316. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10295,
+    "name": "65_B",
+    "aliases": [
+      "65 B",
+      "65% BORON BINDER",
+      "C2.15H9.106B6.007",
+      "C2.15 H9.106 B6.007",
+      "see 43 B"
+    ],
+    "category": 3000,
+    "cea_formula": "B 6.007 C 2.15 H 9.106",
+    "h_cal": -39700.0,
+    "t_k": 298.15,
+    "density": 1.0,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 317. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10296,
+    "name": "DOS",
+    "aliases": [
+      "C26H50O4",
+      "DIOCTYL SEBACATE PLASTICIZER",
+      "C26 H50 O4"
+    ],
+    "category": 7000,
+    "cea_formula": "C 26.0 H 50.0 O 4.0",
+    "h_cal": -344210.0,
+    "t_k": 298.15,
+    "density": 0.91,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 319. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10297,
+    "name": "HANF",
+    "aliases": [
+      "HYDROXYLAMMONIUM NITROFORM",
+      "NH3OHCN3O6",
+      "hypothetical material"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 H 4.0 N 4.0 O 7.0",
+    "h_cal": -41500.0,
+    "t_k": 298.15,
+    "density": 2.0,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 320. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10299,
+    "name": "MAGNESIUM_ALUMINUM_ALLOY",
+    "aliases": [
+      "MAGNESIUM/ALUMINUM ALLOY",
+      "MGAL2",
+      "SPINELIUM",
+      "SP"
+    ],
+    "category": 2000,
+    "cea_formula": "AL 2.0 MG 1.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 2.305,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 364. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10300,
+    "name": "H2O",
+    "aliases": [
+      "WATERVAPOR"
+    ],
+    "category": 8000,
+    "cea_formula": "H 2.0 O 1.0",
+    "h_cal": -49548.0,
+    "t_k": 298.15,
+    "density": 0.8036,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 328. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10301,
+    "name": "STRONTIUM_NITRATE",
+    "aliases": [
+      "STRONTIUM NITRATE",
+      "SR(NO3)2",
+      "SRN"
+    ],
+    "category": 1000,
+    "cea_formula": "",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 2.986,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Reference entry. Common oxidizing red colorant source in pyrotechnic systems. Strong candidate when screening for red exhaust hues. No full CEA thermo card is loaded yet, so this entry is currently for database browsing / weight tracking / future card development."
+  },
+  {
+    "id": 10302,
+    "name": "BARIUM_NITRATE",
+    "aliases": [
+      "BARIUM NITRATE",
+      "BA(NO3)2",
+      "BAN"
+    ],
+    "category": 1000,
+    "cea_formula": "",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 3.244,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Reference entry. Classic green colorant / oxidizer source in pyrotechnics. Useful when screening candidate green plume systems. No full CEA thermo card is loaded yet, so this entry is currently for database browsing / weight tracking / future card development."
+  },
+  {
+    "id": 10303,
+    "name": "STRONTIUM_CARBONATE",
+    "aliases": [
+      "STRONTIUM CARBONATE",
+      "SRCO3"
+    ],
+    "category": 8000,
+    "cea_formula": "",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 3.74,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Reference entry. Common red strontium colorant source. Often used when the formulation needs strontium without adding nitrate oxidizer loading. No full CEA thermo card is loaded yet."
+  },
+  {
+    "id": 10304,
+    "name": "LITHIUM_CARBONATE",
+    "aliases": [
+      "LITHIUM CARBONATE",
+      "LI2CO3"
+    ],
+    "category": 8000,
+    "cea_formula": "",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 2.11,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Reference entry. Practical lithium source for crimson-red flame screening. No full CEA thermo card is loaded yet."
+  },
+  {
+    "id": 10305,
+    "name": "COPPER_II_CHLORIDE",
+    "aliases": [
+      "COPPER(II) CHLORIDE",
+      "CUPRIC CHLORIDE",
+      "CUCL2"
+    ],
+    "category": 8000,
+    "cea_formula": "",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 3.386,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Reference entry. Copper + chlorine source and therefore highly relevant to blue / blue-green flame quality. Copper halides are often more color-pure than oxide-only copper systems. No full CEA thermo card is loaded yet."
+  },
+  {
+    "id": 10306,
+    "name": "CALCIUM_CHLORIDE",
+    "aliases": [
+      "CALCIUM CHLORIDE",
+      "CACL2"
+    ],
+    "category": 8000,
+    "cea_formula": "",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 2.15,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Reference entry. Calcium source with orange / orange-red flame tendency and a chlorine contribution. Useful for screening warm orange exhaust hues. No full CEA thermo card is loaded yet."
+  },
+  {
+    "id": 10307,
+    "name": "SODIUM_OXALATE",
+    "aliases": [
+      "SODIUM OXALATE",
+      "NA2C2O4"
+    ],
+    "category": 8000,
+    "cea_formula": "",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 2.34,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Reference entry. Strong sodium source and therefore mainly relevant when deliberately screening for intense yellow flame or when evaluating how small sodium contamination could dominate the visible plume. No full CEA thermo card is loaded yet."
+  },
+  {
+    "id": 10308,
+    "name": "AZODICARBONAMIDE",
+    "aliases": [
+      "AZODICARBOXAMIDE",
+      "ADA"
+    ],
+    "category": 6000,
+    "cea_formula": "C 2.0 H 4.0 N 4.0 O 2.0",
+    "h_cal": -69910.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 177. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+  },
+  {
+    "id": 10309,
+    "name": "MAGNALIUM",
+    "aliases": [
+      "MGAL",
+      "ALMG",
+      "50/50 AL/MG"
+    ],
+    "category": 2000,
+    "cea_formula": "AL 1.854 MG 2.056",
+    "h_cal": -2650.0,
+    "t_k": 298.15,
+    "density": 2.187,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 321. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10310,
+    "name": "C8H10",
+    "aliases": [
+      "XYLENE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 8.0 H 10.0",
+    "h_cal": -6000.0,
+    "t_k": 298.15,
+    "density": 0.87,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 323. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10311,
+    "name": "C3H6",
+    "aliases": [
+      "CYCLOPROPANE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 3.0 H 6.0",
+    "h_cal": 13000.0,
+    "t_k": 298.15,
+    "density": 0.5,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 324. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10312,
+    "name": "N2O",
+    "aliases": [
+      "NITROUS OXIDE"
+    ],
+    "category": 8000,
+    "cea_formula": "N 2.0 O 1.0",
+    "h_cal": 10000.0,
+    "t_k": 298.15,
+    "density": 1.1,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 327. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10313,
+    "name": "N4_45O",
+    "aliases": [
+      "N4.45O",
+      "HOT AIR"
+    ],
+    "category": 8000,
+    "cea_formula": "N 4.45 O 1.0",
+    "h_cal": 10000.0,
+    "t_k": 298.15,
+    "density": 1.2946,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 331. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10314,
+    "name": "COLD_AIR",
+    "aliases": [
+      "N4.45O",
+      "COLD AIR"
+    ],
+    "category": 8000,
+    "cea_formula": "N 4.45 O 1.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 1.2946,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 332. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10315,
+    "name": "HE",
+    "aliases": [
+      "HELIUM"
+    ],
+    "category": 8000,
+    "cea_formula": "HE 1.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 0.1787,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 333. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10316,
+    "name": "NH4CL",
+    "aliases": [
+      "AMMONIUM CHLORIDE"
+    ],
+    "category": 8000,
+    "cea_formula": "CL 1.0 H 4.0 N 1.0",
+    "h_cal": -75143.0,
+    "t_k": 298.15,
+    "density": 1.53,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 335. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10317,
+    "name": "CH8N2O3",
+    "aliases": [
+      "AMMONIUM CARBONATE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 H 8.0 N 2.0 O 3.0",
+    "h_cal": -2430000.0,
+    "t_k": 298.15,
+    "density": 1.5,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 336. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10318,
+    "name": "N2H8C2O4",
+    "aliases": [
+      "AMMONIUM OXALATE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 H 8.0 N 2.0 O 4.0",
+    "h_cal": -2160000.0,
+    "t_k": 298.15,
+    "density": 1.5,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 337. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10319,
+    "name": "NH7C2O5",
+    "aliases": [
+      "MONOAMMONIUM OXALATE MONOHYDRATE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 H 7.0 N 1.0 O 5.0",
+    "h_cal": -2400000.0,
+    "t_k": 298.15,
+    "density": 1.5,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 338. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10320,
+    "name": "B4C",
+    "aliases": [
+      "BORON CARBIDE"
+    ],
+    "category": 2000,
+    "cea_formula": "B 4.0 C 1.0",
+    "h_cal": -271000.0,
+    "t_k": 298.15,
+    "density": 2.52,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 339. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10321,
+    "name": "BI2O3",
+    "aliases": [
+      "BISMUTH OXIDE",
+      "BISMUTH TRIOXIDE"
+    ],
+    "category": 8000,
+    "cea_formula": "BI 2.0 O 3.0",
+    "h_cal": -137165.39,
+    "t_k": 298.15,
+    "density": 8.9,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 340. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10322,
+    "name": "C2H4O",
+    "aliases": [
+      "PEG",
+      "POLYETHYLENE GLYCOL",
+      "POLYETHYLENE OXIDE",
+      "PEO"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 H 4.0 O 1.0",
+    "h_cal": -11140.0,
+    "t_k": 298.15,
+    "density": 1.125,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 341. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10323,
+    "name": "C3H6N6",
+    "aliases": [
+      "MELAMINE",
+      "CYANURAMIDE",
+      "TRIAMINOTRIAZINE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 3.0 H 6.0 N 6.0",
+    "h_cal": -18000.0,
+    "t_k": 298.15,
+    "density": 1.573,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 343. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10324,
+    "name": "ZN",
+    "aliases": [
+      "ZINC"
+    ],
+    "category": 8000,
+    "cea_formula": "ZN 1.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 7.14,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 344. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10325,
+    "name": "W",
+    "aliases": [
+      "TUNGSTEN",
+      "WOLFRAM"
+    ],
+    "category": 8000,
+    "cea_formula": "W 1.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 19.3,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 345. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10326,
+    "name": "C6H12N4",
+    "aliases": [
+      "HEXAMINE",
+      "HEXAMETHYLENETETRAMINE",
+      "METHENAMINE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 6.0 H 12.0 N 4.0",
+    "h_cal": 29400.0,
+    "t_k": 298.15,
+    "density": 1.33,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 346. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10327,
+    "name": "C2H6NO",
+    "aliases": [
+      "UREA"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 H 6.0 N 1.0 O 1.0",
+    "h_cal": -77340.0,
+    "t_k": 298.15,
+    "density": 1.32,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 347. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10328,
+    "name": "C120H242O48S48",
+    "aliases": [
+      "POLYSULFIDE RUBBER",
+      "THIOKOL",
+      "POLYSULFIDE",
+      "POLYSULPHIDE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 120.0 H 242.0 O 48.0 S 48.0",
+    "h_cal": -2351300.0,
+    "t_k": 298.15,
+    "density": 1.27,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 348. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10329,
+    "name": "SIOC2H6",
+    "aliases": [
+      "SILICONE",
+      "PDMS",
+      "POLYDIMETHYLSILOXANE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 H 6.0 O 1.0 SI 1.0",
+    "h_cal": -135000.0,
+    "t_k": 298.15,
+    "density": 1.2,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 349. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10330,
+    "name": "C3H6O",
+    "aliases": [
+      "POLYPROPYLENE GLYCOL",
+      "PPG",
+      "POLYPROPYLENE OXIDE",
+      "PPO"
+    ],
+    "category": 8000,
+    "cea_formula": "C 3.0 H 6.0 O 1.0",
+    "h_cal": -24400.0,
+    "t_k": 298.15,
+    "density": 1.01,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 350. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10331,
+    "name": "C6N12H6O12",
+    "aliases": [
+      "CL-20",
+      "HNIW",
+      "HEXANITROHEXAAZAISOWURTZITANE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 6.0 H 6.0 N 12.0 O 12.0",
+    "h_cal": 90100.0,
+    "t_k": 298.15,
+    "density": 2.044,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 351. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10332,
+    "name": "C6H6N6O6",
+    "aliases": [
+      "TATB",
+      "TRIAMINOTRINITROBENZENE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 6.0 H 6.0 N 6.0 O 6.0",
+    "h_cal": -36450.0,
+    "t_k": 298.15,
+    "density": 1.93,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 352. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10333,
+    "name": "HGO",
+    "aliases": [
+      "MERCURIC OXIDE",
+      "MONTROYDITE"
+    ],
+    "category": 8000,
+    "cea_formula": "HG 1.0 O 1.0",
+    "h_cal": -21700.0,
+    "t_k": 298.15,
+    "density": 11.14,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 353. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10334,
+    "name": "C4H8O",
+    "aliases": [
+      "TERATHANE",
+      "POLYTETRAMETHYLENEETHER",
+      "POLYTETRAHYDROFURAN",
+      "PTHF",
+      "PTMEG"
+    ],
+    "category": 8000,
+    "cea_formula": "C 4.0 H 8.0 O 1.0",
+    "h_cal": -37208.0,
+    "t_k": 298.15,
+    "density": 1.01,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 354. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10335,
+    "name": "COPPER_CARBONATE",
+    "aliases": [
+      "COPPER CARBONATE",
+      "BASIC COPPER CARBONATE",
+      "COPPER CARBONATE HYDROXIDE",
+      "CUCARB"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 CU 2.0 H 2.0 O 5.0",
+    "h_cal": -142200.0,
+    "t_k": 298.15,
+    "density": 4.0,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 355. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10336,
+    "name": "C2CL6",
+    "aliases": [
+      "HCE",
+      "HEXACHLOROETHANE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 CL 6.0",
+    "h_cal": -50000.0,
+    "t_k": 298.15,
+    "density": 2.0,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 356. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10337,
+    "name": "CR2O3",
+    "aliases": [
+      "CHROMIUM OXIDE",
+      "CHROMIUM TRIOXIDE",
+      "CHROMIUM III OXIDE"
+    ],
+    "category": 8000,
+    "cea_formula": "CR 2.0 O 3.0",
+    "h_cal": -269600.0,
+    "t_k": 298.15,
+    "density": 5.22,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 357. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10338,
+    "name": "CU2CR2O5",
+    "aliases": [
+      "COPPER CHROMITE",
+      "CUCR"
+    ],
+    "category": 8000,
+    "cea_formula": "CR 2.0 CU 2.0 O 5.0",
+    "h_cal": -344200.0,
+    "t_k": 298.15,
+    "density": 5.7,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 358. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10339,
+    "name": "C6H14O6",
+    "aliases": [
+      "SORBITOL",
+      "SB"
+    ],
+    "category": 8000,
+    "cea_formula": "C 6.0 H 14.0 O 6.0",
+    "h_cal": -323500.0,
+    "t_k": 298.15,
+    "density": 1.49,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 359. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10340,
+    "name": "C3H6O3",
+    "aliases": [
+      "DELRIN",
+      "POLYFORMALDEHYDE",
+      "POM"
+    ],
+    "category": 8000,
+    "cea_formula": "C 3.0 H 6.0 O 3.0",
+    "h_cal": -122530.0,
+    "t_k": 298.15,
+    "density": 1.41,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 360. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10341,
+    "name": "C4H10O4",
+    "aliases": [
+      "ERYTHRITOL",
+      "ER"
+    ],
+    "category": 8000,
+    "cea_formula": "C 4.0 H 10.0 O 4.0",
+    "h_cal": -217600.0,
+    "t_k": 298.15,
+    "density": 1.1,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 361. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10342,
+    "name": "MDI",
+    "aliases": [
+      "C15H10N2O2",
+      "MDI",
+      "METHYLENE DIPHENYL DIISOCYANATE",
+      "ISONATE",
+      "PAPI",
+      "E744"
+    ],
+    "category": 4000,
+    "cea_formula": "C 15.0 H 10.0 N 2.0 O 2.0",
+    "h_cal": -12700.0,
+    "t_k": 298.15,
+    "density": 1.23,
+    "Weq": 172.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "NCO",
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 362. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10343,
+    "name": "AL1_6224MG",
+    "aliases": [
+      "AL1.6224MG",
+      "HAMILTONIUM",
+      "HM"
+    ],
+    "category": 2000,
+    "cea_formula": "AL 1.6224 MG 1.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 2.013,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 363. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10344,
+    "name": "WO3",
+    "aliases": [
+      "TUNGSTEN TRIOXIDE"
+    ],
+    "category": 8000,
+    "cea_formula": "O 3.0 W 1.0",
+    "h_cal": -201460.0,
+    "t_k": 298.15,
+    "density": 7.16,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 365. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10345,
+    "name": "H144C124NS",
+    "aliases": [
+      "GILSONITE",
+      "ASPHALT",
+      "ASPHALTUM",
+      "PITCH",
+      "TAR",
+      "BITUMEN"
+    ],
+    "category": 8000,
+    "cea_formula": "C 124.0 H 144.0 N 1.0 S 1.0",
+    "h_cal": -672000.0,
+    "t_k": 298.15,
+    "density": 0.8,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 366. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10346,
+    "name": "C83H110ON8",
+    "aliases": [
+      "PBAN",
+      "POLYBUTADIENE ACRYLONITRILE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 83.0 H 110.0 N 8.0 O 1.0",
+    "h_cal": 1563000.0,
+    "t_k": 298.15,
+    "density": 0.924,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 367. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10347,
+    "name": "C10H8",
+    "aliases": [
+      "NAPTHALENE",
+      "PAH"
+    ],
+    "category": 8000,
+    "cea_formula": "C 10.0 H 8.0",
+    "h_cal": 18000.0,
+    "t_k": 298.15,
+    "density": 1.025,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 368. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10348,
+    "name": "XEO3",
+    "aliases": [
+      "XENON TRIOXIDE"
+    ],
+    "category": 8000,
+    "cea_formula": "O 3.0 XE 1.0",
+    "h_cal": 96000.0,
+    "t_k": 298.15,
+    "density": 4.55,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 369. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10349,
+    "name": "NB",
+    "aliases": [
+      "NIOBIUM"
+    ],
+    "category": 8000,
+    "cea_formula": "NB 1.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 8.57,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 370. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10350,
+    "name": "V",
+    "aliases": [
+      "VANADIUM"
+    ],
+    "category": 8000,
+    "cea_formula": "V 1.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 5.87,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 371. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10351,
+    "name": "PBN2O6",
+    "aliases": [
+      "LEAD NITRATE",
+      "PBN"
+    ],
+    "category": 1000,
+    "cea_formula": "N 2.0 O 6.0 PB 1.0",
+    "h_cal": -107300.0,
+    "t_k": 298.15,
+    "density": 4.53,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 372. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10352,
+    "name": "NH4F",
+    "aliases": [
+      "AMMONIUM FLUORIDE",
+      "AF"
+    ],
+    "category": 8000,
+    "cea_formula": "F 1.0 H 4.0 N 1.0",
+    "h_cal": -116000.0,
+    "t_k": 298.15,
+    "density": 1.009,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 374. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10353,
+    "name": "C2H5N3O2",
+    "aliases": [
+      "BIURET",
+      "BURT"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 H 5.0 N 3.0 O 2.0",
+    "h_cal": -134250.0,
+    "t_k": 298.15,
+    "density": 1.467,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 375. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10354,
+    "name": "LIF",
+    "aliases": [
+      "LITHIUM FLUORIDE"
+    ],
+    "category": 8000,
+    "cea_formula": "F 1.0 LI 1.0",
+    "h_cal": -147450.0,
+    "t_k": 298.15,
+    "density": 2.635,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 377. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10355,
+    "name": "SRN2O6",
+    "aliases": [
+      "STRONTIUM NITRATE",
+      "SRNO3"
+    ],
+    "category": 1000,
+    "cea_formula": "N 2.0 O 6.0 SR 1.0",
+    "h_cal": -235200.0,
+    "t_k": 298.15,
+    "density": 2.986,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 378. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10356,
+    "name": "SRCO3",
+    "aliases": [
+      "STRONTIUM CARBONATE"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 O 3.0 SR 1.0",
+    "h_cal": -291200.0,
+    "t_k": 298.15,
+    "density": 3.7,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 379. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10357,
+    "name": "BAN2O6",
+    "aliases": [
+      "BARIUM NITRATE"
+    ],
+    "category": 1000,
+    "cea_formula": "BA 1.0 N 2.0 O 6.0",
+    "h_cal": -236140.0,
+    "t_k": 298.15,
+    "density": 3.24,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 380. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10358,
+    "name": "TIH2",
+    "aliases": [
+      "TITANIUM HYDRIDE"
+    ],
+    "category": 2000,
+    "cea_formula": "H 2.0 TI 1.0",
+    "h_cal": -34500.0,
+    "t_k": 298.15,
+    "density": 3.76,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 381. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10359,
+    "name": "C2H2CL2",
+    "aliases": [
+      "SARAN",
+      "CHLOROWAX",
+      "PARLON"
+    ],
+    "category": 8000,
+    "cea_formula": "C 2.0 CL 2.0 H 2.0",
+    "h_cal": -27250.0,
+    "t_k": 298.15,
+    "density": 1.2,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 382. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10360,
+    "name": "DDI",
+    "aliases": [
+      "C38H70N2O2"
+    ],
+    "category": 4000,
+    "cea_formula": "C 38.0 H 70.0 N 2.0 O 2.0",
+    "h_cal": -280.0,
+    "t_k": 298.15,
+    "density": 0.924,
+    "Weq": 293.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "NCO",
+    "phase": "S",
+    "notes": "Imported from ALLPROP.json entry 384. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+  },
+  {
+    "id": 10361,
+    "name": "TIO2",
+    "aliases": [
+      "Titanium Dioxide"
+    ],
+    "category": 8000,
+    "cea_formula": "TI 1.0 O 2.0",
+    "h_cal": -72999.5,
+    "t_k": 298.15,
+    "density": 4.26,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "",
+    "notes": ""
+  },
+  {
+    "id": 10362,
+    "name": "HDPE",
+    "aliases": [],
+    "category": 2000,
+    "cea_formula": "C 2.0 H 4.0",
+    "h_cal": -13900.0,
+    "t_k": 298.15,
+    "density": 0.95,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "",
+    "notes": ""
+  }
+]

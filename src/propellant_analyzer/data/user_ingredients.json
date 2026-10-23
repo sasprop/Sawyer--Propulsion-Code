@@ -243,7 +243,7 @@
     ],
     "category": 8000,
     "cea_formula": "C 14.0 H 32.0 N 6.0 O 2.0",
-    "h_cal": -146.0,
+    "h_cal": -83000.0,
     "t_k": 298.15,
     "density": 1.1,
     "Weq": 211.0,
@@ -252,7 +252,7 @@
     ],
     "functional_group": "OH",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 383. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "notes": "Imported from ALLPROP.json entry 383. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Hf was -146 cal/mol. Rough group-additivity estimate for the TEPA + acrylonitrile + glycidol adduct (+/- 30 kcal/mol); no published value found."
   },
   {
     "id": 10001,
@@ -346,16 +346,18 @@
     ],
     "category": 8000,
     "cea_formula": "C 1.0 F 5.0 N 3.0",
-    "h_cal": 24200.0,
+    "h_cal": 18900.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
-    "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 76. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 76. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Was using the gas-phase allprop.dat entry; switched to the condensed entry 5 (Hf 18.900 kcal/mol, density not given).",
+    "density_status": "none",
+    "density_note": "No density available (not in allprop.dat, and the estimation method is unreliable for this kind of compound)."
   },
   {
     "id": 10006,
@@ -388,16 +390,16 @@
     ],
     "category": 8000,
     "cea_formula": "C 1.0 F 8.0 N 4.0",
-    "h_cal": 2600.0,
+    "h_cal": -4000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.748,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
-    "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 79. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 79. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Was using the gas-phase allprop.dat entry; switched to the condensed entry 7 (Hf -4.000 kcal/mol, density 1.748)."
   },
   {
     "id": 10008,
@@ -472,14 +474,16 @@
     "cea_formula": "C 2.0 F 1.0 H 3.0 N 2.0 O 4.0",
     "h_cal": -67340.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.637,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "L",
-    "notes": "Imported from ALLPROP.json entry 12. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 12. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10012,
@@ -492,14 +496,16 @@
     "cea_formula": "C 2.0 F 1.0 H 3.0 N 2.0 O 5.0",
     "h_cal": -114200.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.667,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 13. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 13. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10014,
@@ -512,14 +518,16 @@
     "cea_formula": "C 2.0 H 4.0 N 2.0 O 4.0",
     "h_cal": -34670.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.521,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "L",
-    "notes": "Imported from ALLPROP.json entry 15. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 15. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10015,
@@ -571,14 +579,16 @@
     "cea_formula": "C 3.0 F 1.0 H 5.0 N 2.0 O 4.0",
     "h_cal": -80530.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.513,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "L",
-    "notes": "Imported from ALLPROP.json entry 18. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 18. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10018,
@@ -591,14 +601,16 @@
     "cea_formula": "C 3.0 H 5.0 N 3.0 O 6.0",
     "h_cal": -28060.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.568,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 19. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 19. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10019,
@@ -654,16 +666,16 @@
     ],
     "category": 1000,
     "cea_formula": "CL 1.0 F 3.0",
-    "h_cal": -37970.0,
+    "h_cal": -44450.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.807,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "L",
-    "notes": "Imported from ALLPROP.json entry 88. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 88. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Was using the gas-phase allprop.dat entry; switched to the condensed entry 25 (Hf -44.450 kcal/mol, density 1.807)."
   },
   {
     "id": 10025,
@@ -675,16 +687,16 @@
     ],
     "category": 1000,
     "cea_formula": "CL 1.0 F 3.0 O 1.0",
-    "h_cal": -32600.0,
+    "h_cal": -39600.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.852,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "L",
-    "notes": "Imported from ALLPROP.json entry 89. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 89. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Was using the gas-phase allprop.dat entry; switched to the condensed entry 26 (Hf -39.600 kcal/mol, density 1.852)."
   },
   {
     "id": 10026,
@@ -696,16 +708,16 @@
     ],
     "category": 1000,
     "cea_formula": "CL 1.0 F 5.0",
-    "h_cal": -55700.0,
+    "h_cal": -60500.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.779,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "L",
-    "notes": "Imported from ALLPROP.json entry 90. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 90. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Was using the gas-phase allprop.dat entry; switched to the condensed entry 27 (Hf -60.500 kcal/mol, density 1.779)."
   },
   {
     "id": 10027,
@@ -718,14 +730,15 @@
     "cea_formula": "CL 1.0 H 1.0 O 4.0",
     "h_cal": -11100.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.768,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "L",
-    "notes": "Imported from ALLPROP.json entry 28. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 28. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_note": "Literature value for anhydrous HClO4; not in allprop.dat."
   },
   {
     "id": 10028,
@@ -757,14 +770,16 @@
     "cea_formula": "CL 2.0 O 7.0",
     "h_cal": 55000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "L",
-    "notes": "Imported from ALLPROP.json entry 30. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 30. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "No density available (not in allprop.dat, and the estimation method is unreliable for this kind of compound)."
   },
   {
     "id": 10030,
@@ -776,16 +791,16 @@
     ],
     "category": 8000,
     "cea_formula": "F 2.0",
-    "h_cal": 0.0,
+    "h_cal": -3098.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.505,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "L",
-    "notes": "Imported from ALLPROP.json entry 94. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 94. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Was using the gas-phase allprop.dat entry; switched to the condensed entry 31 (Hf -3.098 kcal/mol, density 1.505)."
   },
   {
     "id": 10031,
@@ -797,16 +812,16 @@
     ],
     "category": 1000,
     "cea_formula": "F 2.0 O 1.0",
-    "h_cal": 5860.0,
+    "h_cal": 1860.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.521,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "L",
-    "notes": "Imported from ALLPROP.json entry 96. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 96. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Was using the gas-phase allprop.dat entry; switched to the condensed entry 32 (Hf 1.860 kcal/mol, density 1.521)."
   },
   {
     "id": 10032,
@@ -818,16 +833,16 @@
     ],
     "category": 1000,
     "cea_formula": "F 3.0 N 1.0",
-    "h_cal": -31430.0,
+    "h_cal": -35900.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.531,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "L",
-    "notes": "Imported from ALLPROP.json entry 97. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 97. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Was using the gas-phase allprop.dat entry; switched to the condensed entry 33 (Hf -35.900 kcal/mol, density 1.531)."
   },
   {
     "id": 10034,
@@ -922,16 +937,16 @@
     ],
     "category": 2000,
     "cea_formula": "AL 1.0 B 3.0 H 12.0",
-    "h_cal": -14900.0,
+    "h_cal": -21500.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.55,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
-    "phase": "G",
-    "notes": "Imported from ALLPROP.json entry 67. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 67. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Was using the gas-phase allprop.dat entry; switched to the condensed entry 39 (Hf -21.500 kcal/mol, density 0.55)."
   },
   {
     "id": 10039,
@@ -943,16 +958,16 @@
     ],
     "category": 2000,
     "cea_formula": "B 2.0 H 6.0",
-    "h_cal": 9800.0,
+    "h_cal": 4970.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.437,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
-    "phase": "G",
-    "notes": "Imported from ALLPROP.json entry 68. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 68. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Was using the gas-phase allprop.dat entry; switched to the condensed entry 40 (Hf 4.970 kcal/mol, density 0.437)."
   },
   {
     "id": 10040,
@@ -1006,14 +1021,16 @@
     "cea_formula": "C 1.0 H 5.0 N 1.0 O 1.0",
     "h_cal": -13000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.067,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 43. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 43. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10043,
@@ -1191,14 +1208,15 @@
     "cea_formula": "C 3.0 H 3.0 N 1.0",
     "h_cal": 36190.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.806,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 52. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 52. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_note": "Literature value for acrylonitrile; not in allprop.dat."
   },
   {
     "id": 10052,
@@ -1211,16 +1229,16 @@
     ],
     "category": 9000,
     "cea_formula": "H 1.0 N 3.0",
-    "h_cal": 70260.0,
+    "h_cal": 63100.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.091,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
-    "phase": "G",
-    "notes": "Imported from ALLPROP.json entry 243. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 243. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Was using the gas-phase allprop.dat entry; switched to the condensed entry 53 (Hf 63.100 kcal/mol, density 1.091)."
   },
   {
     "id": 10053,
@@ -1392,16 +1410,16 @@
     ],
     "category": 8000,
     "cea_formula": "C 3.0 H 4.0",
-    "h_cal": 44310.0,
+    "h_cal": 38800.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.7,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
-    "phase": "G",
-    "notes": "Imported from ALLPROP.json entry 247. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 247. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Was using the gas-phase allprop.dat entry; switched to the condensed entry 62 (Hf 38.800 kcal/mol, density 0.7)."
   },
   {
     "id": 10062,
@@ -1460,14 +1478,16 @@
     "cea_formula": "B 1.0 BE 1.0 C 1.0 H 13.0 N 1.0",
     "h_cal": -60000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 65. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 65. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "No density available (not in allprop.dat, and the estimation method is unreliable for this kind of compound)."
   },
   {
     "id": 10065,
@@ -1503,14 +1523,16 @@
     "cea_formula": "B 5.0 H 9.0",
     "h_cal": 15020.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "G",
-    "notes": "Imported from ALLPROP.json entry 69. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 69. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "Gas phase - no condensed-phase density."
   },
   {
     "id": 10067,
@@ -1523,14 +1545,16 @@
     "cea_formula": "BR 1.0 F 1.0",
     "h_cal": -13970.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 70. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 70. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "No density available (not in allprop.dat, and the estimation method is unreliable for this kind of compound)."
   },
   {
     "id": 10068,
@@ -1544,14 +1568,16 @@
     "cea_formula": "BR 1.0 F 3.0",
     "h_cal": -61090.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "G",
-    "notes": "Imported from ALLPROP.json entry 71. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 71. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "Gas phase - no condensed-phase density."
   },
   {
     "id": 10069,
@@ -1565,14 +1591,16 @@
     "cea_formula": "BR 1.0 F 5.0",
     "h_cal": -102470.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "G",
-    "notes": "Imported from ALLPROP.json entry 72. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 72. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "Gas phase - no condensed-phase density."
   },
   {
     "id": 10070,
@@ -1586,14 +1614,16 @@
     "cea_formula": "C 1.0 F 4.0 N 2.0",
     "h_cal": -33700.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
-    "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 73. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "phase": "G",
+    "notes": "Imported from ALLPROP.json entry 73. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "Gas phase - no condensed-phase density."
   },
   {
     "id": 10071,
@@ -1606,14 +1636,16 @@
     "cea_formula": "C 1.0 F 4.0 O 1.0",
     "h_cal": -184000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
-    "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 74. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "phase": "G",
+    "notes": "Imported from ALLPROP.json entry 74. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "Gas phase - no condensed-phase density."
   },
   {
     "id": 10072,
@@ -1626,14 +1658,16 @@
     "cea_formula": "C 1.0 F 4.0 O 2.0",
     "h_cal": -134600.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
-    "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 75. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "phase": "G",
+    "notes": "Imported from ALLPROP.json entry 75. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "Gas phase - no condensed-phase density."
   },
   {
     "id": 10073,
@@ -1647,14 +1681,16 @@
     "cea_formula": "C 1.0 F 6.0 N 2.0",
     "h_cal": -107500.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 77. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 77. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "No density available (not in allprop.dat, and the estimation method is unreliable for this kind of compound)."
   },
   {
     "id": 10074,
@@ -1669,14 +1705,16 @@
     "cea_formula": "C 1.0 F 7.0 N 3.0",
     "h_cal": -46500.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "G",
-    "notes": "Imported from ALLPROP.json entry 78. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 78. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "Gas phase - no condensed-phase density."
   },
   {
     "id": 10075,
@@ -1690,14 +1728,16 @@
     "cea_formula": "C 1.0 H 2.0 N 4.0",
     "h_cal": 80100.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "G",
-    "notes": "Imported from ALLPROP.json entry 80. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 80. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "Gas phase - no condensed-phase density."
   },
   {
     "id": 10076,
@@ -1748,14 +1788,16 @@
     "cea_formula": "C 3.0 F 4.0 H 6.0 N 2.0",
     "h_cal": -43000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.443,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 84. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 84. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10079,
@@ -1787,14 +1829,16 @@
     "cea_formula": "CL 1.0 F 1.0",
     "h_cal": -12100.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "L",
-    "notes": "Imported from ALLPROP.json entry 86. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 86. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "No density available (not in allprop.dat, and the estimation method is unreliable for this kind of compound)."
   },
   {
     "id": 10081,
@@ -1807,14 +1851,16 @@
     "cea_formula": "CL 1.0 F 1.0 O 3.0",
     "h_cal": -5120.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 87. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 87. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "No density available (not in allprop.dat, and the estimation method is unreliable for this kind of compound)."
   },
   {
     "id": 10084,
@@ -1827,14 +1873,16 @@
     "cea_formula": "F 1.0 N 1.0 O 1.0",
     "h_cal": -15700.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 91. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 91. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "No density available (not in allprop.dat, and the estimation method is unreliable for this kind of compound)."
   },
   {
     "id": 10085,
@@ -1847,14 +1895,16 @@
     "cea_formula": "F 1.0 N 1.0 O 2.0",
     "h_cal": -19000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 92. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 92. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "No density available (not in allprop.dat, and the estimation method is unreliable for this kind of compound)."
   },
   {
     "id": 10086,
@@ -1867,14 +1917,16 @@
     "cea_formula": "F 1.0 N 1.0 O 3.0",
     "h_cal": 2500.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "L",
-    "notes": "Imported from ALLPROP.json entry 93. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 93. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "No density available (not in allprop.dat, and the estimation method is unreliable for this kind of compound)."
   },
   {
     "id": 10088,
@@ -1886,14 +1938,16 @@
     "cea_formula": "F 2.0 H 1.0 N 1.0",
     "h_cal": -32000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 95. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 95. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "No density available (not in allprop.dat, and the estimation method is unreliable for this kind of compound)."
   },
   {
     "id": 10091,
@@ -1906,14 +1960,16 @@
     "cea_formula": "F 3.0 N 1.0 O 1.0",
     "h_cal": -35900.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "L",
-    "notes": "Imported from ALLPROP.json entry 98. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 98. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "No density available (not in allprop.dat, and the estimation method is unreliable for this kind of compound)."
   },
   {
     "id": 10092,
@@ -1927,16 +1983,16 @@
     ],
     "category": 8000,
     "cea_formula": "F 4.0 N 2.0",
-    "h_cal": -2000.0,
+    "h_cal": -5000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.66,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
-    "phase": "G",
-    "notes": "Imported from ALLPROP.json entry 249. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 249. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Was using the gas-phase allprop.dat entry; switched to the condensed entry 99 (Hf -5.000 kcal/mol, density 1.66)."
   },
   {
     "id": 10093,
@@ -1946,16 +2002,16 @@
     ],
     "category": 1000,
     "cea_formula": "H 1.0 N 1.0 O 3.0",
-    "h_cal": -32100.0,
+    "h_cal": -41460.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.503,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "L",
-    "notes": "Imported from ALLPROP.json entry 100. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 100. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Was using the gas-phase allprop.dat entry; switched to the condensed entry 34 (Hf -41.460 kcal/mol, density 1.503)."
   },
   {
     "id": 10096,
@@ -1988,14 +2044,16 @@
     "cea_formula": "AL 1.0 CL 6.0 N 3.0 O 30.0",
     "h_cal": -120000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 105. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 105. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "No density available (not in allprop.dat, and the estimation method is unreliable for this kind of compound)."
   },
   {
     "id": 10098,
@@ -2008,14 +2066,16 @@
     "cea_formula": "C 1.0 F 2.0 H 2.0 N 2.0 O 1.0",
     "h_cal": -67700.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.664,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 106. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 106. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10099,
@@ -2029,14 +2089,16 @@
     "cea_formula": "C 1.0 H 2.0 N 6.0 O 2.0",
     "h_cal": 71320.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.737,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 108. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 108. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10101,
@@ -2046,16 +2108,18 @@
     ],
     "category": 8000,
     "cea_formula": "C 1.0 H 3.0 N 3.0 O 3.0",
-    "h_cal": -64230.00000000001,
+    "h_cal": -64230.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.592,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 109. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 109. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10102,
@@ -2092,14 +2156,16 @@
     "cea_formula": "C 1.0 H 4.0 N 6.0 O 3.0",
     "h_cal": 3790.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.619,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 112. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 112. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10105,
@@ -2111,14 +2177,16 @@
     "cea_formula": "C 1.0 H 5.0 N 5.0 O 2.0",
     "h_cal": 5300.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.478,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 113. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 113. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10106,
@@ -2151,14 +2219,16 @@
     "cea_formula": "C 1.0 H 8.0 N 6.0 O 3.0",
     "h_cal": -36460.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.402,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 115. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 115. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10108,
@@ -2211,14 +2281,16 @@
     "cea_formula": "C 2.0 H 3.0 N 5.0 O 2.0",
     "h_cal": 26870.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.618,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 118. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 118. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10111,
@@ -2252,14 +2324,16 @@
     "cea_formula": "C 2.0 H 5.0 N 5.0 O 3.0",
     "h_cal": -35100.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.526,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 121. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 121. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10114,
@@ -2292,14 +2366,16 @@
     "cea_formula": "C 2.0 H 7.0 N 9.0 O 2.0",
     "h_cal": 26590.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.512,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 123. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 123. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10116,
@@ -2352,14 +2428,16 @@
     "cea_formula": "C 3.0 H 4.0 N 4.0 O 8.0",
     "h_cal": -38600.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.682,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 126. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 126. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10119,
@@ -2412,14 +2490,16 @@
     "cea_formula": "CL 1.0 F 4.0 N 1.0 O 2.0",
     "h_cal": -48000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 130. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 130. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "No density available (not in allprop.dat, and the estimation method is unreliable for this kind of compound)."
   },
   {
     "id": 10122,
@@ -2573,14 +2653,15 @@
     "cea_formula": "H 3.0 N 1.0 O 1.0",
     "h_cal": -26200.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.21,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 138. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 138. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_note": "Literature value for hydroxylamine; not in allprop.dat."
   },
   {
     "id": 10130,
@@ -2653,14 +2734,16 @@
     "cea_formula": "AL 1.0 H 8.0 N 4.0 NA 1.0",
     "h_cal": -173000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 143. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 143. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "No density available (not in allprop.dat, and the estimation method is unreliable for this kind of compound)."
   },
   {
     "id": 10134,
@@ -2815,14 +2898,16 @@
     "cea_formula": "B 3.0 H 10.0 N 1.0",
     "h_cal": -49000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.719,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "L",
-    "notes": "Imported from ALLPROP.json entry 151. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 151. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10142,
@@ -2835,14 +2920,16 @@
     "cea_formula": "B 8.0 H 28.0 N 4.0",
     "h_cal": -10000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.76,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "L",
-    "notes": "Imported from ALLPROP.json entry 152. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 152. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10143,
@@ -2854,14 +2941,15 @@
     "cea_formula": "B 10.0 H 14.0",
     "h_cal": -15800.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.94,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 153. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 153. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_note": "Literature value for decaborane; not in allprop.dat."
   },
   {
     "id": 10144,
@@ -2893,14 +2981,16 @@
     "cea_formula": "B 10.0 H 22.0 N 4.0",
     "h_cal": -71000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.852,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 155. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 155. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10146,
@@ -2913,14 +3003,16 @@
     "cea_formula": "B 10.0 H 23.0 N 3.0",
     "h_cal": -92000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.803,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "L",
-    "notes": "Imported from ALLPROP.json entry 156. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 156. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10147,
@@ -2933,14 +3025,16 @@
     "cea_formula": "B 10.0 H 24.0 N 6.0",
     "h_cal": -23300.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.896,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 157. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 157. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10148,
@@ -2953,14 +3047,16 @@
     "cea_formula": "B 10.0 H 28.0 N 8.0",
     "h_cal": -22800.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.911,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 158. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 158. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10149,
@@ -2973,14 +3069,16 @@
     "cea_formula": "B 10.0 H 30.0 N 8.0",
     "h_cal": -2000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.891,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "L",
-    "notes": "Imported from ALLPROP.json entry 159. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 159. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10150,
@@ -2993,14 +3091,16 @@
     "cea_formula": "B 10.0 H 34.0 N 10.0",
     "h_cal": 10000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.905,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "L",
-    "notes": "Imported from ALLPROP.json entry 160. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 160. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10151,
@@ -3013,14 +3113,16 @@
     "cea_formula": "BE 1.0 H 2.0",
     "h_cal": -4400.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.65,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 161. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 161. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated: beryllium hydride (allprop.dat 204-206 give 0.65-0.66)."
   },
   {
     "id": 10152,
@@ -3033,14 +3135,16 @@
     "cea_formula": "BE 1.0 H 4.0 LI 2.0",
     "h_cal": -79900.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 162. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 162. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "No density available (not in allprop.dat, and the estimation method is unreliable for this kind of compound)."
   },
   {
     "id": 10153,
@@ -3052,14 +3156,16 @@
     "cea_formula": "C 1.0 H 2.0 N 4.0",
     "h_cal": 56660.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.573,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 163. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 163. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10154,
@@ -3152,14 +3258,16 @@
     "cea_formula": "B 3.0 C 1.0 H 17.0 N 6.0",
     "h_cal": 47900.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.961,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 168. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 168. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10159,
@@ -3172,14 +3280,16 @@
     "cea_formula": "B 9.0 C 1.0 H 23.0 N 6.0",
     "h_cal": 28300.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.921,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 169. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 169. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10160,
@@ -3192,14 +3302,16 @@
     "cea_formula": "B 10.0 C 1.0 H 26.0 N 8.0",
     "h_cal": 30900.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.951,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 170. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 170. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10161,
@@ -3212,14 +3324,16 @@
     "cea_formula": "C 2.0 H 1.0 N 5.0",
     "h_cal": 96090.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.726,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 171. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 171. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10162,
@@ -3232,14 +3346,16 @@
     "cea_formula": "C 2.0 H 2.0 N 6.0",
     "h_cal": 96980.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.657,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 173. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 173. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10165,
@@ -3252,14 +3368,16 @@
     "cea_formula": "C 2.0 H 4.0 N 4.0 O 1.0",
     "h_cal": 16510.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.454,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 176. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 176. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10167,
@@ -3272,14 +3390,16 @@
     "cea_formula": "C 2.0 H 4.0 N 10.0",
     "h_cal": 135140.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.628,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 178. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 178. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10168,
@@ -3293,14 +3413,16 @@
     "cea_formula": "C 2.0 H 5.0 N 5.0",
     "h_cal": 48410.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.375,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 181. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 181. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10171,
@@ -3313,14 +3435,16 @@
     "cea_formula": "C 2.0 H 5.0 N 7.0",
     "h_cal": 40560.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.474,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 182. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 182. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10172,
@@ -3332,14 +3456,16 @@
     "cea_formula": "C 2.0 H 6.0 N 4.0 O 2.0",
     "h_cal": -119190.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.382,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 183. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 183. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10173,
@@ -3373,14 +3499,16 @@
     "cea_formula": "C 2.0 H 8.0 N 10.0 O 1.0",
     "h_cal": 45210.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.466,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 185. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 185. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10175,
@@ -3393,14 +3521,16 @@
     "cea_formula": "B 1.0 C 2.0 H 10.0 N 1.0",
     "h_cal": -30400.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.789,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 186. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 186. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10176,
@@ -3413,14 +3543,16 @@
     "cea_formula": "B 10.0 C 2.0 H 24.0 N 4.0",
     "h_cal": -100000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.875,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 187. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 187. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10177,
@@ -3433,14 +3565,16 @@
     "cea_formula": "B 10.0 C 2.0 H 28.0 N 12.0",
     "h_cal": 60000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.038,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 188. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 188. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10178,
@@ -3453,14 +3587,16 @@
     "cea_formula": "C 2.0 LI 1.0 N 3.0",
     "h_cal": -9000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 189. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 189. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "No density available (not in allprop.dat, and the estimation method is unreliable for this kind of compound)."
   },
   {
     "id": 10179,
@@ -3473,14 +3609,16 @@
     "cea_formula": "C 3.0 H 5.0 N 5.0 O 1.0",
     "h_cal": -1210.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.446,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 190. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 190. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10180,
@@ -3493,14 +3631,16 @@
     "cea_formula": "C 3.0 H 5.0 N 5.0 O 2.0",
     "h_cal": 12720.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.491,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 191. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 191. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10181,
@@ -3513,14 +3653,16 @@
     "cea_formula": "C 3.0 H 6.0 N 4.0",
     "h_cal": 45080.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.275,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 192. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 192. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10182,
@@ -3533,14 +3675,16 @@
     "cea_formula": "C 3.0 H 6.0 N 4.0 O 1.0",
     "h_cal": -6690.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.342,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 193. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 193. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10183,
@@ -3553,14 +3697,15 @@
     "cea_formula": "CS 1.0 N 3.0",
     "h_cal": -2160.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 3.5,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 194. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 194. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_note": "Literature value for cesium azide; not in allprop.dat."
   },
   {
     "id": 10184,
@@ -3613,14 +3758,16 @@
     "cea_formula": "HG 2.0 N 6.0",
     "h_cal": 142100.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 197. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 197. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "No density available (not in allprop.dat, and the estimation method is unreliable for this kind of compound)."
   },
   {
     "id": 10187,
@@ -3653,14 +3800,15 @@
     "cea_formula": "LI 1.0 N 3.0",
     "h_cal": 2790.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.83,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 199. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 199. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_note": "Literature value for lithium azide; not in allprop.dat."
   },
   {
     "id": 10189,
@@ -3693,14 +3841,15 @@
     "cea_formula": "N 6.0 PB 1.0",
     "h_cal": 115900.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 4.71,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 201. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 201. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_note": "Literature value for lead azide; not in allprop.dat."
   },
   {
     "id": 10191,
@@ -3732,14 +3881,16 @@
     "cea_formula": "BE 1.0 C 0.0228 H 2.0356 O 0.008",
     "h_cal": -5576.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.65,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 203. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 203. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated: beryllium hydride (allprop.dat 204-206 give 0.65-0.66)."
   },
   {
     "id": 10193,
@@ -3772,14 +3923,16 @@
     "cea_formula": "BE 8.6542 C 0.3522 H 17.6277",
     "h_cal": -50800.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.65,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 205. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 205. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated: beryllium hydride (allprop.dat 204-206 give 0.65-0.66)."
   },
   {
     "id": 10195,
@@ -3908,14 +4061,15 @@
     "cea_formula": "H 1.0 NA 1.0",
     "h_cal": -13700.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.39,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 212. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 212. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_note": "Literature value for sodium hydride; not in allprop.dat."
   },
   {
     "id": 10202,
@@ -4003,14 +4157,16 @@
     "cea_formula": "B 10.0 C 2.0 H 12.0",
     "h_cal": -27600.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.883,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 218. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 218. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10207,
@@ -4023,14 +4179,16 @@
     "cea_formula": "B 3.0 C 4.0 H 20.0 N 1.0",
     "h_cal": -22000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.755,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 219. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 219. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10208,
@@ -4043,14 +4201,16 @@
     "cea_formula": "AL 6.0 H 19.0 LI 1.0",
     "h_cal": -44000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 220. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 220. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "No density available (not in allprop.dat, and the estimation method is unreliable for this kind of compound)."
   },
   {
     "id": 10209,
@@ -4063,14 +4223,16 @@
     "cea_formula": "AL 11.0 H 34.0 LI 1.0",
     "h_cal": -64000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 221. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 221. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "No density available (not in allprop.dat, and the estimation method is unreliable for this kind of compound)."
   },
   {
     "id": 10210,
@@ -4083,14 +4245,16 @@
     "cea_formula": "SI 1.0 ZR 1.0",
     "h_cal": -18000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 222. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 222. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "No density available (not in allprop.dat, and the estimation method is unreliable for this kind of compound)."
   },
   {
     "id": 10211,
@@ -4103,14 +4267,15 @@
     "cea_formula": "SI 2.0 ZR 1.0",
     "h_cal": -12000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 4.88,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 223. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 223. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_note": "Literature value for ZrSi2; not in allprop.dat."
   },
   {
     "id": 10212,
@@ -4142,14 +4307,15 @@
     "cea_formula": "C 6.0 H 8.0 N 2.0",
     "h_cal": 26300.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.951,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 225. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 225. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_note": "Literature value for adiponitrile; not in allprop.dat."
   },
   {
     "id": 10214,
@@ -4244,14 +4410,16 @@
     "cea_formula": "C 1.0 H 2.0 O 1.0",
     "h_cal": -48000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.236,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 230. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 230. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10219,
@@ -4264,14 +4432,16 @@
     "cea_formula": "BE 1.0 H 3.0 LI 1.0",
     "h_cal": -42000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 231. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 231. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "No density available (not in allprop.dat, and the estimation method is unreliable for this kind of compound)."
   },
   {
     "id": 10220,
@@ -4284,14 +4454,15 @@
     "cea_formula": "C 3.0 H 4.0 O 3.0",
     "h_cal": -138800.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.32,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 232. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 232. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_note": "Literature value for ethylene carbonate; not in allprop.dat."
   },
   {
     "id": 10221,
@@ -4303,14 +4474,16 @@
     "cea_formula": "C 3.0 H 5.0 N 1.0 O 4.0",
     "h_cal": -109770.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.421,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 233. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 233. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10222,
@@ -4363,14 +4536,16 @@
     "cea_formula": "C 2.0 H 6.0 N 2.0",
     "h_cal": 250.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.055,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "L",
-    "notes": "Imported from ALLPROP.json entry 238. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 238. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10225,
@@ -4402,14 +4577,15 @@
     "cea_formula": "C 3.0 H 5.0 N 1.0 O 1.0",
     "h_cal": -113000.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.3,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 240. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 240. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_note": "Literature value for polyacrylamide; not in allprop.dat."
   },
   {
     "id": 10227,
@@ -4422,14 +4598,16 @@
     "cea_formula": "C 3.0 H 5.0 N 1.0 O 2.0",
     "h_cal": -30750.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.287,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "L",
-    "notes": "Imported from ALLPROP.json entry 241. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 241. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated from atomic-volume increments fitted to the 192 allprop.dat entries with known density (typical error +/-9%, can reach +/-25%)."
   },
   {
     "id": 10230,
@@ -4483,14 +4661,16 @@
     "cea_formula": "H 3.0 P 1.0",
     "h_cal": 1300.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "G",
-    "notes": "Imported from ALLPROP.json entry 250. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 250. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "Gas phase - no condensed-phase density."
   },
   {
     "id": 10235,
@@ -4503,16 +4683,18 @@
     ],
     "category": 2000,
     "cea_formula": "H 4.0 P 2.0",
-    "h_cal": 5000.0,
+    "h_cal": -1200.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
-    "phase": "G",
-    "notes": "Imported from ALLPROP.json entry 252. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 252. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Was using the gas-phase allprop.dat entry; switched to the condensed entry 251 (Hf -1.200 kcal/mol, density not given).",
+    "density_status": "none",
+    "density_note": "No density available (not in allprop.dat, and the estimation method is unreliable for this kind of compound)."
   },
   {
     "id": 10237,
@@ -4754,14 +4936,16 @@
     "cea_formula": "C 1.0 H 0.681 N 0.011 O 0.069 S 0.003 SI 0.009",
     "h_cal": 0.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.3,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 266. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 266. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "estimated",
+    "density_note": "Estimated: typical bituminous coal 1.2-1.4."
   },
   {
     "id": 10249,
@@ -5633,14 +5817,15 @@
     "cea_formula": "C 2.0 CL 1.0 F 3.0",
     "h_cal": -51400.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 2.12,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "L",
-    "notes": "Imported from ALLPROP.json entry 313. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 313. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_note": "Literature value for PCTFE / Kel-F; not in allprop.dat."
   },
   {
     "id": 10292,
@@ -5823,8 +6008,8 @@
       "SRN"
     ],
     "category": 1000,
-    "cea_formula": "",
-    "h_cal": 0.0,
+    "cea_formula": "SR 1.0 N 2.0 O 6.0",
+    "h_cal": -233800.0,
     "t_k": 298.15,
     "density": 2.986,
     "Weq": 0.0,
@@ -5833,7 +6018,7 @@
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Reference entry. Common oxidizing red colorant source in pyrotechnic systems. Strong candidate when screening for red exhaust hues. No full CEA thermo card is loaded yet, so this entry is currently for database browsing / weight tracking / future card development."
+    "notes": "Reference entry. Common oxidizing red colorant source in pyrotechnic systems. Strong candidate when screening for red exhaust hues. No full CEA thermo card is loaded yet, so this entry is currently for database browsing / weight tracking / future card development. [2026-10-23] Was weight-track only; now CEA-ready so the Flame Color tab sees its emitters. Hf: Sr(NO3)2 -978.2 kJ/mol (NBS thermochemical tables (Wagman et al. 1982))."
   },
   {
     "id": 10302,
@@ -5844,8 +6029,8 @@
       "BAN"
     ],
     "category": 1000,
-    "cea_formula": "",
-    "h_cal": 0.0,
+    "cea_formula": "BA 1.0 N 2.0 O 6.0",
+    "h_cal": -237100.0,
     "t_k": 298.15,
     "density": 3.244,
     "Weq": 0.0,
@@ -5854,7 +6039,7 @@
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Reference entry. Classic green colorant / oxidizer source in pyrotechnics. Useful when screening candidate green plume systems. No full CEA thermo card is loaded yet, so this entry is currently for database browsing / weight tracking / future card development."
+    "notes": "Reference entry. Classic green colorant / oxidizer source in pyrotechnics. Useful when screening candidate green plume systems. No full CEA thermo card is loaded yet, so this entry is currently for database browsing / weight tracking / future card development. [2026-10-23] Was weight-track only; now CEA-ready so the Flame Color tab sees its emitters. Hf: Ba(NO3)2 -992.1 kJ/mol (NBS thermochemical tables (Wagman et al. 1982))."
   },
   {
     "id": 10303,
@@ -5864,8 +6049,8 @@
       "SRCO3"
     ],
     "category": 8000,
-    "cea_formula": "",
-    "h_cal": 0.0,
+    "cea_formula": "SR 1.0 C 1.0 O 3.0",
+    "h_cal": -291600.0,
     "t_k": 298.15,
     "density": 3.74,
     "Weq": 0.0,
@@ -5874,7 +6059,7 @@
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Reference entry. Common red strontium colorant source. Often used when the formulation needs strontium without adding nitrate oxidizer loading. No full CEA thermo card is loaded yet."
+    "notes": "Reference entry. Common red strontium colorant source. Often used when the formulation needs strontium without adding nitrate oxidizer loading. No full CEA thermo card is loaded yet. [2026-10-23] Was weight-track only; now CEA-ready so the Flame Color tab sees its emitters. Hf: SrCO3 -1220.1 kJ/mol (NBS thermochemical tables (Wagman et al. 1982))."
   },
   {
     "id": 10304,
@@ -5884,8 +6069,8 @@
       "LI2CO3"
     ],
     "category": 8000,
-    "cea_formula": "",
-    "h_cal": 0.0,
+    "cea_formula": "LI 2.0 C 1.0 O 3.0",
+    "h_cal": -290600.0,
     "t_k": 298.15,
     "density": 2.11,
     "Weq": 0.0,
@@ -5894,7 +6079,7 @@
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Reference entry. Practical lithium source for crimson-red flame screening. No full CEA thermo card is loaded yet."
+    "notes": "Reference entry. Practical lithium source for crimson-red flame screening. No full CEA thermo card is loaded yet. [2026-10-23] Was weight-track only; now CEA-ready so the Flame Color tab sees its emitters. Hf: Li2CO3 -1216.0 kJ/mol (NBS thermochemical tables (Wagman et al. 1982))."
   },
   {
     "id": 10305,
@@ -5905,8 +6090,8 @@
       "CUCL2"
     ],
     "category": 8000,
-    "cea_formula": "",
-    "h_cal": 0.0,
+    "cea_formula": "CU 1.0 CL 2.0",
+    "h_cal": -52600.0,
     "t_k": 298.15,
     "density": 3.386,
     "Weq": 0.0,
@@ -5915,7 +6100,7 @@
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Reference entry. Copper + chlorine source and therefore highly relevant to blue / blue-green flame quality. Copper halides are often more color-pure than oxide-only copper systems. No full CEA thermo card is loaded yet."
+    "notes": "Reference entry. Copper + chlorine source and therefore highly relevant to blue / blue-green flame quality. Copper halides are often more color-pure than oxide-only copper systems. No full CEA thermo card is loaded yet. [2026-10-23] Was weight-track only; now CEA-ready so the Flame Color tab sees its emitters. Hf: CuCl2 -220.1 kJ/mol (NBS thermochemical tables (Wagman et al. 1982))."
   },
   {
     "id": 10306,
@@ -5925,8 +6110,8 @@
       "CACL2"
     ],
     "category": 8000,
-    "cea_formula": "",
-    "h_cal": 0.0,
+    "cea_formula": "CA 1.0 CL 2.0",
+    "h_cal": -190100.0,
     "t_k": 298.15,
     "density": 2.15,
     "Weq": 0.0,
@@ -5935,7 +6120,7 @@
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Reference entry. Calcium source with orange / orange-red flame tendency and a chlorine contribution. Useful for screening warm orange exhaust hues. No full CEA thermo card is loaded yet."
+    "notes": "Reference entry. Calcium source with orange / orange-red flame tendency and a chlorine contribution. Useful for screening warm orange exhaust hues. No full CEA thermo card is loaded yet. [2026-10-23] Was weight-track only; now CEA-ready so the Flame Color tab sees its emitters. Hf: CaCl2 -795.4 kJ/mol (NBS thermochemical tables (Wagman et al. 1982))."
   },
   {
     "id": 10307,
@@ -5945,8 +6130,8 @@
       "NA2C2O4"
     ],
     "category": 8000,
-    "cea_formula": "",
-    "h_cal": 0.0,
+    "cea_formula": "NA 2.0 C 2.0 O 4.0",
+    "h_cal": -315100.0,
     "t_k": 298.15,
     "density": 2.34,
     "Weq": 0.0,
@@ -5955,7 +6140,7 @@
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Reference entry. Strong sodium source and therefore mainly relevant when deliberately screening for intense yellow flame or when evaluating how small sodium contamination could dominate the visible plume. No full CEA thermo card is loaded yet."
+    "notes": "Reference entry. Strong sodium source and therefore mainly relevant when deliberately screening for intense yellow flame or when evaluating how small sodium contamination could dominate the visible plume. No full CEA thermo card is loaded yet. [2026-10-23] Was weight-track only; now CEA-ready so the Flame Color tab sees its emitters. Hf: Na2C2O4 -1318 kJ/mol (NBS thermochemical tables (Wagman et al. 1982))."
   },
   {
     "id": 10308,
@@ -5968,14 +6153,15 @@
     "cea_formula": "C 2.0 H 4.0 N 4.0 O 2.0",
     "h_cal": -69910.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.65,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 177. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Imported from ALLPROP.json entry 177. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_note": "Literature value for azodicarbonamide; not in allprop.dat."
   },
   {
     "id": 10309,
@@ -6044,16 +6230,16 @@
     ],
     "category": 8000,
     "cea_formula": "N 2.0 O 1.0",
-    "h_cal": 10000.0,
+    "h_cal": 19500.0,
     "t_k": 298.15,
-    "density": 1.1,
+    "density": 1.22,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
-    "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 327. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "phase": "L",
+    "notes": "Imported from ALLPROP.json entry 327. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Hf +443 cal/g (PEP propellant database (Purdue propulsion page); gas-phase value). Density: liquid N2O at its boiling point."
   },
   {
     "id": 10313,
@@ -6066,14 +6252,16 @@
     "cea_formula": "N 4.45 O 1.0",
     "h_cal": 10000.0,
     "t_k": 298.15,
-    "density": 1.2946,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
-    "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 331. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "phase": "G",
+    "notes": "Imported from ALLPROP.json entry 331. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "Gas phase - no condensed-phase density."
   },
   {
     "id": 10314,
@@ -6086,14 +6274,16 @@
     "cea_formula": "N 4.45 O 1.0",
     "h_cal": 0.0,
     "t_k": 298.15,
-    "density": 1.2946,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
-    "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 332. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "phase": "G",
+    "notes": "Imported from ALLPROP.json entry 332. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "Gas phase - no condensed-phase density."
   },
   {
     "id": 10315,
@@ -6105,14 +6295,16 @@
     "cea_formula": "HE 1.0",
     "h_cal": 0.0,
     "t_k": 298.15,
-    "density": 0.1787,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
-    "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 333. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "phase": "G",
+    "notes": "Imported from ALLPROP.json entry 333. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc.",
+    "density_status": "none",
+    "density_note": "Gas phase - no condensed-phase density."
   },
   {
     "id": 10316,
@@ -6141,7 +6333,7 @@
     ],
     "category": 8000,
     "cea_formula": "C 1.0 H 8.0 N 2.0 O 3.0",
-    "h_cal": -2430000.0,
+    "h_cal": -224800.0,
     "t_k": 298.15,
     "density": 1.5,
     "Weq": 0.0,
@@ -6150,7 +6342,7 @@
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 336. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "notes": "Imported from ALLPROP.json entry 336. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Hf was -2430 kcal/mol (cal/g value entered as kcal/mol). Now -2340 cal/g x 96.09 g/mol (PEP propellant database (Purdue propulsion page))."
   },
   {
     "id": 10318,
@@ -6160,7 +6352,7 @@
     ],
     "category": 8000,
     "cea_formula": "C 2.0 H 8.0 N 2.0 O 4.0",
-    "h_cal": -2160000.0,
+    "h_cal": -268100.0,
     "t_k": 298.15,
     "density": 1.5,
     "Weq": 0.0,
@@ -6169,7 +6361,7 @@
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 337. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "notes": "Imported from ALLPROP.json entry 337. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Hf was -2160 kcal/mol (cal/g entered as kcal/mol). Now -2160 cal/g x 124.10 g/mol (PEP propellant database (Purdue propulsion page)); agrees with NBS -1123 kJ/mol."
   },
   {
     "id": 10319,
@@ -6179,7 +6371,7 @@
     ],
     "category": 8000,
     "cea_formula": "C 2.0 H 7.0 N 1.0 O 5.0",
-    "h_cal": -2400000.0,
+    "h_cal": -300200.0,
     "t_k": 298.15,
     "density": 1.5,
     "Weq": 0.0,
@@ -6188,7 +6380,7 @@
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 338. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "notes": "Imported from ALLPROP.json entry 338. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Hf was -2400 kcal/mol (cal/g entered as kcal/mol). Now -2400 cal/g x 125.08 g/mol (PEP propellant database (Purdue propulsion page))."
   },
   {
     "id": 10320,
@@ -6198,7 +6390,7 @@
     ],
     "category": 2000,
     "cea_formula": "B 4.0 C 1.0",
-    "h_cal": -271000.0,
+    "h_cal": -17000.0,
     "t_k": 298.15,
     "density": 2.52,
     "Weq": 0.0,
@@ -6207,7 +6399,7 @@
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 339. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "notes": "Imported from ALLPROP.json entry 339. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Hf was -271 kcal/mol. B4C -71 kJ/mol (NBS thermochemical tables (Wagman et al. 1982))."
   },
   {
     "id": 10321,
@@ -6240,7 +6432,7 @@
     ],
     "category": 8000,
     "cea_formula": "C 2.0 H 4.0 O 1.0",
-    "h_cal": -11140.0,
+    "h_cal": -46600.0,
     "t_k": 298.15,
     "density": 1.125,
     "Weq": 0.0,
@@ -6249,7 +6441,7 @@
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 341. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "notes": "Imported from ALLPROP.json entry 341. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Hf was -11.14 kcal/mol. PEG -1058 cal/g x 44.05 g/mol per C2H4O unit (PEP propellant database (Purdue propulsion page))."
   },
   {
     "id": 10323,
@@ -6334,13 +6526,15 @@
   },
   {
     "id": 10327,
-    "name": "C2H6NO",
+    "name": "UREA",
     "aliases": [
-      "UREA"
+      "C2H6NO",
+      "CH4N2O",
+      "CARBAMIDE"
     ],
     "category": 8000,
-    "cea_formula": "C 2.0 H 6.0 N 1.0 O 1.0",
-    "h_cal": -77340.0,
+    "cea_formula": "C 1.0 H 4.0 N 2.0 O 1.0",
+    "h_cal": -79600.0,
     "t_k": 298.15,
     "density": 1.32,
     "Weq": 0.0,
@@ -6349,7 +6543,7 @@
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 347. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "notes": "Imported from ALLPROP.json entry 347. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Formula was C2H6NO, which is not urea. Urea CH4N2O, Hf -333.1 kJ/mol (NIST; PEP -1326 cal/g agrees)."
   },
   {
     "id": 10328,
@@ -6405,7 +6599,7 @@
     ],
     "category": 8000,
     "cea_formula": "C 3.0 H 6.0 O 1.0",
-    "h_cal": -24400.0,
+    "h_cal": -63200.0,
     "t_k": 298.15,
     "density": 1.01,
     "Weq": 0.0,
@@ -6414,7 +6608,7 @@
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 350. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "notes": "Imported from ALLPROP.json entry 350. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Hf was -24.4 kcal/mol. PPG -1088 cal/g x 58.08 g/mol per C3H6O unit (PEP propellant database (Purdue propulsion page))."
   },
   {
     "id": 10331,
@@ -6552,7 +6746,7 @@
     ],
     "category": 8000,
     "cea_formula": "CR 2.0 O 3.0",
-    "h_cal": -269600.0,
+    "h_cal": -272400.0,
     "t_k": 298.15,
     "density": 5.22,
     "Weq": 0.0,
@@ -6561,7 +6755,7 @@
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 357. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "notes": "Imported from ALLPROP.json entry 357. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Hf: Cr2O3 -1139.7 kJ/mol (NBS thermochemical tables (Wagman et al. 1982))."
   },
   {
     "id": 10338,
@@ -6635,14 +6829,14 @@
     "cea_formula": "C 4.0 H 10.0 O 4.0",
     "h_cal": -217600.0,
     "t_k": 298.15,
-    "density": 1.1,
+    "density": 1.45,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 361. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "notes": "Imported from ALLPROP.json entry 361. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Density: erythritol 1.45 g/cc (was 1.1)."
   },
   {
     "id": 10342,
@@ -6734,23 +6928,24 @@
   },
   {
     "id": 10346,
-    "name": "C83H110ON8",
+    "name": "PBAN",
     "aliases": [
-      "PBAN",
-      "POLYBUTADIENE ACRYLONITRILE"
+      "C83H110ON8",
+      "POLYBUTADIENE ACRYLONITRILE",
+      "POLYBUTADIENE ACRYLIC ACID ACRYLONITRILE"
     ],
     "category": 8000,
-    "cea_formula": "C 83.0 H 110.0 N 8.0 O 1.0",
-    "h_cal": 1563000.0,
+    "cea_formula": "C 6.71 H 9.99 N 0.19 O 0.16",
+    "h_cal": -15340.0,
     "t_k": 298.15,
-    "density": 0.924,
+    "density": 0.913,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 367. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "notes": "Imported from ALLPROP.json entry 367. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Formula C83H110ON8 and Hf +1563 kcal/mol were not self-consistent. Now PBAN (Thiokol) from PEP propellant database (Purdue propulsion page): C671 H999 N19 O16 scaled per 100 C, -160 cal/g, 0.913 g/cc."
   },
   {
     "id": 10347,
@@ -6763,14 +6958,14 @@
     "cea_formula": "C 10.0 H 8.0",
     "h_cal": 18000.0,
     "t_k": 298.15,
-    "density": 1.025,
+    "density": 1.14,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 368. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "notes": "Imported from ALLPROP.json entry 368. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Density: naphthalene 1.14 g/cc (was 1.025)."
   },
   {
     "id": 10348,
@@ -6820,14 +7015,14 @@
     "cea_formula": "V 1.0",
     "h_cal": 0.0,
     "t_k": 298.15,
-    "density": 5.87,
+    "density": 6.11,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 371. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "notes": "Imported from ALLPROP.json entry 371. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Density: vanadium 6.11 g/cc (was 5.87)."
   },
   {
     "id": 10351,
@@ -6858,7 +7053,7 @@
     ],
     "category": 8000,
     "cea_formula": "F 1.0 H 4.0 N 1.0",
-    "h_cal": -116000.0,
+    "h_cal": -110900.0,
     "t_k": 298.15,
     "density": 1.009,
     "Weq": 0.0,
@@ -6867,7 +7062,7 @@
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 374. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "notes": "Imported from ALLPROP.json entry 374. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Hf: NH4F -464.0 kJ/mol (NBS thermochemical tables (Wagman et al. 1982))."
   },
   {
     "id": 10353,
@@ -6917,7 +7112,7 @@
     ],
     "category": 1000,
     "cea_formula": "N 2.0 O 6.0 SR 1.0",
-    "h_cal": -235200.0,
+    "h_cal": -233800.0,
     "t_k": 298.15,
     "density": 2.986,
     "Weq": 0.0,
@@ -6926,7 +7121,7 @@
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 378. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "notes": "Imported from ALLPROP.json entry 378. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Hf: Sr(NO3)2 -978.2 kJ/mol (NBS thermochemical tables (Wagman et al. 1982)). Same material as STRONTIUM_NITRATE."
   },
   {
     "id": 10356,
@@ -6955,7 +7150,7 @@
     ],
     "category": 1000,
     "cea_formula": "BA 1.0 N 2.0 O 6.0",
-    "h_cal": -236140.0,
+    "h_cal": -237100.0,
     "t_k": 298.15,
     "density": 3.24,
     "Weq": 0.0,
@@ -6964,7 +7159,7 @@
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 380. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "notes": "Imported from ALLPROP.json entry 380. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Hf: Ba(NO3)2 -992.1 kJ/mol (NBS thermochemical tables (Wagman et al. 1982)). Same material as BARIUM_NITRATE."
   },
   {
     "id": 10358,
@@ -7013,8 +7208,8 @@
       "C38H70N2O2"
     ],
     "category": 4000,
-    "cea_formula": "C 38.0 H 70.0 N 2.0 O 2.0",
-    "h_cal": -280.0,
+    "cea_formula": "C 38.0 H 72.0 N 2.0 O 2.0",
+    "h_cal": -208500.0,
     "t_k": 298.15,
     "density": 0.924,
     "Weq": 293.0,
@@ -7023,7 +7218,7 @@
     ],
     "functional_group": "NCO",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 384. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "notes": "Imported from ALLPROP.json entry 384. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. [2026-10-23] Hf was -0.28 kcal/mol. DDI from PEP propellant database (Purdue propulsion page): C38H72N2O2, -354 cal/g x 589.0 g/mol."
   },
   {
     "id": 10361,
@@ -7033,16 +7228,16 @@
     ],
     "category": 8000,
     "cea_formula": "TI 1.0 O 2.0",
-    "h_cal": -72999.5,
+    "h_cal": -225800.0,
     "t_k": 298.15,
-    "density": 4.26,
+    "density": 4.23,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
-    "phase": "",
-    "notes": ""
+    "phase": "S",
+    "notes": "[2026-10-23] Hf was -73.0 kcal/mol. TiO2 (rutile) -944.0 kJ/mol (NIST). Density rutile 4.23 g/cc."
   },
   {
     "id": 10362,
@@ -7050,7 +7245,7 @@
     "aliases": [],
     "category": 2000,
     "cea_formula": "C 2.0 H 4.0",
-    "h_cal": -13900.0,
+    "h_cal": -12720.0,
     "t_k": 298.15,
     "density": 0.95,
     "Weq": 0.0,
@@ -7058,8 +7253,8 @@
       0
     ],
     "functional_group": "",
-    "phase": "",
-    "notes": ""
+    "phase": "S",
+    "notes": "[2026-10-23] Hf aligned with allprop.dat polyethylene (-6.35 kcal/mol per CH2)."
   },
   {
     "id": 10363,
@@ -7086,7 +7281,7 @@
       "CYANURIC ACID",
       "C3N3O3H3"
     ],
-    "category": 3000,
+    "category": 8000,
     "cea_formula": "C 3.0 H 3.0 N 3.0 O 3.0",
     "h_cal": -168000.0,
     "t_k": 298.15,
@@ -7096,8 +7291,8 @@
       0
     ],
     "functional_group": "",
-    "phase": "L",
-    "notes": "Cyanuric acid (ALLPROP extension #373); split out of CA/cellulose acetate 2026-10-23.",
+    "phase": "S",
+    "notes": "Cyanuric acid (ALLPROP extension #373); split out of CA/cellulose acetate 2026-10-23. [2026-10-23] Category: not a binder.",
     "name": "CYANURIC_ACID"
   },
   {
@@ -7109,7 +7304,7 @@
     "cea_formula": "O 2.0",
     "h_cal": 0.0,
     "t_k": 298.15,
-    "density": 1.4286,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
@@ -7117,7 +7312,9 @@
     "functional_group": "",
     "phase": "G",
     "notes": "Gaseous O2 (ALLPROP extension #334); split from LOX 2026-10-23. Density is g/L, not g/cc.",
-    "name": "O2_GAS"
+    "name": "O2_GAS",
+    "density_status": "none",
+    "density_note": "Gas phase - no condensed-phase density."
   },
   {
     "id": 10366,
@@ -7128,7 +7325,7 @@
     "cea_formula": "H 2.0",
     "h_cal": 0.0,
     "t_k": 298.15,
-    "density": 0.09,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
@@ -7136,7 +7333,9 @@
     "functional_group": "",
     "phase": "G",
     "notes": "Gaseous H2 (ALLPROP extension #329); split from LH2 2026-10-23. Density is g/L, not g/cc.",
-    "name": "H2_GAS"
+    "name": "H2_GAS",
+    "density_status": "none",
+    "density_note": "Gas phase - no condensed-phase density."
   },
   {
     "id": 10367,
@@ -7147,7 +7346,7 @@
     "cea_formula": "N 2.0",
     "h_cal": 0.0,
     "t_k": 298.15,
-    "density": 1.25,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
@@ -7155,7 +7354,9 @@
     "functional_group": "",
     "phase": "G",
     "notes": "Gaseous N2 (ALLPROP extension #330); split from LN2 2026-10-23. Density is g/L, not g/cc.",
-    "name": "N2_GAS"
+    "name": "N2_GAS",
+    "density_status": "none",
+    "density_note": "Gas phase - no condensed-phase density."
   },
   {
     "id": 10368,
@@ -7205,17 +7406,19 @@
     ],
     "category": 8000,
     "cea_formula": "H 2.0 O 1.0",
-    "h_cal": -49548.0,
+    "h_cal": -57800.0,
     "t_k": 298.15,
-    "density": 0.8036,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
-    "phase": "S",
-    "notes": "Water vapour (ALLPROP extension #328); split from liquid water 2026-10-23. Hf -49.5 kcal/mol does not match the standard gas value (-57.8).",
-    "name": "WATER_VAPOR"
+    "phase": "G",
+    "notes": "Water vapour (ALLPROP extension #328); split from liquid water 2026-10-23. Hf -49.5 kcal/mol does not match the standard gas value (-57.8). [2026-10-23] Hf was -49.5 kcal/mol. Water vapour -241.8 kJ/mol (NIST).",
+    "name": "WATER_VAPOR",
+    "density_status": "none",
+    "density_note": "Gas phase - no condensed-phase density."
   },
   {
     "id": 10371,
@@ -7226,14 +7429,16 @@
     "cea_formula": "N 2.0 O 4.0",
     "h_cal": 2170.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 0.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "G",
-    "notes": "Gaseous N2O4 (allprop.dat entry 102; no density given, placeholder 0.001).",
-    "name": "N2O4_GAS"
+    "notes": "Gaseous N2O4 (allprop.dat entry 102). Gas phase, so no condensed-phase density.",
+    "name": "N2O4_GAS",
+    "density_status": "none",
+    "density_note": "Gas phase - no condensed-phase density."
   }
 ]

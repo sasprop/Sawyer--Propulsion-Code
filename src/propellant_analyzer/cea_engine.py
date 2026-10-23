@@ -58,33 +58,40 @@ def _supersonic_mach(eps: float, gamma: float,
     return None
 
 
-def estimate_blend_density_gcc(rows: list[dict]) -> Optional[float]:
+def blend_density_info(rows: list[dict]) -> dict:
     """
-    Estimate bulk reactant density from ingredient densities using simple
-    additive specific volume:
+    Bulk reactant density from ingredient densities using additive specific
+    volume:  rho_mix = total_mass / sum(mass_i / rho_i).
 
-        rho_mix = total_mass / sum(mass_i / rho_i)
-
-    The wt% inputs are already proportional masses on a 100 g basis, so the
-    exact mass unit cancels. Returns None if any nonzero row lacks density.
+    The wt% inputs are proportional masses on a 100 g basis, so the mass unit
+    cancels. Returns {"value", "estimated", "missing"}: value is None when any
+    nonzero row has no density; "estimated" lists rows whose density is only
+    an estimate.
     """
     total_mass = 0.0
     total_volume_cc = 0.0
+    estimated: list[str] = []
+    missing: list[str] = []
 
     for row in rows:
         wt_pct = max(float(row.get("wt_pct", 0.0) or 0.0), 0.0)
         if wt_pct <= 0.0:
             continue
         ing = DB._find_ingredient(row.get("name", ""))
+        status = DB.density_status(ing) if ing else "none"
         density = float(ing.get("density", 0.0)) if ing else 0.0
-        if density <= 0.0:
-            return None
+        if status == "none" or density <= 0.0:
+            missing.append(row.get("name", "?"))
+            continue
+        if status == "estimated":
+            estimated.append(row.get("name", "?"))
         total_mass += wt_pct
         total_volume_cc += wt_pct / density
 
-    if total_mass <= 0.0 or total_volume_cc <= 0.0:
-        return None
-    return total_mass / total_volume_cc
+    value = None
+    if not missing and total_mass > 0.0 and total_volume_cc > 0.0:
+        value = total_mass / total_volume_cc
+    return {"value": value, "estimated": estimated, "missing": missing}
 
 
 def run_cea(cfg: dict) -> dict:
@@ -182,14 +189,21 @@ def run_cea(cfg: dict) -> dict:
         return float(m.group(1)) if m else None
 
     cea_reactant_density_gcc = _parse_float(r"REACTANT DENSITY=\s*([\d.]+)\s*G/CC")
-    blend_density_gcc = estimate_blend_density_gcc(rows)
+    blend = blend_density_info(rows)
+    blend_density_gcc = blend["value"]
     if blend_density_gcc is not None:
         reactant_density_gcc = blend_density_gcc
         reactant_density_source = "Ingredient blend density"
-    else:
+        if blend["estimated"]:
+            reactant_density_source += " (uses estimated density: " + ", ".join(blend["estimated"]) + ")"
+    elif cea_reactant_density_gcc is not None:
         reactant_density_gcc = cea_reactant_density_gcc
+        reactant_density_source = "RocketCEA reactant density"
+    else:
+        reactant_density_gcc = None
         reactant_density_source = (
-            "RocketCEA reactant density" if cea_reactant_density_gcc is not None else "Unavailable"
+            "Unavailable - no density for: " + ", ".join(blend["missing"])
+            if blend["missing"] else "Unavailable"
         )
     mw_m = re.search(r"MW, MOL WT\s+[\d.]+\s+[\d.]+\s+([\d.]+)", full_out)
     mol_wt_exit = float(mw_m.group(1)) if mw_m else None
@@ -312,6 +326,8 @@ def run_cea(cfg: dict) -> dict:
         "reactant_density_gcc":  reactant_density_gcc,
         "cea_reactant_density_gcc": cea_reactant_density_gcc,
         "blend_density_gcc":      blend_density_gcc,
+        "density_estimated":      blend["estimated"],
+        "density_missing":        blend["missing"],
         "reactant_density_source": reactant_density_source,
         "reactant_density_lbin3": reactant_density_lbin3,
         "mol_wt_exit":           mol_wt_exit,

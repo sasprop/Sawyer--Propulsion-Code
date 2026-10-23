@@ -5,6 +5,35 @@ All notable changes to Propellant Analyzer. Versions follow
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-10-23
+
+### Added
+- Density provenance for every ingredient: measured, **estimated**, or **not available**.
+  Shown in the ingredient browser ("(est.)" / "none" plus the source note), editable in the
+  add/edit ingredient dialog ("Density source"), and flagged on the Performance tab when a run
+  uses an estimated density or an ingredient with none.
+- The ISP chart (Temperature view) shades and labels the flat stretch in the exit-temperature
+  curve; the Wiki explains it (Al2O3 freezing at 2327 K in shifting equilibrium).
+
+### Changed
+- The 114 ingredients that carried a 0.001 g/cc placeholder density now have the allprop.dat value of
+  their condensed-phase entry, a literature value (14), an estimate (54, marked: atomic-volume increments
+  fitted to allprop.dat, or a sibling entry), or no density (23). 17 gas-phase entries are flagged as
+  having no condensed density. A CEA card is written without rho when there is no density.
+- Blend density reports which estimated densities it used, or which ingredient has none.
+
+### Fixed (ingredient values not covered by allprop.dat)
+- Values that had been entered as cal/g in the kcal/mol column, now converted with PEP data:
+  ammonium carbonate, ammonium oxalate, monoammonium oxalate monohydrate.
+- TiO2 Hf -73.0 -> -225.8 kcal/mol (used by AST3: vacuum Isp 270.56 -> 269.23 s).
+- Tepanol HX-878 Hf -0.146 -> about -83 kcal/mol (estimate; used by VSP1: 221.40 -> 221.34 s).
+- DDI, PBAN, PEG, PPG, castor oil, urea (formula was wrong), B4C, Cr2O3, NH4F, Sr/Ba nitrate,
+  HDPE, water vapour; densities of triphenylbismuth, erythritol, naphthalene, vanadium.
+- Seven colorant salts (Sr/Ba nitrate, SrCO3, Li2CO3, CuCl2, CaCl2, Na2C2O4) were weight-track only;
+  they are now CEA-ready so the Flame Color tab can see their emitters.
+- 15 liquids (ClF3, ClF5, ClF3O, liquid F2 / OF2 / NF3, diborane, HNO3, N2F4, ...) were using the
+  gas-phase allprop.dat entry; switched to the condensed entry's Hf and density.
+
 ## [1.0.1] - 2026-10-23
 
 ### Fixed (ingredient database, cross-checked against the AFCEI allprop.dat list)

@@ -54,6 +54,13 @@ class PerformanceTab(QWidget):
         cols.addWidget(ch)
         lay.addLayout(cols)
 
+        self.lbl_density_note = QLabel("")
+        self.lbl_density_note.setStyleSheet(
+            f"color:{C['amber']}; font-family:Consolas,monospace; font-size:11px;"
+        )
+        self.lbl_density_note.setWordWrap(True)
+        lay.addWidget(self.lbl_density_note)
+
         # -- CEA exclusion note ---------------------------------------------
         self.lbl_excluded = QLabel("")
         self.lbl_excluded.setStyleSheet(
@@ -114,15 +121,29 @@ class PerformanceTab(QWidget):
         self.dr_mw.set(
             f"{r['mol_wt_exit']:.4f} g/mol" if r["mol_wt_exit"] else "N/A"
         )
+        estimated = r.get("density_estimated") or []
+        missing = r.get("density_missing") or []
         if r["reactant_density_gcc"]:
+            from_blend = r.get("blend_density_gcc") is not None
+            if from_blend and estimated:
+                badge, kind = "blend, EST.", "amber"
+            elif from_blend:
+                badge, kind = "blend", "green"
+            else:
+                badge, kind = "CEA", "grey"
             self.dr_density.set(
                 f"{r['reactant_density_gcc']:.4f} g/cc  "
                 f"({r['reactant_density_lbin3']:.5f} lb/in^3)",
-                "blend" if r.get("reactant_density_source") == "Ingredient blend density" else "CEA",
-                "green" if r.get("reactant_density_source") == "Ingredient blend density" else "grey",
+                badge, kind,
             )
         else:
-            self.dr_density.set("N/A")
+            self.dr_density.set("N/A", "no data" if missing else "", "red" if missing else "amber")
+        notes = []
+        if estimated:
+            notes.append("Density uses ESTIMATED ingredient densities: " + ", ".join(estimated))
+        if missing:
+            notes.append("No density in the database for: " + ", ".join(missing))
+        self.lbl_density_note.setText("\n".join(notes))
 
         # CEA exclusion note
         if r["excluded_summary"]:

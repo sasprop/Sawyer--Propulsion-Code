@@ -154,6 +154,34 @@ class WikiTab(QWidget):
             or be very sensitive to small ingredient changes. The detailed species table is there so you can see whether the hue is driven by one strong emitter or by a broad mix of weaker contributors.
           </p>
 
+          <h3 style="color:{C['amber']};">Flat Step In The Exit Temperature Curve</h3>
+          <p>
+            For aluminized propellants the exit temperature in the ISP chart stops falling and holds at exactly
+            <b>2327 K</b> over a band of expansion ratios, then starts falling again. That is real equilibrium
+            thermochemistry, not a glitch: 2327 K is the melting point of Al2O3. As the gas expands, the liquid
+            alumina droplets freeze, and the latent heat of fusion they release holds the gas temperature at the
+            melting point until all of the alumina is solid (CEA lists AL2O3(L) and AL2O3(a) together in that band).
+            The chart shades the band. It appears near the eps where Te would otherwise cross 2327 K, so it moves
+            with chamber pressure and aluminium loading, and can be absent if Te never reaches 2327 K.
+          </p>
+          <p>
+            In a real nozzle the particles lag the gas and can supercool, so the measured plume will not show a
+            sharp plateau. Treat the step as a property of the shifting-equilibrium model. The jump in the
+            ambient Isp curve at larger eps is a separate effect: it sits in the range where RocketCEA's ambient-Isp
+            estimate assumes the nozzle flow has separated, and comes from that separated-nozzle approximation,
+            not from the chemistry.
+          </p>
+
+          <h3 style="color:{C['amber']};">Ingredient Density Flags</h3>
+          <p>
+            Every ingredient density is either <b>measured</b> (allprop.dat or a literature value), <b>estimated</b>,
+            or <b>not available</b>. Estimated densities come from atomic-volume increments fitted to the allprop.dat
+            entries with known densities (typically within about 9%, occasionally 25%). They show as "(est.)" in the
+            ingredient browser, and a run that uses one is flagged on the Performance tab. When any ingredient has no
+            density the blend density cannot be computed; the app then uses RocketCEA's reactant density if available,
+            otherwise reports N/A and names the ingredient.
+          </p>
+
           <h3 style="color:{C['amber']};">Ingredient Database & Curation Notes</h3>
           <p>
             The ingredient browser is intended to mix three kinds of information: solver-ready CEA cards, weight-tracked reference materials, and practical formulation notes.

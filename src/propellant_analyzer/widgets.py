@@ -135,6 +135,7 @@ class DataRow(QWidget):
     def set(self, value: str, badge_text: str = "", badge_kind: str = "amber"):
         self.val.setText(value)
         if self._badge:
+            self._badge.hide()
             self._badge.deleteLater()
             self._badge = None
         if badge_text:

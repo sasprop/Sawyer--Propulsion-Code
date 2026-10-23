@@ -62,9 +62,21 @@ class AddIngredientDialog(QDialog):
         for code, label in sorted(CATEGORY_NAMES.items()):
             self.cmb_category.addItem(f"{code}  -  {label}", code)
 
+        self.cmb_density_status = QComboBox()
+        for label, key in [("Measured / literature value", "measured"),
+                           ("Estimated (rough)", "estimated"),
+                           ("Not available", "none")]:
+            self.cmb_density_status.addItem(label, key)
+        self.cmb_density_status.setToolTip(
+            "Where the density below comes from. Estimated densities are flagged on the Performance tab;\n"
+            "'Not available' stores no density, and the blend density then falls back to CEA or N/A."
+        )
+        self.cmb_density_status.currentIndexChanged.connect(self._toggle_density_status)
+
         for lbl, w in [("Name *:", self.txt_name),
                        ("Aliases:", self.txt_aliases),
-                       ("Category *:", self.cmb_category)]:
+                       ("Category *:", self.cmb_category),
+                       ("Density source:", self.cmb_density_status)]:
             form_top.addRow(mono_label(lbl), w)
         main.addLayout(form_top)
         main.addWidget(sep_line())
@@ -203,6 +215,11 @@ class AddIngredientDialog(QDialog):
             self._load_existing()
 
     # -- Toggle helpers -----------------------------------------------------
+    def _toggle_density_status(self, *_args):
+        has_density = self.cmb_density_status.currentData() != "none"
+        self.spn_density_cea.setEnabled(has_density)
+        self.spn_density_wt.setEnabled(has_density)
+
     def _toggle_cea(self, state):
         cea = bool(state)
         self.cea_box.setVisible(cea)
@@ -297,6 +314,8 @@ class AddIngredientDialog(QDialog):
         idx = self.cmb_category.findData(int(ing.get("category", 8000)))
         self.cmb_category.setCurrentIndex(idx if idx >= 0 else 0)
         self.txt_notes.setPlainText(ing.get("notes", ""))
+        status_idx = self.cmb_density_status.findData(DB.density_status(ing))
+        self.cmb_density_status.setCurrentIndex(status_idx if status_idx >= 0 else 0)
 
         has_cea = bool(ing.get("cea_formula", "").strip())
         self.chk_cea.setChecked(has_cea)
@@ -309,13 +328,13 @@ class AddIngredientDialog(QDialog):
             self.chk_std_tk.setChecked(abs(t_k - 298.15) < 1e-6)
             if abs(t_k - 298.15) >= 1e-6:
                 self.spn_tk.setValue(t_k)
-            self.spn_density_cea.setValue(float(ing.get("density", 1.0)))
+            self.spn_density_cea.setValue(float(ing.get("density", 0.0)) or 1.0)
             func_g = ing.get("functional_group", "") or "(none)"
             idx = self.cmb_func_cea.findText(func_g if func_g != "" else "(none)")
             self.cmb_func_cea.setCurrentIndex(idx if idx >= 0 else 0)
             self.spn_weq_cea.setValue(float(ing.get("Weq", 0.0)))
         else:
-            self.spn_density_wt.setValue(float(ing.get("density", 1.0)))
+            self.spn_density_wt.setValue(float(ing.get("density", 0.0)) or 1.0)
             func_g = ing.get("functional_group", "")
             binder_on = bool(func_g or float(ing.get("Weq", 0.0)) > 0.0)
             self.chk_binder_sys.setChecked(binder_on)
@@ -428,6 +447,14 @@ class AddIngredientDialog(QDialog):
                 "phase":           phase,
                 "notes":           notes,
             }
+
+        status = self.cmb_density_status.currentData()
+        if status == "none":
+            ingredient["density"] = 0.0
+        if status != "measured":
+            ingredient["density_status"] = status
+        if existing.get("density_note") and DB.density_status(existing) == status:
+            ingredient["density_note"] = existing["density_note"]
 
         DB.save_user_ingredient(ingredient)
         self.ingredient_saved.emit()
@@ -638,7 +665,11 @@ class IngredientPickerDialog(QDialog):
                 QTableWidgetItem("Yes" if ing.get("cea_formula", "").strip() else "No")
             )
             self.tbl.setItem(row_idx, 4, QTableWidgetItem(ing.get("functional_group", "") or "-"))
-            self.tbl.setItem(row_idx, 5, QTableWidgetItem(f"{float(ing.get('density', 0.0)):.3f}"))
+            dens_item = QTableWidgetItem(DB.density_text(ing))
+            if DB.density_status(ing) != "measured":
+                dens_item.setForeground(QColor(C["amber"]))
+                dens_item.setToolTip(ing.get("density_note", "") or "No density in the database.")
+            self.tbl.setItem(row_idx, 5, dens_item)
             hf_cal = float(ing.get("h_cal", 0.0))
             self.tbl.setItem(
                 row_idx, 6,
@@ -682,7 +713,15 @@ class IngredientPickerDialog(QDialog):
         cat = CATEGORY_NAMES.get(int(ing.get("category", 8000)), "Unknown")
         phase = ing.get("phase", "") or "-"
         func = ing.get("functional_group", "") or "-"
-        density = float(ing.get("density", 0.0))
+        dens_status = DB.density_status(ing)
+        if dens_status == "none":
+            density_html = f"<span style='color:{C['amber']};'>Not available</span>"
+        else:
+            density_html = f"{float(ing.get('density', 0.0)):.3f} g/cc"
+            if dens_status == "estimated":
+                density_html += f" <span style='color:{C['amber']}; font-weight:700;'>ESTIMATED</span>"
+        if ing.get("density_note"):
+            density_html += f"<br><span style='color:{C['text2']}; font-size:11px;'>{escape(ing['density_note'])}</span>"
         hf_cal = float(ing.get("h_cal", 0.0))
         weq = float(ing.get("Weq", 0.0))
         has_cea = bool(ing.get("cea_formula", "").strip())
@@ -699,7 +738,7 @@ class IngredientPickerDialog(QDialog):
             <tr><td style="padding:4px 8px 4px 0; color:{C['text2']};">Solver status</td><td style="padding:4px 0;">{"CEA-ready" if has_cea else "Reference only"}</td></tr>
             <tr><td style="padding:4px 8px 4px 0; color:{C['text2']};">CEA data</td><td style="padding:4px 0;">{"Yes" if has_cea else "No"}</td></tr>
             <tr><td style="padding:4px 8px 4px 0; color:{C['text2']};">Functional group</td><td style="padding:4px 0;">{escape(func)}</td></tr>
-            <tr><td style="padding:4px 8px 4px 0; color:{C['text2']};">Density</td><td style="padding:4px 0;">{density:.3f} g/cc</td></tr>
+            <tr><td style="padding:4px 8px 4px 0; color:{C['text2']};">Density</td><td style="padding:4px 0;">{density_html}</td></tr>
             <tr><td style="padding:4px 8px 4px 0; color:{C['text2']};">Heat of formation</td><td style="padding:4px 0;">{f"{hf_cal:,.1f} cal/mol  ({hf_cal / 1000.0:.3f} kcal/mol)" if hf_cal != 0.0 else "-"}</td></tr>
             <tr><td style="padding:4px 8px 4px 0; color:{C['text2']};">Weq</td><td style="padding:4px 0;">{f"{weq:.2f} g/eq" if weq > 0 else "-"}</td></tr>
           </table>

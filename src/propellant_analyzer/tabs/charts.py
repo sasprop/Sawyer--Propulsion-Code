@@ -145,6 +145,53 @@ class ChartsTab(QWidget):
             return (values - 273.15) * 9.0 / 5.0 + 32.0
         return values
 
+    @staticmethod
+    def find_exit_plateau(er, te_k, tol_k: float = 0.05):
+        """
+        Return (eps_start, eps_end, Te_K) for the widest stretch where the exit
+        temperature stays constant, or None.
+
+        In shifting-equilibrium CEA runs this happens when a condensed product
+        freezes inside the nozzle: the latent heat holds the gas at that
+        product's melting point until it has all solidified. For aluminized
+        propellants it is Al2O3 at 2327 K.
+        """
+        te = np.asarray(te_k, dtype=float)
+        er = np.asarray(er, dtype=float)
+        if te.size < 3 or te.size != er.size:
+            return None
+        flat = np.abs(np.diff(te)) < tol_k
+        best, start = None, None
+        for i, f in enumerate(np.append(flat, False)):
+            if f and start is None:
+                start = i
+            elif not f and start is not None:
+                if best is None or (i - start) > (best[1] - best[0]):
+                    best = (start, i)
+                start = None
+        if best is None or not np.isfinite(te[best[0]]):
+            return None
+        return float(er[best[0]]), float(er[best[1]]), float(te[best[0]])
+
+    def _mark_exit_plateau(self, ax, er, te_k, te_display, unit_label, x_min, x_max):
+        found = self.find_exit_plateau(er, te_k)
+        if not found:
+            return
+        e0, e1, t_k = found
+        if e1 < x_min or e0 > x_max:
+            return
+        what = "Al2O3 freezing" if abs(t_k - 2327.0) < 1.0 else "condensed product freezing"
+        ax.axvspan(e0, e1, color=C["border2"], alpha=0.35, lw=0, zorder=1)
+        t_disp = float(np.interp(e0, er, te_display))
+        ax.annotate(
+            f"Te held at {t_disp:.0f} {unit_label}\n({what})",
+            xy=((e0 + e1) / 2.0, t_disp),
+            xytext=(12, 18), textcoords="offset points",
+            color=C["text1"], fontsize=8.5, fontfamily="monospace",
+            bbox=dict(boxstyle="round,pad=0.35", facecolor=C["bg0"], edgecolor=C["border2"], alpha=0.92),
+            zorder=7,
+        )
+
     def populate(self, r: dict):
         self._result = r
         self._configure_x_range_controls(r["eps_range"])
@@ -211,6 +258,7 @@ class ChartsTab(QWidget):
                 self.canvas.draw_idle()
                 return
 
+            self._mark_exit_plateau(ax, er, r.get("te_curve_k", []), te_curve, temp_unit_display, x_min, x_max)
             ax.plot(er, tc_curve, color=C["amber"], lw=2.2, label="Chamber temperature", zorder=3)
             ax.plot(er, tt_curve, color=C["blue"], lw=2.0, ls="--", label="Throat temperature", zorder=3)
             ax.plot(er, te_curve, color=C["green"], lw=2.0, ls="-.", label="Exit temperature", zorder=3)

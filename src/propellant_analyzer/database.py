@@ -32,7 +32,9 @@
 #                            Empty string -> no CEA thermochemical data
 #    h_cal           float : heat of formation in calories (NOT kcal)
 #    t_k             float : temperature at which Hf was measured (K)
-#    density         float : g/cc
+#    density         float : g/cc (0 = no density)
+#    density_status  str   : "estimated" or "none" when not a measured value
+#    density_note    str   : where an estimated/literature density came from
 #    Weq             float : equivalent weight g/mol of reactive group; 0 = N/A
 #    particles       list  : particle sizes in microns; [0] = homogeneous
 #    functional_group str  : "OH", "NCO", "EPOXIDE", etc. for cure calculator
@@ -167,20 +169,45 @@ def card_in(key) -> tuple:
     formula   = ing.get("cea_formula", "").strip()
     h_cal     = float(ing.get("h_cal", 0.0))
     t_k       = float(ing.get("t_k", 298.15))
-    density   = float(ing.get("density", 1.0))
+    density   = float(ing.get("density", 0.0))
     Weq       = float(ing.get("Weq", 0.0))
     particles = list(ing.get("particles", [0]))
 
     if formula:
         cea_tag = (
             f"name {name}  {formula} "
-            f"wt%=100.0 h,cal={h_cal:.1f} t(k)={t_k:.2f} "
-            f"rho,g/cc={density:.3f}"
+            f"wt%=100.0 h,cal={h_cal:.1f} t(k)={t_k:.2f}"
         )
+        # CEA accepts a card without rho; it then just skips reactant density.
+        if density > 0.0:
+            cea_tag += f" rho,g/cc={density:.3f}"
     else:
         cea_tag = ""   # Signal: no thermochemical data available
 
     return (name, cea_tag, Weq, particles, density)
+
+
+# ---------------------------------------------------------------------------
+# Density provenance
+#   density_status  "measured" (default; from allprop.dat or literature)
+#                   "estimated" (rough estimate - see density_note)
+#                   "none"      (no density; stored as 0)
+# ---------------------------------------------------------------------------
+
+def density_status(ing: dict) -> str:
+    status = (ing or {}).get("density_status", "")
+    if status in ("estimated", "none"):
+        return status
+    return "measured" if float((ing or {}).get("density", 0.0) or 0.0) > 0.0 else "none"
+
+
+def density_text(ing: dict, places: int = 3) -> str:
+    """Short display string, e.g. '1.820', '1.574 (est.)', 'none'."""
+    status = density_status(ing)
+    if status == "none":
+        return "none"
+    value = f"{float(ing.get('density', 0.0)):.{places}f}"
+    return f"{value} (est.)" if status == "estimated" else value
 
 
 # ---------------------------------------------------------------------------

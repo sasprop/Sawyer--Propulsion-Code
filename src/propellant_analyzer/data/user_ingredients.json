@@ -860,16 +860,16 @@
     ],
     "category": 1000,
     "cea_formula": "N 2.0 O 4.0",
-    "h_cal": 2170.0,
+    "h_cal": -4680.0,
     "t_k": 298.15,
-    "density": 0.001,
+    "density": 1.431,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "L",
-    "notes": "Imported from ALLPROP.json entry 102. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc. Source density not provided; placeholder density 0.001 g/cc used for CEA compatibility."
+    "notes": "Values from AFCEI allprop.dat (Dunn, Rocket Engine Specific Impulse Program) entry 36. Cross-checked 2026-10-23."
   },
   {
     "id": 10036,
@@ -877,21 +877,20 @@
     "aliases": [
       "LIQUID OXYGEN AT NBP",
       "LO2",
-      "O2",
-      "GAS O2"
+      "O2"
     ],
     "category": 1000,
     "cea_formula": "O 2.0",
-    "h_cal": 0.0,
+    "h_cal": -3102.0,
     "t_k": 298.15,
-    "density": 1.4286,
+    "density": 1.149,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
-    "phase": "G",
-    "notes": "Imported from ALLPROP.json entry 334. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "phase": "L",
+    "notes": "Values from AFCEI allprop.dat (Dunn, Rocket Engine Specific Impulse Program) entry 37. Cross-checked 2026-10-23."
   },
   {
     "id": 10037,
@@ -982,21 +981,20 @@
     "aliases": [
       "CH4",
       "METHANE LIQUID AT NBP",
-      "SLUSH METHANE",
-      "S-CH4"
+      "LCH4"
     ],
     "category": 8000,
     "cea_formula": "C 1.0 H 4.0",
-    "h_cal": -21500.0,
+    "h_cal": -21390.0,
     "t_k": 298.15,
-    "density": 0.5,
+    "density": 0.424,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
-    "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 326. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "phase": "L",
+    "notes": "Values from AFCEI allprop.dat (Dunn, Rocket Engine Specific Impulse Program) entry 42. Cross-checked 2026-10-23."
   },
   {
     "id": 10042,
@@ -1064,9 +1062,7 @@
     "name": "ETHYLENE_LIQUID_AT_NBP",
     "aliases": [
       "C2H4",
-      "ETHYLENE LIQUID AT NBP",
-      "PE",
-      "POLYETHYLENE"
+      "ETHYLENE LIQUID AT NBP"
     ],
     "category": 8000,
     "cea_formula": "C 2.0 H 4.0",
@@ -1232,21 +1228,20 @@
     "aliases": [
       "H2",
       "HYDROGEN",
-      "HYDROGEN LIQUID AT NBP",
-      "GAS H2"
+      "HYDROGEN LIQUID AT NBP"
     ],
     "category": 8000,
     "cea_formula": "H 2.0",
-    "h_cal": 0.0,
+    "h_cal": -2154.0,
     "t_k": 298.15,
-    "density": 0.09,
+    "density": 0.071,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
-    "phase": "G",
-    "notes": "Imported from ALLPROP.json entry 329. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "phase": "L",
+    "notes": "Values from AFCEI allprop.dat (Dunn, Rocket Engine Specific Impulse Program) entry 54. Cross-checked 2026-10-23."
   },
   {
     "id": 10054,
@@ -1480,20 +1475,20 @@
     "aliases": [
       "N2",
       "NITROGEN LIQUID AT NBP",
-      "GAS N2"
+      "LN2"
     ],
     "category": 8000,
     "cea_formula": "N 2.0",
-    "h_cal": 0.0,
+    "h_cal": -2939.0,
     "t_k": 298.15,
-    "density": 1.25,
+    "density": 0.808,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
-    "phase": "G",
-    "notes": "Imported from ALLPROP.json entry 330. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "phase": "L",
+    "notes": "Values from AFCEI allprop.dat (Dunn, Rocket Engine Specific Impulse Program) entry 66. Cross-checked 2026-10-23."
   },
   {
     "id": 10066,
@@ -2876,7 +2871,7 @@
       "DODECAHYDRODECABORATE DIAMMINE"
     ],
     "category": 2000,
-    "cea_formula": "B 10.0 H 28.0 N 2.0",
+    "cea_formula": "B 10.0 H 18.0 N 2.0",
     "h_cal": -87130.0,
     "t_k": 298.15,
     "density": 1.0,
@@ -2886,7 +2881,7 @@
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 154. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "notes": "Values from AFCEI allprop.dat (Dunn, Rocket Engine Specific Impulse Program) entry 154. Formula corrected from H 28 to H 18 (2026-10-23)."
   },
   {
     "id": 10145,
@@ -5238,24 +5233,23 @@
     "id": 10272,
     "name": "TA",
     "aliases": [
-      "C9H14O6",
-      "GLYCERINE TRIACETATE",
       "TRIACETIN",
-      "[CH3COOCH2]2-CH-OCOCH3",
-      "TANTALUM"
+      "GLYCERINE TRIACETATE",
+      "C9H14O6",
+      "[CH3COOCH2]2-CH-OCOCH3"
     ],
     "category": 7000,
-    "cea_formula": "TA 1.0",
-    "h_cal": 0.0,
+    "cea_formula": "C 9.0 H 14.0 O 6.0",
+    "h_cal": -316100.0,
     "t_k": 298.15,
-    "density": 16.69,
+    "density": 1.16,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "L",
-    "notes": "Imported from ALLPROP.json entry 376. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "notes": "Values from AFCEI allprop.dat (Dunn, Rocket Engine Specific Impulse Program) entry 293. Cross-checked 2026-10-23."
   },
   {
     "id": 10273,
@@ -5426,23 +5420,21 @@
     "id": 10281,
     "name": "CA",
     "aliases": [
-      "C12H16O8",
       "CELLULOSE ACETATE",
-      "C3N3O3H3",
-      "CYANURIC ACID"
+      "C12H16O8"
     ],
     "category": 3000,
-    "cea_formula": "C 3.0 H 3.0 N 3.0 O 3.0",
-    "h_cal": -168000.0,
+    "cea_formula": "C 12.0 H 16.0 O 8.0",
+    "h_cal": -341000.0,
     "t_k": 298.15,
-    "density": 1.75,
+    "density": 1.3,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
-    "phase": "L",
-    "notes": "Imported from ALLPROP.json entry 373. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "phase": "S",
+    "notes": "Values from AFCEI allprop.dat (Dunn, Rocket Engine Specific Impulse Program) entry 303. Cross-checked 2026-10-23."
   },
   {
     "id": 10282,
@@ -5703,8 +5695,7 @@
       "55 B",
       "55% BORON BINDER",
       "C2.618H8.774O.348B5.004",
-      "C2.618 H8.774 O.348 B5.004",
-      "see 43 B"
+      "C2.618 H8.774 O.348 B5.004"
     ],
     "category": 3000,
     "cea_formula": "B 5.004 C 2.618 H 8.774 O 0.348",
@@ -5726,8 +5717,7 @@
       "65 B",
       "65% BORON BINDER",
       "C2.15H9.106B6.007",
-      "C2.15 H9.106 B6.007",
-      "see 43 B"
+      "C2.15 H9.106 B6.007"
     ],
     "category": 3000,
     "cea_formula": "B 6.007 C 2.15 H 9.106",
@@ -5789,41 +5779,40 @@
     "name": "MAGNESIUM_ALUMINUM_ALLOY",
     "aliases": [
       "MAGNESIUM/ALUMINUM ALLOY",
-      "MGAL2",
-      "SPINELIUM",
-      "SP"
+      "MGAL2"
     ],
     "category": 2000,
     "cea_formula": "AL 2.0 MG 1.0",
-    "h_cal": 0.0,
+    "h_cal": -270.0,
     "t_k": 298.15,
-    "density": 2.305,
+    "density": 2.4,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
     "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 364. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "notes": "Values from AFCEI allprop.dat (Dunn, Rocket Engine Specific Impulse Program) entry 322. Cross-checked 2026-10-23."
   },
   {
     "id": 10300,
     "name": "H2O",
     "aliases": [
-      "WATERVAPOR"
+      "WATER",
+      "WATER LIQUID"
     ],
     "category": 8000,
     "cea_formula": "H 2.0 O 1.0",
-    "h_cal": -49548.0,
+    "h_cal": -68300.0,
     "t_k": 298.15,
-    "density": 0.8036,
+    "density": 1.0,
     "Weq": 0.0,
     "particles": [
       0
     ],
     "functional_group": "",
-    "phase": "S",
-    "notes": "Imported from ALLPROP.json entry 328. Hf source units assumed kcal/mol and converted to cal/mol. Density units assumed g/cc."
+    "phase": "L",
+    "notes": "Values from AFCEI allprop.dat (Dunn, Rocket Engine Specific Impulse Program) entry 325. Cross-checked 2026-10-23."
   },
   {
     "id": 10301,
@@ -7071,5 +7060,180 @@
     "functional_group": "",
     "phase": "",
     "notes": ""
+  },
+  {
+    "id": 10363,
+    "aliases": [
+      "TANTALUM METAL"
+    ],
+    "category": 2000,
+    "cea_formula": "TA 1.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 16.69,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Tantalum metal (ALLPROP extension #376); split out of TA/triacetin 2026-10-23.",
+    "name": "TANTALUM"
+  },
+  {
+    "id": 10364,
+    "aliases": [
+      "CYANURIC ACID",
+      "C3N3O3H3"
+    ],
+    "category": 3000,
+    "cea_formula": "C 3.0 H 3.0 N 3.0 O 3.0",
+    "h_cal": -168000.0,
+    "t_k": 298.15,
+    "density": 1.75,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "L",
+    "notes": "Cyanuric acid (ALLPROP extension #373); split out of CA/cellulose acetate 2026-10-23.",
+    "name": "CYANURIC_ACID"
+  },
+  {
+    "id": 10365,
+    "aliases": [
+      "GAS O2"
+    ],
+    "category": 1000,
+    "cea_formula": "O 2.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 1.4286,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "G",
+    "notes": "Gaseous O2 (ALLPROP extension #334); split from LOX 2026-10-23. Density is g/L, not g/cc.",
+    "name": "O2_GAS"
+  },
+  {
+    "id": 10366,
+    "aliases": [
+      "GAS H2"
+    ],
+    "category": 8000,
+    "cea_formula": "H 2.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 0.09,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "G",
+    "notes": "Gaseous H2 (ALLPROP extension #329); split from LH2 2026-10-23. Density is g/L, not g/cc.",
+    "name": "H2_GAS"
+  },
+  {
+    "id": 10367,
+    "aliases": [
+      "GAS N2"
+    ],
+    "category": 8000,
+    "cea_formula": "N 2.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 1.25,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "G",
+    "notes": "Gaseous N2 (ALLPROP extension #330); split from LN2 2026-10-23. Density is g/L, not g/cc.",
+    "name": "N2_GAS"
+  },
+  {
+    "id": 10368,
+    "aliases": [
+      "SLUSH METHANE",
+      "S-CH4"
+    ],
+    "category": 8000,
+    "cea_formula": "C 1.0 H 4.0",
+    "h_cal": -21500.0,
+    "t_k": 298.15,
+    "density": 0.5,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Slush methane (ALLPROP extension #326); split from liquid methane 2026-10-23.",
+    "name": "SLUSH_METHANE"
+  },
+  {
+    "id": 10369,
+    "aliases": [
+      "SPINELIUM",
+      "SP"
+    ],
+    "category": 2000,
+    "cea_formula": "AL 2.0 MG 1.0",
+    "h_cal": 0.0,
+    "t_k": 298.15,
+    "density": 2.305,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Spinelium MgAl2 (ALLPROP extension #364); split from the PDF Mg/Al alloy 2026-10-23.",
+    "name": "SPINELIUM"
+  },
+  {
+    "id": 10370,
+    "aliases": [
+      "WATERVAPOR",
+      "STEAM"
+    ],
+    "category": 8000,
+    "cea_formula": "H 2.0 O 1.0",
+    "h_cal": -49548.0,
+    "t_k": 298.15,
+    "density": 0.8036,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "S",
+    "notes": "Water vapour (ALLPROP extension #328); split from liquid water 2026-10-23. Hf -49.5 kcal/mol does not match the standard gas value (-57.8).",
+    "name": "WATER_VAPOR"
+  },
+  {
+    "id": 10371,
+    "aliases": [
+      "GAS N2O4"
+    ],
+    "category": 1000,
+    "cea_formula": "N 2.0 O 4.0",
+    "h_cal": 2170.0,
+    "t_k": 298.15,
+    "density": 0.001,
+    "Weq": 0.0,
+    "particles": [
+      0
+    ],
+    "functional_group": "",
+    "phase": "G",
+    "notes": "Gaseous N2O4 (allprop.dat entry 102; no density given, placeholder 0.001).",
+    "name": "N2O4_GAS"
   }
 ]

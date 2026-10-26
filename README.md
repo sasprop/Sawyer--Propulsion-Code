@@ -6,8 +6,8 @@ Desktop tool for solid-propellant formulation, built on NASA CEA through
 | Tab | What it does |
 | --- | --- |
 | **Formulation** (left sidebar) | Solids table, binder system with the NCO/OH cure calculator or manual entry, run conditions, ambient pressure / altitude, efficiency factors |
-| **Performance** | c\*, vacuum / ambient / ideal Isp, nozzle expansion state, Tc / Tt / Te, gamma, exit molar mass, density |
-| **ISP Chart** | Isp or temperature vs. expansion ratio. Hover for values; overlay past runs or saved configs from the Run History panel |
+| **Performance** | c\*, vacuum / ambient / ideal Isp and density Isp, exit Mach, nozzle expansion state, Tc / Tt / Te, gamma, exit molar mass, density |
+| **ISP Chart** | Isp, density Isp, temperature or exit Mach vs. expansion ratio. Hover for values; overlay past runs or saved configs from the Run History panel |
 | **Chemistry** | Oxygen balance and atom inventory |
 | **Flame Color** | Likely visible emitters in the exhaust, with an alumina-smoke penalty |
 | **Wiki** | What every input and output means, filled in with your current values |

@@ -18,7 +18,7 @@ from propellant_analyzer import paths
 
 MAX_RUNS = 100
 CURVE_KEYS = ("eps_range", "isp_vac_curve", "isp_amb_100pct_curve", "isp_amb_eff_curve",
-              "tc_curve_k", "tt_curve_k", "te_curve_k")
+              "tc_curve_k", "tt_curve_k", "te_curve_k", "mach_curve")
 
 
 def _clean(values) -> list:
@@ -53,6 +53,8 @@ def record_from_result(r: dict, source: str = "run", label: Optional[str] = None
         "isp_vac": float(r.get("isp_vac", 0.0)),
         "isp_amb": float(r.get("isp_amb", 0.0)),
         "Tc_K": float(r.get("Tc_K", 0.0)),
+        "density_gcc": float(r["reactant_density_gcc"]) if r.get("reactant_density_gcc") else None,
+        "mach_exit": float(r["mach_exit"]) if r.get("mach_exit") else None,
         "ingredients": [(row.get("name"), float(row.get("wt_pct", 0.0))) for row in cfg.get("ingredients", [])],
     }
     for key in CURVE_KEYS:
@@ -74,6 +76,9 @@ def describe(rec: dict) -> str:
         f"Pc {rec.get('pc_psia', 0):.0f} psia | eps {rec.get('eps', 0):.2f} | Pamb {rec.get('pamb', 0):.3f} psia",
         f"c* {rec.get('cstar', 0):.1f} ft/s | Isp vac {rec.get('isp_vac', 0):.2f} s | "
         f"Isp amb {rec.get('isp_amb', 0):.2f} s | Tc {rec.get('Tc_K', 0):.0f} K",
+        (f"density {rec['density_gcc']:.4f} g/cc | rho*Isp amb {rec['density_gcc'] * rec.get('isp_amb', 0):.1f} s*g/cc"
+         if rec.get("density_gcc") else "no reactant density")
+        + (f" | Me {rec['mach_exit']:.3f}" if rec.get("mach_exit") else ""),
     ]
     ings = rec.get("ingredients") or []
     if ings:

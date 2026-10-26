@@ -14,6 +14,7 @@ from typing import Optional
 
 import numpy as np
 from PyQt6.QtCore import QThread, pyqtSignal
+from rocketcea import Isp as _isp_math
 from rocketcea import blends
 from rocketcea.cea_obj import CEA_Obj, add_new_fuel
 
@@ -62,6 +63,55 @@ def _supersonic_mach(eps: float, gamma: float,
             return Me
 
     return None
+
+
+def _sep_nozzle_cf(gam: float, eps_tot: float, pc: float, pamb: float, eps95_divisor: float = 1.45):
+    """
+    Kalt & Badal separated-nozzle thrust coefficient, as in
+    rocketcea.separated_Cf.sepNozzleCf, with one correction.
+
+    The 95%-recovery area ratio eps95 is the solution of
+        eps95 = epsSep + (epsSep - 1) / 2.4 = epsSep + (epsTot - epsSep) / 1.45
+    RocketCEA's code omits the "/ 1.45" in the second branch, which makes the
+    ambient Isp jump (about 1 %, ~3 s) where the branches switch. Dividing by
+    1.45 as the correlation intends makes the two branches meet. Passing
+    eps95_divisor=1.0 reproduces RocketCEA exactly.
+    """
+    pc_ov_pe = _isp_math.CalcPCoPE(gam, eps_tot)
+    cf_vac = _isp_math.CalcCFvac(gam, pc_ov_pe)
+    p_sep = (2.0 / 3.0) * (pc / pamb) ** (-0.2) * pamb
+    eps_sep = _isp_math.CalcEps(gam, pc / p_sep)
+    cfi_vac = _isp_math.CalcCFvac(gam, _isp_math.CalcPCoPE(gam, eps_sep))
+    c = 2.4 / 1.45
+    if eps_sep <= eps_tot * c / (1.0 + c) + 1.0 / (1.0 + c):
+        eps95 = eps_sep + (eps_sep - 1.0) / 2.4
+    else:
+        eps95 = eps_sep + (eps_tot - eps_sep) / eps95_divisor
+    p95 = 0.95 * pamb
+    cf = (cfi_vac + 0.55 * (p_sep + p95) * (eps95 - eps_sep) / pc
+          - (0.975 * eps95 + 0.025 * eps_tot) * pamb / pc)
+    return cf / cfi_vac, cf_vac, eps_sep, p_sep
+
+
+def ambient_isp(cea, pc: float, eps: float, pamb: float, eps95_divisor: float = 1.45):
+    """
+    (Isp_ambient, mode), same as CEA_Obj.estimate_Ambient_Isp, except that a
+    separated nozzle uses the corrected Kalt & Badal correlation above.
+    """
+    isp_amb, mode = cea.estimate_Ambient_Isp(Pc=pc, eps=eps, Pamb=pamb)
+    if not str(mode).startswith("Separated"):
+        return isp_amb, mode
+    try:
+        _, gam = cea.get_Throat_MolWt_gamma(Pc=pc, eps=eps)
+        isp_vac = cea.get_Isp(Pc=pc, eps=eps)
+        cstar = cea.get_Cstar(Pc=pc)
+        ratio, cf_vac, eps_sep, _ = _sep_nozzle_cf(gam, eps, pc, pamb, eps95_divisor)
+        isp_at_sep = cea.get_Isp(Pc=pc, eps=eps_sep)
+        cf_amb = cf_vac * isp_at_sep / isp_vac * ratio
+        value = cf_amb * cstar / 32.174
+        return (value, mode) if math.isfinite(value) and value > 0 else (isp_amb, mode)
+    except Exception:
+        return isp_amb, mode
 
 
 def blend_density_info(rows: list[dict]) -> dict:
@@ -151,7 +201,7 @@ def run_cea(cfg: dict) -> dict:
     # -- Core CEA calls -------------------------------------------------
     cstar_th         = CEA.get_Cstar(Pc=Pc)
     isp_vac_th       = CEA.get_Isp(Pc=Pc, eps=eps)
-    isp_amb_th, mode = CEA.estimate_Ambient_Isp(Pc=Pc, eps=eps, Pamb=Pamb)
+    isp_amb_th, mode = ambient_isp(CEA, Pc, eps, Pamb)
 
     cstar   = cstar_th   * cfg["cstar_eff"]
     isp_vac = isp_vac_th * isp_eff
@@ -169,7 +219,7 @@ def run_cea(cfg: dict) -> dict:
     isp_ideal = eps_ideal_val = Me_ideal = None
     if eps_ideal_res:
         eps_ideal_val, Me_ideal = eps_ideal_res
-        isp_i_th, _ = CEA.estimate_Ambient_Isp(Pc=Pc, eps=eps_ideal_val, Pamb=Pamb)
+        isp_i_th, _ = ambient_isp(CEA, Pc, eps_ideal_val, Pamb)
         if _is_valid_cea_scalar(isp_i_th) and float(isp_i_th) > 0.0:
             isp_ideal = isp_i_th * isp_eff
 
@@ -223,6 +273,19 @@ def run_cea(cfg: dict) -> dict:
     Pe = (Pc * (1.0 + (gamma_ch - 1.0) / 2.0 * Me_exit ** 2)
           ** (-gamma_ch / (gamma_ch - 1.0))) if Me_exit else None
 
+    # Exit Mach number from the equilibrium CEA solution at the design eps
+    try:
+        mach_exit = float(CEA.get_MachNumber(Pc=Pc, eps=eps))
+        mach_exit = mach_exit if math.isfinite(mach_exit) and mach_exit > 0 else None
+    except Exception:
+        mach_exit = None
+
+    # Density-specific impulse (rho * Isp), in s*g/cm^3; None without a density
+    def _rho_isp(isp_value):
+        if not reactant_density_gcc or isp_value is None:
+            return None
+        return float(isp_value) * float(reactant_density_gcc)
+
     # -- Isp vs eps sweep for chart (3 curves) ----------------------------
     chart_warning = None
     if valid_base_solution:
@@ -233,15 +296,21 @@ def run_cea(cfg: dict) -> dict:
         tc_curve_k = []
         tt_curve_k = []
         te_curve_k = []
+        mach_curve = []
         for e in eps_range:
             try:
                 vac_val = CEA.get_Isp(Pc=Pc, eps=e)
-                amb_val = CEA.estimate_Ambient_Isp(Pc=Pc, eps=e, Pamb=Pamb)[0]
+                amb_val = ambient_isp(CEA, Pc, e, Pamb)[0]
                 temp_vals = CEA.get_Temperatures(Pc=Pc, eps=e)
+                mach_val = CEA.get_MachNumber(Pc=Pc, eps=e)
             except Exception:
                 vac_val = float("nan")
                 amb_val = float("nan")
                 temp_vals = None
+                mach_val = float("nan")
+            mach_curve.append(
+                float(mach_val) if _is_valid_cea_scalar(mach_val) and float(mach_val) > 0.0 else float("nan")
+            )
             isp_vac_curve.append(
                 float(vac_val)
                 if _is_valid_cea_scalar(vac_val) and float(vac_val) > 0.0
@@ -280,6 +349,7 @@ def run_cea(cfg: dict) -> dict:
         tc_curve_k = []
         tt_curve_k = []
         te_curve_k = []
+        mach_curve = []
         chart_warning = (
             "Expansion-ratio sweep skipped because the base CEA solution returned an invalid "
             "gamma or nonphysical performance values."
@@ -349,6 +419,13 @@ def run_cea(cfg: dict) -> dict:
         "tc_curve_k":            tc_curve_k,
         "tt_curve_k":            tt_curve_k,
         "te_curve_k":            te_curve_k,
+        "mach_curve":            mach_curve,
+        "mach_exit":             mach_exit,
+        "rho_isp_vac":           _rho_isp(isp_vac),
+        "rho_isp_vac_th":        _rho_isp(isp_vac_th),
+        "rho_isp_amb":           _rho_isp(isp_amb),
+        "rho_isp_amb_th":        _rho_isp(isp_amb_th),
+        "rho_isp_ideal":         _rho_isp(isp_ideal),
         "chart_warning":         chart_warning,
         "atoms":                 atoms,
         "ob":                    ob,

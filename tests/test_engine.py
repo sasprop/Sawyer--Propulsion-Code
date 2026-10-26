@@ -144,3 +144,31 @@ def test_chart_hover_values(panel):
     assert tab.hover_values(1.5) == [("a", 15.0, "#fff")]
     assert tab.hover_values(2.5) == []        # NaN segment is skipped
     assert tab.hover_values(5.0) == []        # outside the curve
+
+
+def test_rho_isp_mach_and_separated_isp(panel):
+    import numpy as np
+
+    from propellant_analyzer.cea_engine import ambient_isp, run_cea
+    from propellant_analyzer.config import read_config
+
+    panel.load_config(read_config(str(EXAMPLE)))
+    cfg = panel.get_config()
+    r = run_cea(cfg)
+    assert r["rho_isp_vac"] == r["isp_vac"] * r["reactant_density_gcc"]
+    assert r["rho_isp_amb"] == r["isp_amb"] * r["reactant_density_gcc"]
+    assert 2.5 < r["mach_exit"] < 4.5 and len(r["mach_curve"]) == 180
+    mach = np.asarray(r["mach_curve"])
+    assert mach[-1] > mach[20] > mach[1]                                # Me rises with eps overall
+
+    # Separated-nozzle ambient Isp: reproduces RocketCEA with divisor 1, and is continuous with the fix
+    from rocketcea.cea_obj import CEA_Obj
+    cea = CEA_Obj(propName=r["combo"])
+    pc, pamb = cfg["pc_psia"], cfg["pamb"]
+    eps = np.linspace(20, 80, 241)
+    ref = np.array([cea.estimate_Ambient_Isp(Pc=pc, eps=e, Pamb=pamb)[0] for e in eps])
+    same = np.array([ambient_isp(cea, pc, e, pamb, eps95_divisor=1.0)[0] for e in eps])
+    fixed = np.array([ambient_isp(cea, pc, e, pamb)[0] for e in eps])
+    assert np.allclose(same, ref, rtol=0, atol=1e-9)
+    assert np.max(np.diff(ref)) > 1.0          # RocketCEA's upward jump
+    assert np.max(np.diff(fixed)) < 0.2        # gone after the correction

@@ -80,6 +80,10 @@ class CeaOutputTab(QWidget):
              if r["isp_ideal"] else "  Isp ideal     : N/A"),
             f"  Tc              : {r['Tc_K']:.2f} K  ({r['Tc_K']-273.15:.2f} degC)",
             f"  gamma           : {r['gamma_ch']:.4f}",
+            (f"  rho*Isp (s*g/cc): vac {r['rho_isp_vac']:.1f}  amb {r['rho_isp_amb']:.1f}"
+             + (f"  ideal {r['rho_isp_ideal']:.1f}" if r.get("rho_isp_ideal") else "")
+             if r.get("rho_isp_vac") is not None else "  rho*Isp         : N/A (no reactant density)"),
+            (f"  Exit Mach (CEA) : {r['mach_exit']:.4f}" if r.get("mach_exit") else "  Exit Mach (CEA) : N/A"),
             (f"  Density         : {r['reactant_density_gcc']:.4f} g/cc  "
              f"({r['reactant_density_lbin3']:.5f} lb/in^3)  "
              f"[{r.get('reactant_density_source', 'Unknown source')}]"

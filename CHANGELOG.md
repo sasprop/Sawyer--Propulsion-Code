@@ -5,6 +5,26 @@ All notable changes to Propellant Analyzer. Versions follow
 
 ## [Unreleased]
 
+## [1.3.0] - 2026-10-26
+
+### Added
+- Density-specific impulse (rho x Isp, s*g/cc, with lb*s/in^3) on the Performance tab under the vacuum,
+  ambient and ideal-expansion Isp cards; in the saved output file and the Wiki; and as a "Density Isp"
+  chart view with hover readout and run overlays.
+- Exit Mach number: Performance card (CEA equilibrium value at the design eps) and an "Exit Mach Number"
+  chart view (hover, overlays, design and ideal eps marked). The Al2O3 freezing band, where CEA's
+  equilibrium sound speed drops and Me steps up, is shaded and explained.
+
+### Fixed
+- The ambient Isp curve jumped up by about 3 s (about 1 %) once the nozzle flow was separated, typically
+  near eps 40 at sea level. RocketCEA's Kalt & Badal separated-nozzle code leaves out a "/1.45" that its
+  own correlation calls for, so its two branches did not meet. The app now applies the correlation as
+  written. This only changes ambient Isp between the separation point and that switch; design-point
+  results for all saved configs are unchanged.
+
+### Notes
+- Runs saved by v1.2 have no Mach or density data; the chart lists them as "not shown" in those views.
+
 ## [1.2.0] - 2026-10-26
 
 ### Added

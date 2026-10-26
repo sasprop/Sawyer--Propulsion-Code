@@ -30,11 +30,21 @@ from propellant_analyzer.widgets import SectionCard, _dspin, mono_label
 RUN_COLORS = ["#3987e5", "#d95926", "#199e70", "#c98500", "#d55181", "#008300", "#9085e9", "#e66767"]
 MAX_OVERLAYS = 7  # current run + 7 = the 8 validated colours
 
+RHO = "\u03c1\u00b7"                       # "rho*" prefix
+RHO_UNIT = "s\u00b7g/cc"
 COMPARE_CURVES = {
     "Specific Impulse": [
         ("Isp ambient (100% eff.)", "isp_amb_100pct_curve"),
         ("Isp ambient (with eta)", "isp_amb_eff_curve"),
         ("Isp vacuum", "isp_vac_curve"),
+    ],
+    "Density Isp": [
+        (RHO + "Isp ambient (100% eff.)", "isp_amb_100pct_curve"),
+        (RHO + "Isp ambient (with eta)", "isp_amb_eff_curve"),
+        (RHO + "Isp vacuum", "isp_vac_curve"),
+    ],
+    "Exit Mach Number": [
+        ("Exit Mach number", "mach_curve"),
     ],
     "Temperature": [
         ("Exit temperature", "te_curve_k"),
@@ -85,7 +95,7 @@ class ChartsTab(QWidget):
         ctrl.addWidget(mono_label("Chart:"))
         self.cmb_chart_view = QComboBox()
         self.cmb_chart_view.addItems(list(COMPARE_CURVES))
-        self.cmb_chart_view.setFixedWidth(160)
+        self.cmb_chart_view.setFixedWidth(170)
         ctrl.addWidget(self.cmb_chart_view)
         self.lbl_temp_units = mono_label("Temp units:")
         self.cmb_temp_units = QComboBox()
@@ -472,7 +482,19 @@ class ChartsTab(QWidget):
         eps_span = er[-1] - er[0]
         box = dict(boxstyle="round,pad=0.35", facecolor=C["bg0"], edgecolor=C["border2"], alpha=0.92)
 
-        if self.cmb_chart_view.currentText() == "Temperature":
+        view = self.cmb_chart_view.currentText()
+        if view == "Exit Mach Number":
+            self._render_single_mach(ax, r, er, display_x_min, x_min, x_max, box)
+            return
+        scale, unit, prefix = 1.0, "s", ""
+        if view == "Density Isp":
+            rho = r.get("reactant_density_gcc")
+            if not rho:
+                self._message(ax, "Density Isp needs a reactant density.\n"
+                                  "At least one ingredient in this run has no density in the database.")
+                return
+            scale, unit, prefix = float(rho), RHO_UNIT, RHO
+        if view == "Temperature":
             temp_unit = self.cmb_temp_units.currentText()
             unit = self._temp_unit_display()
             tc = self._convert_temperature_curve(r.get("tc_curve_k", []), temp_unit)
@@ -503,26 +525,26 @@ class ChartsTab(QWidget):
             ax.set_title(f"Temperature vs Expansion Ratio  -  Pc = {r['cfg']['pc_psia']:.0f} psia"
                          f"  |  Pamb = {r['Pamb']:.3f} psia", fontsize=10, pad=10, color=C["text1"])
         else:
-            series = [(r["isp_vac_curve"], C["blue"], "-", "Isp vacuum (theoretical)"),
-                      (r["isp_amb_100pct_curve"], C["amber"], "--", "Isp ambient - 100% efficient")]
+            series = [(r["isp_vac_curve"], C["blue"], "-", f"{prefix}Isp vacuum (theoretical)"),
+                      (r["isp_amb_100pct_curve"], C["amber"], "--", f"{prefix}Isp ambient - 100% efficient")]
             if eff < 1.0:
-                series.append((r["isp_amb_eff_curve"], C["green"], "-", f"Isp ambient - eta={eff:.3f} (expected)"))
+                series.append((r["isp_amb_eff_curve"], C["green"], "-", f"{prefix}Isp ambient - eta={eff:.3f} (expected)"))
             for y, color, ls, label in series:
-                y = np.asarray(y, dtype=float)
+                y = np.asarray(y, dtype=float) * scale
                 ax.plot(er, y, color=color, lw=2, ls=ls, label=label, zorder=3)
-                self._hover_lines.append((label, er, y, color, "{:.2f} s"))
+                self._hover_lines.append((label, er, y, color, "{:.2f} " + unit))
 
             arr = dict(arrowstyle="-|>", connectionstyle="arc3,rad=0.15", lw=0.8)
-            amb = np.asarray(r["isp_amb_100pct_curve"], dtype=float)
+            amb = np.asarray(r["isp_amb_100pct_curve"], dtype=float) * scale
             y_100 = float(np.interp(cfg_eps, er, amb))
-            y_eff = float(np.interp(cfg_eps, er, np.asarray(r["isp_amb_eff_curve"], dtype=float)))
+            y_eff = float(np.interp(cfg_eps, er, np.asarray(r["isp_amb_eff_curve"], dtype=float) * scale))
             visible = amb[visible_mask]
             visible = visible[np.isfinite(visible)]
             if visible.size < 2:
                 visible = amb[np.isfinite(amb)]
             isp_span = float(visible.max() - visible.min()) if visible.size >= 2 else 1.0
-            label = (f"eps = {cfg_eps:.1f}\n{y_100:.1f} s  (100% eff)\n{y_eff:.1f} s  (eta={eff:.3f})"
-                     if eff < 1.0 else f"eps = {cfg_eps:.1f}\n{y_100:.1f} s")
+            label = (f"eps = {cfg_eps:.1f}\n{y_100:.1f} {unit}  (100% eff)\n{y_eff:.1f} {unit}  (eta={eff:.3f})"
+                     if eff < 1.0 else f"eps = {cfg_eps:.1f}\n{y_100:.1f} {unit}")
             if x_min <= cfg_eps <= x_max:
                 ax.axvline(x=cfg_eps, color=C["text3"], lw=1, ls="--", zorder=2, alpha=0.6)
                 ax.scatter([cfg_eps], [y_100], color=C["amber"], s=60, zorder=6)
@@ -536,18 +558,60 @@ class ChartsTab(QWidget):
                 if x_min <= ei <= x_max:
                     ax.axvline(x=ei, color=C["green"], lw=1, ls=":", zorder=2, alpha=0.7)
                     ax.scatter([ei], [y_id], color=C["green"], s=60, zorder=6, marker="D")
-                    ax.annotate(f"eps_ideal = {ei:.2f}\n{y_id:.1f} s", xy=(ei, y_id),
+                    ax.annotate(f"eps_ideal = {ei:.2f}\n{y_id:.1f} {unit}", xy=(ei, y_id),
                                 xytext=(ei + eps_span * 0.08, y_id + isp_span * 0.12),
                                 color=C["green"], fontsize=8.5, fontfamily="monospace", bbox=box,
                                 arrowprops={**arr, "color": C["green"]}, zorder=7)
             ax.set_xlabel("Expansion Ratio", labelpad=8, fontsize=10, color=C["text1"])
-            ax.set_ylabel("Specific Impulse  (s)", labelpad=8, fontsize=10, color=C["text1"])
-            ax.set_title(f"Isp vs Expansion Ratio  -  Pc = {r['cfg']['pc_psia']:.0f} psia"
+            ax.set_ylabel(f"{'Density-specific impulse' if prefix else 'Specific Impulse'}  ({unit})",
+                          labelpad=8, fontsize=10, color=C["text1"])
+            ax.set_title(f"{prefix}Isp vs Expansion Ratio  -  Pc = {r['cfg']['pc_psia']:.0f} psia"
+                         + (f"  |  rho = {scale:.4f} g/cc" if prefix else "") +
                          f"  |  Pamb = {r['Pamb']:.3f} psia  |  eta_isp = {eff:.4f}",
                          fontsize=10, pad=10, color=C["text1"])
             y_lo, y_hi = ax.get_ylim()
             ax.set_ylim(y_lo, y_hi + isp_span * 0.08)
 
+        ax.legend(loc="upper left", framealpha=0.25, edgecolor=C["border2"])
+        self._style_axes(ax, display_x_min, x_max)
+
+    def _render_single_mach(self, ax, r, er, display_x_min, x_min, x_max, box):
+        mach = np.asarray(r.get("mach_curve", []), dtype=float)
+        if len(mach) != len(er):
+            self._message(ax, "Exit Mach data is not available for this run.\nRe-run the analysis to generate it.")
+            return
+        found = self.find_exit_plateau(er, r.get("te_curve_k", []))
+        if found and found[1] >= x_min and found[0] <= x_max and abs(found[2] - 2327.0) < 1.0:
+            e0, e1, _ = found
+            ax.axvspan(e0, e1, color=C["border2"], alpha=0.35, lw=0, zorder=1)
+            ax.text(0.98, 0.04,
+                    f"Shaded: Al2O3 freezing band (eps {e0:.1f}-{e1:.1f}).\n"
+                    "The equilibrium sound speed drops while alumina\n"
+                    "freezes, so Me steps up there (see Wiki).",
+                    transform=ax.transAxes, ha="right", va="bottom", color=C["text1"], fontsize=8.5,
+                    fontfamily="monospace", bbox=box, zorder=7)
+        ax.plot(er, mach, color=C["blue"], lw=2.2, label="Exit Mach number (CEA equilibrium)", zorder=3)
+        self._hover_lines.append(("Exit Mach number", er, mach, C["blue"], "{:.3f}"))
+        cfg_eps = float(r.get("eps_used", r["cfg"]["eps"]))
+        if x_min <= cfg_eps <= x_max:
+            m = float(np.interp(cfg_eps, er, mach))
+            ax.axvline(x=cfg_eps, color=C["text3"], lw=1, ls="--", zorder=2, alpha=0.6)
+            ax.scatter([cfg_eps], [m], color=C["amber"], s=55, zorder=6)
+            ax.annotate(f"eps = {cfg_eps:.1f}\nMe = {m:.3f}", xy=(cfg_eps, m), xytext=(14, -34),
+                        textcoords="offset points", color=C["amber"], fontsize=8.5, fontfamily="monospace",
+                        bbox=box, zorder=7)
+        ei = r.get("eps_ideal_val")
+        if ei and x_min <= ei <= x_max:
+            mi = float(np.interp(ei, er, mach))
+            ax.axvline(x=ei, color=C["green"], lw=1, ls=":", zorder=2, alpha=0.7)
+            ax.scatter([ei], [mi], color=C["green"], s=55, zorder=6, marker="D")
+            ax.annotate(f"eps_ideal = {ei:.2f}\nMe = {mi:.3f}", xy=(ei, mi), xytext=(14, 14),
+                        textcoords="offset points", color=C["green"], fontsize=8.5, fontfamily="monospace",
+                        bbox=box, zorder=7)
+        ax.set_xlabel("Expansion Ratio", labelpad=8, fontsize=10, color=C["text1"])
+        ax.set_ylabel("Exit Mach number", labelpad=8, fontsize=10, color=C["text1"])
+        ax.set_title(f"Exit Mach Number vs Expansion Ratio  -  Pc = {r['cfg']['pc_psia']:.0f} psia",
+                     fontsize=10, pad=10, color=C["text1"])
         ax.legend(loc="upper left", framealpha=0.25, edgecolor=C["border2"])
         self._style_axes(ax, display_x_min, x_max)
 
@@ -558,26 +622,40 @@ class ChartsTab(QWidget):
         idx = max(0, min(self.cmb_compare.currentIndex(), len(options) - 1))
         curve_label, key = options[idx]
         is_temp = mode == "Temperature"
-        unit = self._temp_unit_display() if is_temp else "s"
-        fmt = f"{{:.1f}} {unit}" if is_temp else "{:.2f} s"
+        is_rho = mode == "Density Isp"
+        is_mach = mode == "Exit Mach Number"
+        unit = self._temp_unit_display() if is_temp else RHO_UNIT if is_rho else "-" if is_mach else "s"
+        fmt = (f"{{:.1f}} {unit}" if is_temp else "{:.3f}" if is_mach else "{:.2f} " + unit)
+        skipped = []
 
         entries = []   # (label, er, y, color, lw, design eps, is_current)
         if self._result is not None and len(self._result.get("eps_range", [])) >= 2:
             cur = self.history.get(self._current_seq) if self._current_seq is not None else None
             label = (cur or {}).get("label") or (self._result["cfg"].get("formula_name") or "Current run")
             color = run_color(self._current_seq) if self._current_seq is not None else C["amber"]
-            entries.append((f"{label} (current)", np.asarray(self._result["eps_range"], dtype=float),
-                            np.asarray(self._result.get(key, []), dtype=float), color, 2.6,
-                            float(self._result.get("eps_used", self._result["cfg"]["eps"])), True))
+            y = np.asarray(self._result.get(key, []), dtype=float)
+            rho = self._result.get("reactant_density_gcc")
+            if is_rho and not rho:
+                skipped.append(f"{label} (current)")
+            else:
+                entries.append((f"{label} (current)", np.asarray(self._result["eps_range"], dtype=float),
+                                y * (float(rho) if is_rho else 1.0), color, 2.6,
+                                float(self._result.get("eps_used", self._result["cfg"]["eps"])), True))
         for rec in overlays:
             cv = RH.curves(rec)
+            y = np.asarray(cv.get(key, []), dtype=float)
+            rho = rec.get("density_gcc")
+            if (is_rho and not rho) or len(y) != len(cv["eps_range"]):
+                skipped.append(rec.get("label", "Run"))
+                continue
             entries.append((rec.get("label", "Run"), np.asarray(cv["eps_range"], dtype=float),
-                            np.asarray(cv.get(key, []), dtype=float), run_color(rec["seq"]), 1.8,
+                            y * (float(rho) if is_rho else 1.0), run_color(rec["seq"]), 1.8,
                             float(rec.get("eps", 0.0)), False))
 
         entries = [e for e in entries if len(e[1]) >= 2 and len(e[1]) == len(e[2])]
         if not entries:
-            self._message(ax, "The selected runs have no sweep data to compare.")
+            self._message(ax, "The selected runs have no data for this view."
+                          + ("\n(Runs saved before v1.3 have no Mach or density data.)" if skipped else ""))
             return
         if is_temp:
             entries = [(lb, er, self._convert_temperature_curve(y, self.cmb_temp_units.currentText()), c, lw, de, cur)
@@ -602,9 +680,11 @@ class ChartsTab(QWidget):
                                edgecolors=C["bg0"], linewidths=1.5)
 
         ax.set_xlabel("Expansion Ratio", labelpad=8, fontsize=10, color=C["text1"])
-        ax.set_ylabel(f"{curve_label}  ({unit})", labelpad=8, fontsize=10, color=C["text1"])
-        ax.set_title(f"Run comparison  -  {curve_label}  (dots mark each run's design eps)",
-                     fontsize=10, pad=10, color=C["text1"])
+        ax.set_ylabel(curve_label if is_mach else f"{curve_label}  ({unit})", labelpad=8, fontsize=10, color=C["text1"])
+        title = f"Run comparison  -  {curve_label}  (dots mark each run's design eps)"
+        if skipped:
+            title += f"\nNot shown (no {'density' if is_rho else 'data for this view'}): " + ", ".join(skipped)
+        ax.set_title(title, fontsize=10, pad=10, color=C["text1"])
         ax.legend(loc="best", framealpha=0.25, edgecolor=C["border2"], fontsize=8.5)
         self._style_axes(ax, display_x_min, x_max)
 
@@ -643,8 +723,8 @@ class ChartsTab(QWidget):
             self._hide_hover()
             return
         fmts = {label: fmt for label, _xs, _ys, _c, fmt in self._hover_lines}
-        width = min(max(len(label) for label, _, _ in vals), 44)
-        lines = [f"eps = {x:.2f}"] + [f"{label[:44]:<{width}}  {fmts[label].format(y)}" for label, y, _ in vals]
+        width = min(max(len(label) for label, _, _ in vals), 52)
+        lines = [f"eps = {x:.2f}"] + [f"{label[:52]:<{width}}  {fmts[label].format(y)}" for label, y, _ in vals]
         y_anchor = vals[0][1]
         self._hover_vline.set_xdata([x, x])
         self._hover_vline.set_visible(True)

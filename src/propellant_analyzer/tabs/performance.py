@@ -5,6 +5,22 @@ from PyQt6.QtWidgets import QHBoxLayout, QLabel, QVBoxLayout, QWidget
 from propellant_analyzer.theme import C
 from propellant_analyzer.widgets import DataRow, MetricCard, SectionCard
 
+RHO_ISP = "Density Isp"                  # rho*Isp (card titles are upper-cased, so no Greek rho)
+RHO_ISP_UNIT = "s\u00b7g/cc"
+GCC_TO_LBIN3 = 0.0361273
+
+
+def _rho_isp_sub(value, theoretical=None, extra=""):
+    """Sub-line for a rho*Isp card: lb-s/in^3 equivalent plus optional theoretical value."""
+    if value is None:
+        return "needs a reactant density"
+    parts = [f"{value * GCC_TO_LBIN3:.3f} lb\u00b7s/in\u00b3"]
+    if theoretical is not None:
+        parts.append(f"th: {theoretical:.1f}")
+    if extra:
+        parts.append(extra)
+    return "  |  ".join(parts)
+
 
 class PerformanceTab(QWidget):
     """Performance metrics: key results + nozzle analysis + propellant properties."""
@@ -25,6 +41,17 @@ class PerformanceTab(QWidget):
         for mc in [self.mc_cstar, self.mc_isp_vac, self.mc_isp_amb, self.mc_isp_ideal]:
             cards.addWidget(mc)
         lay.addLayout(cards)
+
+        # Second row: exit Mach + density-specific impulse under each Isp card
+        cards2 = QHBoxLayout()
+        cards2.setSpacing(10)
+        self.mc_mach          = MetricCard("Exit Mach  (CEA)")
+        self.mc_rho_isp_vac   = MetricCard(f"{RHO_ISP} Vacuum  ({RHO_ISP_UNIT})")
+        self.mc_rho_isp_amb   = MetricCard(f"{RHO_ISP} Ambient  ({RHO_ISP_UNIT})")
+        self.mc_rho_isp_ideal = MetricCard(f"{RHO_ISP} Ideal Exp  ({RHO_ISP_UNIT})")
+        for mc in [self.mc_mach, self.mc_rho_isp_vac, self.mc_rho_isp_amb, self.mc_rho_isp_ideal]:
+            cards2.addWidget(mc)
+        lay.addLayout(cards2)
 
         # -- Two-column: nozzle + propellant properties ---------------------
         cols = QHBoxLayout()
@@ -82,6 +109,21 @@ class PerformanceTab(QWidget):
             f"{r['isp_ideal']:.2f}" if r["isp_ideal"] else "N/A",
             f"at eps = {r['eps_ideal_val']:.3f}" if r["eps_ideal_val"] else "",
         )
+
+        # Exit Mach + density-specific impulse
+        mach = r.get("mach_exit")
+        in_freeze = abs(float(r.get("Te_K", 0.0)) - 2327.0) < 0.5
+        self.mc_mach.update(
+            f"{mach:.3f}" if mach else "N/A",
+            (f"eps {r.get('eps_used', r['cfg']['eps']):.2f}"
+             + ("  |  Al2O3 freezing band" if in_freeze else "")) if mach else "")
+        est = " (est. density)" if r.get("density_estimated") else ""
+        rv, ra, ri = r.get("rho_isp_vac"), r.get("rho_isp_amb"), r.get("rho_isp_ideal")
+        self.mc_rho_isp_vac.update(f"{rv:.1f}" if rv is not None else "N/A",
+                                   _rho_isp_sub(rv, r.get("rho_isp_vac_th") if eff != 1.0 else None, est.strip()))
+        self.mc_rho_isp_amb.update(f"{ra:.1f}" if ra is not None else "N/A", _rho_isp_sub(ra, None, est.strip()))
+        self.mc_rho_isp_ideal.update(f"{ri:.1f}" if ri is not None else "N/A",
+                                     _rho_isp_sub(ri, None, est.strip()) if ri is not None or r.get("isp_ideal") else "")
 
         # Nozzle rows
         if r["eps_ideal_val"]:

@@ -101,6 +101,8 @@ class WikiTab(QWidget):
             snapshot = [
                 ("cstar", f"{float(r.get('cstar', 0.0)):.2f} ft/s", "Delivered c* after the chosen efficiency factor.", "High.", "Performance cards."),
                 ("isp_vac / isp_amb", f"{float(r.get('isp_vac', 0.0)):.2f} / {float(r.get('isp_amb', 0.0)):.2f} s", "Vacuum and ambient specific impulse.", "High.", "Performance cards and charts."),
+                ("rho*Isp vac / amb", (f"{float(r['rho_isp_vac']):.1f} / {float(r['rho_isp_amb']):.1f} s*g/cc" if r.get('rho_isp_vac') is not None else "N/A (no density)"), "Density-specific impulse: Isp multiplied by the reactant density. It measures impulse per unit volume of propellant, which is what matters when the motor case volume is fixed.", "High for volume-limited motors.", "Performance cards and the Density Isp chart."),
+                ("exit Mach", (f"{float(r['mach_exit']):.3f}" if r.get('mach_exit') else "N/A"), "Exit Mach number from the equilibrium CEA solution at the design expansion ratio.", "Medium.", "Performance card and the Exit Mach chart."),
                 ("Tc / gamma", f"{float(r.get('Tc_K', 0.0)):.2f} K / {float(r.get('gamma_ch', 0.0)):.4f}", "Chamber temperature and ratio of specific heats.", "High.", "Nozzle analysis and species state."),
                 ("dominant flame hue", str(r.get('flame_analysis', {}).get('dominant_family') or "-"), "Current dominant flame-color family from the heuristic screen.", "Medium.", "Flame Color tab."),
             ]
@@ -166,10 +168,28 @@ class WikiTab(QWidget):
           </p>
           <p>
             In a real nozzle the particles lag the gas and can supercool, so the measured plume will not show a
-            sharp plateau. Treat the step as a property of the shifting-equilibrium model. The jump in the
-            ambient Isp curve at larger eps is a separate effect: it sits in the range where RocketCEA's ambient-Isp
-            estimate assumes the nozzle flow has separated, and comes from that separated-nozzle approximation,
-            not from the chemistry.
+            sharp plateau. Treat the step as a property of the shifting-equilibrium model.
+          </p>
+
+          <p>
+            The same band shows up in the <b>Exit Mach</b> chart as a raised segment. CEA reports Mach as gas velocity
+            divided by the <i>equilibrium</i> speed of sound, and while liquid and solid alumina coexist that sound speed
+            is about 8 % lower (the phase change soaks up pressure disturbances). The velocity itself is smooth, so Me
+            steps up by roughly 0.2-0.3 at the start of the band and back down at its end. If your design eps sits inside
+            the band, the Performance tab says so next to the exit Mach number.
+          </p>
+
+          <h3 style="color:{C['amber']};">Ambient Isp Once The Nozzle Flow Separates</h3>
+          <p>
+            When the exit pressure drops below about 0.4 x Pamb, the flow separates from the nozzle wall and ambient Isp
+            is estimated with the Kalt &amp; Badal separated-nozzle correlation, the same one RocketCEA uses. In that
+            correlation the "95 % pressure-recovery" area ratio is the solution of
+            <code>eps95 = epsSep + (epsSep - 1)/2.4 = epsSep + (eps - epsSep)/1.45</code>. RocketCEA's code leaves out
+            the <code>/1.45</code> in the second form, so ambient Isp jumped up by about 3 s (about 1 %) at the eps where the
+            two forms switch, usually around eps 40 at sea level. Since v1.3 the app applies the correlation as written,
+            so the curve is continuous. Values are unchanged everywhere except between the separation point and that
+            switch, and unseparated nozzles are not affected at all. The correlation is an old, approximate one, so treat
+            separated-flow Isp as a rough estimate.
           </p>
 
           <h3 style="color:{C['amber']};">Ingredient Density Flags</h3>

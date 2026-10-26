@@ -7,7 +7,7 @@ Desktop tool for solid-propellant formulation, built on NASA CEA through
 | --- | --- |
 | **Formulation** (left sidebar) | Solids table, binder system with the NCO/OH cure calculator or manual entry, run conditions, ambient pressure / altitude, efficiency factors |
 | **Performance** | c\*, vacuum / ambient / ideal Isp, nozzle expansion state, Tc / Tt / Te, gamma, exit molar mass, density |
-| **ISP Chart** | Isp or temperature vs. expansion ratio |
+| **ISP Chart** | Isp or temperature vs. expansion ratio. Hover for values; overlay past runs or saved configs from the Run History panel |
 | **Chemistry** | Oxygen balance and atom inventory |
 | **Flame Color** | Likely visible emitters in the exhaust, with an alumina-smoke penalty |
 | **Wiki** | What every input and output means, filled in with your current values |
@@ -50,9 +50,10 @@ type "%USERPROFILE%\Documents\Propellant Analyzer\selftest.txt"
 | --- | --- | --- |
 | Saved runs | `Formula Outputs\` in this folder | `Documents\Propellant Analyzer\Formula Outputs\` |
 | Configs (default folder for Load/Save) | `configs\` in this folder | `Documents\Propellant Analyzer\configs\` |
+| Run history (chart overlays) | `run_history.json` in this folder | `Documents\Propellant Analyzer\run_history.json` |
 | Your ingredient library | `src\propellant_analyzer\data\user_ingredients.json` (tracked in git) | `Documents\Propellant Analyzer\user_ingredients.json` (copied from the bundled one on first launch) |
 
-`Formula Outputs\` and your personal `configs\*.ceacfg` are git-ignored. Only
+`Formula Outputs\`, `run_history.json` and your personal `configs\*.ceacfg` are git-ignored. Only
 `configs\example_*.ceacfg` is committed. Set the environment variable
 `PROPELLANT_ANALYZER_HOME` to use a different folder for all of the above.
 

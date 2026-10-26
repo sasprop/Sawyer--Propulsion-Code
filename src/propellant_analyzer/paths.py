@@ -80,6 +80,7 @@ else:
 
 DEFAULT_OUTPUT_DIR = WORKSPACE_DIR / "Formula Outputs"
 CONFIG_DIR = WORKSPACE_DIR / "configs"
+RUN_HISTORY = WORKSPACE_DIR / "run_history.json"
 
 
 def ensure_workspace() -> None:

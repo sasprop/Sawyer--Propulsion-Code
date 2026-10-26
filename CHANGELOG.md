@@ -5,6 +5,22 @@ All notable changes to Propellant Analyzer. Versions follow
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-10-26
+
+### Added
+- ISP chart hover readout: a crosshair follows the mouse and lists every plotted curve's value at that
+  expansion ratio (Isp in s, temperatures in the selected unit).
+- Run History panel on the ISP chart. Every completed run is saved (last 100, kept across sessions in
+  `run_history.json`). Tick runs to overlay them on the current run; pick which curve to compare
+  (ambient / ambient-with-eta / vacuum Isp, or exit / throat / chamber temperature). Each run keeps a
+  fixed colour, dots mark each run's design eps, names can be renamed in place, runs can be removed.
+- "Add config..." runs one or more saved .ceacfg files in the background and overlays them without
+  touching the current inputs.
+
+### Changed
+- CEA solves are serialized (RocketCEA's Fortran core is not thread-safe), so overlay runs queue
+  behind the main run instead of running at the same time.
+
 ## [1.1.0] - 2026-10-23
 
 ### Added

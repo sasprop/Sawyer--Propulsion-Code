@@ -109,3 +109,38 @@ def test_exit_temperature_plateau_detection():
     e0, e1, t = ChartsTab.find_exit_plateau(er, te)
     assert abs(t - 2327.0) < 1e-9 and 5.5 < e0 < 6.5 and 8.5 < e1 < 9.5
     assert ChartsTab.find_exit_plateau(er, 3000 - 50 * er) is None
+
+
+def test_run_history_roundtrip(tmp_path, panel):
+    import math
+
+    from propellant_analyzer.cea_engine import run_cea
+    from propellant_analyzer.config import read_config
+    from propellant_analyzer.run_history import RunHistory, curves, record_from_result
+
+    panel.load_config(read_config(str(EXAMPLE)))
+    r = run_cea(panel.get_config())
+    h = RunHistory(str(tmp_path / "hist.json"))
+    a = h.add(record_from_result(r))
+    b = h.add(record_from_result(r, source="config", label="other"))
+    assert (a["seq"], b["seq"]) == (0, 1)
+    h.update(b["seq"], checked=True)
+    h2 = RunHistory(str(tmp_path / "hist.json"))          # reload from disk
+    assert [x["label"] for x in h2.runs][1] == "other" and h2.runs[1]["checked"]
+    cv = curves(h2.runs[0])
+    assert len(cv["eps_range"]) == 180
+    assert math.isclose(cv["isp_vac_curve"][50], float(r["isp_vac_curve"][50]), rel_tol=1e-6)
+    h2.remove([0])
+    assert h2.add(record_from_result(r))["seq"] == 2     # seq never reused -> colours stay put
+
+
+def test_chart_hover_values(panel):
+    import numpy as np
+
+    from propellant_analyzer.tabs.charts import ChartsTab
+
+    tab = ChartsTab.__new__(ChartsTab)
+    tab._hover_lines = [("a", np.array([1.0, 2.0, 3.0]), np.array([10.0, 20.0, np.nan]), "#fff", "{:.1f}")]
+    assert tab.hover_values(1.5) == [("a", 15.0, "#fff")]
+    assert tab.hover_values(2.5) == []        # NaN segment is skipped
+    assert tab.hover_values(5.0) == []        # outside the curve

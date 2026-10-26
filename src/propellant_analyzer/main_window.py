@@ -18,6 +18,7 @@ from propellant_analyzer.config import read_config, write_config
 from propellant_analyzer.ingredients_ui import AddIngredientDialog
 from propellant_analyzer.input_panel import InputPanel
 from propellant_analyzer.paths import CONFIG_DIR
+from propellant_analyzer.run_history import RunHistory, record_from_result
 from propellant_analyzer.tabs.charts import ChartsTab
 from propellant_analyzer.tabs.chemistry import ChemistryTab
 from propellant_analyzer.tabs.flame_color import FlameColorTab
@@ -38,7 +39,9 @@ class MainWindow(QMainWindow):
         self.setMinimumSize(1100, 680)
 
         self._worker: Optional[CeaWorker] = None
+        self._overlay_workers: list[CeaWorker] = []
         self._last_result: Optional[dict] = None
+        self.history = RunHistory()
         self._build_menu()
         self._build_central()
         self._build_statusbar()
@@ -104,7 +107,7 @@ class MainWindow(QMainWindow):
 
         self.tabs = QTabWidget()
         self.tab_perf = PerformanceTab()
-        self.tab_chart = ChartsTab()
+        self.tab_chart = ChartsTab(self.history)
         self.tab_chem = ChemistryTab()
         self.tab_flame = FlameColorTab()
         self.tab_wiki = WikiTab()
@@ -126,6 +129,7 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(splitter)
 
         self.inputs.btn_run.clicked.connect(self._run)
+        self.tab_chart.add_config_requested.connect(self._add_config_overlay)
         self.inputs.preview_changed.connect(self._refresh_wiki)
         self._refresh_wiki()
 
@@ -271,8 +275,9 @@ class MainWindow(QMainWindow):
         self.inputs.btn_run.setText(RUN_LABEL)
 
         self._last_result = r
+        record = self.history.add(record_from_result(r))
         self.tab_perf.populate(r)
-        self.tab_chart.populate(r)
+        self.tab_chart.populate(r, record)
         self.tab_chem.populate(r)
         self.tab_flame.populate(r)
         self.tab_cea.populate(r)
@@ -293,6 +298,41 @@ class MainWindow(QMainWindow):
             f"Tc {r['Tc_K']:.0f} K"
             f"{wt_warn}{exc_warn}"
         )
+
+    # -- Overlay a saved config on the chart ------------------------------------------
+
+    def _add_config_overlay(self):
+        paths, _ = QFileDialog.getOpenFileNames(self, "Overlay saved configs", str(CONFIG_DIR), CONFIG_FILTER)
+        for path in paths:
+            try:
+                cfg = read_config(path)
+            except Exception as e:
+                QMessageBox.critical(self, "Load Error", f"Failed to load {os.path.basename(path)}:\n{e}")
+                continue
+            if "ingredients" not in cfg:
+                continue
+            base = {"pc_psia": 1000.0, "eps": 9.0, "pamb": 14.7, "cstar_eff": 1.0, "isp_eff": 1.0}
+            base.update(cfg)
+            label = os.path.splitext(os.path.basename(path))[0]
+            worker = CeaWorker(base)
+            worker.finished.connect(lambda r, w=worker, lb=label: self._on_overlay_done(w, r, lb))
+            worker.error.connect(lambda msg, w=worker, lb=label: self._on_overlay_err(w, msg, lb))
+            self._overlay_workers.append(worker)
+            worker.start()
+            self.status.showMessage(f"Running {label} for overlay...")
+
+    def _on_overlay_done(self, worker: CeaWorker, r: dict, label: str):
+        if worker in self._overlay_workers:
+            self._overlay_workers.remove(worker)
+        rec = self.history.add(record_from_result(r, source="config", label=f"{label} (config)"))
+        self.tab_chart.add_overlay_record(rec)
+        self.tabs.setCurrentWidget(self.tab_chart)
+        self.status.showMessage(f"Overlay added: {label}  |  Isp vac {r['isp_vac']:.2f} s  |  Tc {r['Tc_K']:.0f} K")
+
+    def _on_overlay_err(self, worker: CeaWorker, msg: str, label: str):
+        if worker in self._overlay_workers:
+            self._overlay_workers.remove(worker)
+        QMessageBox.critical(self, "Overlay Error", f"{label} could not be run:\n\n{msg}")
 
     def _on_err(self, msg: str):
         self.inputs.btn_run.setEnabled(True)

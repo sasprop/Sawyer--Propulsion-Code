@@ -26,3 +26,5 @@ _archive/
 Thumbs.db
 desktop.ini
 selftest.txt
+run_history.json
+run_history.json.tmp

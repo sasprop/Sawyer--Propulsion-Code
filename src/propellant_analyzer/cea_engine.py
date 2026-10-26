@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import math
 import re
+import threading
 from typing import Optional
 
 import numpy as np
@@ -23,6 +24,11 @@ from propellant_analyzer.propellant_analysis import (
     optimal_expansion_ratio,
     oxygen_balance,
 )
+
+
+# RocketCEA's Fortran core keeps global state and shares f.inp/f.out, so only one
+# solve may run at a time (main run and chart-overlay runs queue on this lock).
+CEA_LOCK = threading.Lock()
 
 
 def _is_valid_cea_scalar(value) -> bool:
@@ -364,6 +370,8 @@ class CeaWorker(QThread):
 
     def run(self):
         try:
-            self.finished.emit(run_cea(self.cfg))
+            with CEA_LOCK:
+                result = run_cea(self.cfg)
+            self.finished.emit(result)
         except Exception as exc:
             self.error.emit(str(exc))
